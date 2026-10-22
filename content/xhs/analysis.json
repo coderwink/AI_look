@@ -1,0 +1,6252 @@
+{
+  "count": 117,
+  "summary": {
+    "top_color_family": [
+      [
+        "黑",
+        38
+      ],
+      [
+        "灰",
+        35
+      ],
+      [
+        "米/卡其",
+        25
+      ],
+      [
+        "蓝",
+        7
+      ],
+      [
+        "白",
+        5
+      ],
+      [
+        "棕/大地",
+        3
+      ],
+      [
+        "绿",
+        3
+      ],
+      [
+        "紫/粉",
+        1
+      ]
+    ],
+    "any_family": [
+      [
+        "灰",
+        81
+      ],
+      [
+        "黑",
+        57
+      ],
+      [
+        "米/卡其",
+        47
+      ],
+      [
+        "白",
+        26
+      ],
+      [
+        "蓝",
+        16
+      ],
+      [
+        "棕/大地",
+        15
+      ],
+      [
+        "绿",
+        15
+      ],
+      [
+        "紫/粉",
+        3
+      ],
+      [
+        "黄/橙",
+        1
+      ]
+    ],
+    "luminance_band": [
+      [
+        "中间调 70-140",
+        64
+      ],
+      [
+        "亮调 ≥140",
+        48
+      ],
+      [
+        "暗调 <70",
+        5
+      ]
+    ],
+    "saturation_band": [
+      [
+        "低饱和 <18",
+        75
+      ],
+      [
+        "中饱和 18-32",
+        34
+      ],
+      [
+        "高饱和 ≥32",
+        8
+      ]
+    ],
+    "upper_lower": [
+      [
+        "上浅下深",
+        48
+      ],
+      [
+        "上深下浅",
+        39
+      ],
+      [
+        "同色系",
+        30
+      ]
+    ],
+    "ratio_band": [
+      [
+        "3:4 竖幅",
+        104
+      ],
+      [
+        "9:16 竖幅",
+        13
+      ]
+    ],
+    "solid_background": {
+      "n": 15,
+      "pct": 12.8
+    },
+    "avg_lum": 131.0,
+    "avg_sat": 17.7
+  },
+  "tags": [
+    {
+      "tag": "男友穿搭",
+      "n": 43,
+      "avg_lum": 145.6,
+      "top_family": "灰"
+    },
+    {
+      "tag": "王ze霖",
+      "n": 34,
+      "avg_lum": 131.6,
+      "top_family": "黑"
+    },
+    {
+      "tag": "穿搭经验howto",
+      "n": 20,
+      "avg_lum": 142.9,
+      "top_family": "灰"
+    },
+    {
+      "tag": "男生穿搭",
+      "n": 16,
+      "avg_lum": 143.1,
+      "top_family": "灰"
+    },
+    {
+      "tag": "howto低能量穿搭",
+      "n": 10,
+      "avg_lum": 132.0,
+      "top_family": "黑"
+    },
+    {
+      "tag": "轻熟风穿搭",
+      "n": 10,
+      "avg_lum": 145.8,
+      "top_family": "米/卡其"
+    },
+    {
+      "tag": "男生休闲风穿搭",
+      "n": 8,
+      "avg_lum": 142.3,
+      "top_family": "灰"
+    },
+    {
+      "tag": "轻熟风男装",
+      "n": 7,
+      "avg_lum": 140.3,
+      "top_family": "黑"
+    },
+    {
+      "tag": "痞帅穿搭",
+      "n": 7,
+      "avg_lum": 145.5,
+      "top_family": "灰"
+    },
+    {
+      "tag": "Land98Tic",
+      "n": 6,
+      "avg_lum": 166.1,
+      "top_family": "灰"
+    },
+    {
+      "tag": "男生衬衫",
+      "n": 6,
+      "avg_lum": 143.9,
+      "top_family": "米/卡其"
+    },
+    {
+      "tag": "帅气男友力穿搭",
+      "n": 5,
+      "avg_lum": 146.1,
+      "top_family": "灰"
+    }
+  ],
+  "items": [
+    {
+      "id": "6aa67a0b0000000025036ed2",
+      "title": "夏末初秋的穿搭思路",
+      "tags": [
+        "王ze霖",
+        "穿搭的尽头是去繁就简",
+        "穿搭是自我表达的艺术",
+        "今天就这样穿",
+        "给穿搭做减法",
+        "早秋这么穿"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 116.2,
+      "contrast": 74.3,
+      "sat": 11.9,
+      "top_color": {
+        "hex": "#a49d91",
+        "family": "米/卡其",
+        "share": 0.22
+      },
+      "palette": [
+        "#a49d91",
+        "#191b1c",
+        "#333536",
+        "#c2c1b6",
+        "#dfe0d8"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "黑",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#bbb7ac",
+        "lum": 183.1,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#1c1e20",
+        "lum": 29.7,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 33.0,
+        "hex": "#b2b0a6",
+        "family": "灰"
+      },
+      "text_ratio": 0.012
+    },
+    {
+      "id": "6aa523c9000000002502f3ae",
+      "title": "原来西服还有亚麻的",
+      "tags": [
+        "西服",
+        "亚麻西服",
+        "王ze霖",
+        "JINZAO锦造西服"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 83.8,
+      "contrast": 73.9,
+      "sat": 13.9,
+      "top_color": {
+        "hex": "#252522",
+        "family": "黑",
+        "share": 0.219
+      },
+      "palette": [
+        "#252522",
+        "#1b1d1b",
+        "#121210",
+        "#bdb1a2",
+        "#dcdac9"
+      ],
+      "top3_families": [
+        "黑",
+        "黑",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#151512",
+        "lum": 20.8,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#201f1c",
+        "lum": 31.0,
+        "family": "黑"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 65.5,
+        "hex": "#949386",
+        "family": "灰"
+      },
+      "text_ratio": 0.003
+    },
+    {
+      "id": "6aa3c477000000001001d2a8",
+      "title": "男生初秋穿搭合集",
+      "tags": [
+        "穿搭经验howto",
+        "顶男创造营",
+        "王ze霖",
+        "悟空有货"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 150.0,
+      "contrast": 71.4,
+      "sat": 12.9,
+      "top_color": {
+        "hex": "#2a292a",
+        "family": "黑",
+        "share": 0.262
+      },
+      "palette": [
+        "#2a292a",
+        "#babab0",
+        "#999084",
+        "#d4d5ca",
+        "#cac5b8"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#292829",
+        "lum": 40.3,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#afaca1",
+        "lum": 171.8,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 50.2,
+        "hex": "#c4c1b6",
+        "family": "灰"
+      },
+      "text_ratio": 0.02
+    },
+    {
+      "id": "6aa271df000000000d0259b5",
+      "title": "普通人如何借鉴Luke穿搭",
+      "tags": [
+        "早春晴朗",
+        "寻找各界最有腔调之人",
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 97.9,
+      "contrast": 78.0,
+      "sat": 12.4,
+      "top_color": {
+        "hex": "#0c0c0d",
+        "family": "黑",
+        "share": 0.208
+      },
+      "palette": [
+        "#0c0c0d",
+        "#1a181a",
+        "#968a82",
+        "#bfbbb0",
+        "#cfd0c6"
+      ],
+      "top3_families": [
+        "黑",
+        "黑",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#b1a79d",
+        "lum": 168.4,
+        "family": "米/卡其"
+      },
+      "lower": {
+        "hex": "#0f0e0f",
+        "lum": 14.3,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 63.5,
+        "hex": "#878682",
+        "family": "灰"
+      },
+      "text_ratio": 0.005
+    },
+    {
+      "id": "6aa0dc11000000001001ddde",
+      "title": "秋冬穿搭｜运动风卫衣怎么穿",
+      "tags": [
+        "顶男创造营",
+        "ALPHABOY",
+        "男友穿搭",
+        "卫衣分享",
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 131.4,
+      "contrast": 78.2,
+      "sat": 13.7,
+      "top_color": {
+        "hex": "#161a1e",
+        "family": "黑",
+        "share": 0.262
+      },
+      "palette": [
+        "#161a1e",
+        "#bab9b0",
+        "#cecfc6",
+        "#948a7e",
+        "#ddded5"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "白"
+      ],
+      "upper": {
+        "hex": "#bebfb4",
+        "lum": 190.0,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#181c20",
+        "lum": 27.4,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 41.2,
+        "hex": "#b2aea5",
+        "family": "灰"
+      },
+      "text_ratio": 0.014
+    },
+    {
+      "id": "6a9fc2c6000000002802fb9e",
+      "title": "初秋｜男生的穿搭合集🍂(带店铺版)",
+      "tags": [
+        "男友穿搭",
+        "男生秋季穿搭",
+        "轻熟风男装",
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1439,
+      "ratio": 0.751,
+      "lum": 121.2,
+      "contrast": 71.7,
+      "sat": 9.5,
+      "top_color": {
+        "hex": "#141618",
+        "family": "黑",
+        "share": 0.27
+      },
+      "palette": [
+        "#141618",
+        "#a5a49e",
+        "#bdbfb8",
+        "#88847e",
+        "#d1d3cd"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#191a1d",
+        "lum": 26.0,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#bbbcb5",
+        "lum": 187.3,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 21.8,
+        "hex": "#afada5",
+        "family": "灰"
+      },
+      "text_ratio": 0.001
+    },
+    {
+      "id": "6a9e6773000000002802d982",
+      "title": "干货｜一周穿搭合集（男生版）",
+      "tags": [
+        "男友穿搭",
+        "男生穿搭",
+        "型男穿搭",
+        "一周穿搭合辑",
+        "轻熟风男装",
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 107.0,
+      "contrast": 72.2,
+      "sat": 12.1,
+      "top_color": {
+        "hex": "#101214",
+        "family": "黑",
+        "share": 0.24
+      },
+      "palette": [
+        "#101214",
+        "#94918b",
+        "#28282a",
+        "#d1d4cd",
+        "#b4b5ad"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#2b2b2b",
+        "lum": 43.0,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#272828",
+        "lum": 39.8,
+        "family": "黑"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 53.9,
+        "hex": "#94938e",
+        "family": "灰"
+      },
+      "text_ratio": 0.003
+    },
+    {
+      "id": "6a9d13b4000000002503539d",
+      "title": "当我开始尝试新中式风格",
+      "tags": [
+        "JINZAO锦造西服",
+        "中式辣感",
+        "新中式男孩",
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1920,
+      "ratio": 0.562,
+      "lum": 116.6,
+      "contrast": 64.5,
+      "sat": 11.7,
+      "top_color": {
+        "hex": "#1a1a1d",
+        "family": "黑",
+        "share": 0.244
+      },
+      "palette": [
+        "#1a1a1d",
+        "#939391",
+        "#787875",
+        "#b3b4b1",
+        "#ccd0cb"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#888c8c",
+        "lum": 139.1,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#131316",
+        "lum": 19.2,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 59.0,
+        "hex": "#9da0a0",
+        "family": "灰"
+      },
+      "text_ratio": 0.0
+    },
+    {
+      "id": "6a9bb319000000001001d0df",
+      "title": "男生穿搭｜低饱和韩系穿搭",
+      "tags": [
+        "穿搭暗号对一下",
+        "穿搭经验howto",
+        "IDOL穿搭我抄了",
+        "howto低能量穿搭",
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 111.1,
+      "contrast": 75.6,
+      "sat": 8.1,
+      "top_color": {
+        "hex": "#0f1111",
+        "family": "黑",
+        "share": 0.23
+      },
+      "palette": [
+        "#0f1111",
+        "#9d9c95",
+        "#1f2121",
+        "#b8bcb7",
+        "#d4d7d3"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#93918b",
+        "lum": 145.0,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#1b1c1c",
+        "lum": 27.8,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 40.2,
+        "hex": "#a8a9a3",
+        "family": "灰"
+      },
+      "text_ratio": 0.005
+    },
+    {
+      "id": "6a9535b3000000000402ad23",
+      "title": "居家/下楼取件一双搞定｜男生舒适拖鞋",
+      "tags": [
+        "京东京造",
+        "京造云感家居鞋",
+        "懒人鞋"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1920,
+      "ratio": 0.562,
+      "lum": 155.9,
+      "contrast": 54.2,
+      "sat": 10.4,
+      "top_color": {
+        "hex": "#918d84",
+        "family": "灰",
+        "share": 0.215
+      },
+      "palette": [
+        "#918d84",
+        "#b9b7af",
+        "#cac9c0",
+        "#554f4a",
+        "#ab9c92"
+      ],
+      "top3_families": [
+        "灰",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#6b6059",
+        "lum": 97.8,
+        "family": "棕/大地"
+      },
+      "lower": {
+        "hex": "#c0bcb6",
+        "lum": 188.4,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 37.0,
+        "hex": "#b0b0aa",
+        "family": "灰"
+      },
+      "text_ratio": 0.013
+    },
+    {
+      "id": "6a992240000000002502c960",
+      "title": "被这身帅到了！谁懂！",
+      "tags": [
+        "男友穿搭",
+        "王ze霖",
+        "帅是一种感觉",
+        "古希腊掌管穿搭的神",
+        "MRMUKOK"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 93.3,
+      "contrast": 75.8,
+      "sat": 11.0,
+      "top_color": {
+        "hex": "#0e1010",
+        "family": "黑",
+        "share": 0.216
+      },
+      "palette": [
+        "#0e1010",
+        "#adafaa",
+        "#171a1b",
+        "#222526",
+        "#85847e"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#151819",
+        "lum": 23.4,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#0d0f0f",
+        "lum": 14.6,
+        "family": "黑"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 41.4,
+        "hex": "#abada8",
+        "family": "灰"
+      },
+      "text_ratio": 0.0
+    },
+    {
+      "id": "6a97cfe100000000110326cb",
+      "title": "男生穿搭｜低饱和韩系穿搭",
+      "tags": [
+        "男友穿搭",
+        "男生穿搭",
+        "男士穿搭",
+        "轻熟风穿搭",
+        "穿搭经验howto",
+        "howto低能量穿搭",
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 115.2,
+      "contrast": 73.6,
+      "sat": 12.1,
+      "top_color": {
+        "hex": "#a39c8f",
+        "family": "米/卡其",
+        "share": 0.223
+      },
+      "palette": [
+        "#a39c8f",
+        "#191b1c",
+        "#333536",
+        "#c0bfb3",
+        "#dedfd7"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "黑",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#b9b5aa",
+        "lum": 181.1,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#373839",
+        "lum": 55.9,
+        "family": "灰"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 38.6,
+        "hex": "#acaaa1",
+        "family": "灰"
+      },
+      "text_ratio": 0.013
+    },
+    {
+      "id": "6a967e20000000002502e66a",
+      "title": "低饱和韩系穿搭见crush可以吗？",
+      "tags": [
+        "男友穿搭",
+        "穿搭的尽头是去繁就简",
+        "感觉感穿搭",
+        "王ze霖",
+        "QYCL西服"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 134.5,
+      "contrast": 71.1,
+      "sat": 10.6,
+      "top_color": {
+        "hex": "#bbb3a8",
+        "family": "白",
+        "share": 0.23
+      },
+      "palette": [
+        "#bbb3a8",
+        "#595457",
+        "#252427",
+        "#ccc7bd",
+        "#e0ded7"
+      ],
+      "top3_families": [
+        "白",
+        "灰",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#433f43",
+        "lum": 64.1,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#0d0d12",
+        "lum": 13.4,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 28.5,
+        "hex": "#c5c2b9",
+        "family": "灰"
+      },
+      "text_ratio": 0.01
+    },
+    {
+      "id": "6a95226a000000002501a6a9",
+      "title": "韩男OOTD｜基础款如何穿出高级感",
+      "tags": [
+        "男友穿搭",
+        "男生穿搭",
+        "潮流关键词",
+        "男生休闲风穿搭",
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 113.4,
+      "contrast": 72.6,
+      "sat": 15.0,
+      "top_color": {
+        "hex": "#1d1d1f",
+        "family": "黑",
+        "share": 0.207
+      },
+      "palette": [
+        "#1d1d1f",
+        "#9c948b",
+        "#3a3535",
+        "#c1beb4",
+        "#dcded7"
+      ],
+      "top3_families": [
+        "黑",
+        "米/卡其",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#493834",
+        "lum": 59.3,
+        "family": "红/酒红"
+      },
+      "lower": {
+        "hex": "#1f1f22",
+        "lum": 31.2,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 26.7,
+        "hex": "#bcbab1",
+        "family": "灰"
+      },
+      "text_ratio": 0.018
+    },
+    {
+      "id": "6a913f5300000000250191fb",
+      "title": "极简风增高运动鞋｜悄悄拔高 脚感软到离谱",
+      "tags": [
+        "高尼增高鞋",
+        "隐形增高鞋",
+        "小个子增高"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 125.1,
+      "contrast": 64.7,
+      "sat": 12.7,
+      "top_color": {
+        "hex": "#232423",
+        "family": "黑",
+        "share": 0.239
+      },
+      "palette": [
+        "#232423",
+        "#8b8b81",
+        "#726e64",
+        "#9e998f",
+        "#e1e4dc"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#a19688",
+        "lum": 151.3,
+        "family": "米/卡其"
+      },
+      "lower": {
+        "hex": "#222322",
+        "lum": 34.7,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 48.3,
+        "hex": "#91948f",
+        "family": "灰"
+      },
+      "text_ratio": 0.034
+    },
+    {
+      "id": "6a929a9e0000000020032d13",
+      "title": "韩男OOTD｜基础款如何穿出高级感",
+      "tags": [
+        "穿搭经验howto",
+        "howto低能量穿搭",
+        "王ze霖",
+        "idlt",
+        "LXYZ理想衣栈"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 104.3,
+      "contrast": 62.2,
+      "sat": 12.7,
+      "top_color": {
+        "hex": "#131418",
+        "family": "黑",
+        "share": 0.26
+      },
+      "palette": [
+        "#131418",
+        "#888886",
+        "#9e9c9a",
+        "#696866",
+        "#c9c3bd"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#555352",
+        "lum": 83.4,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#121216",
+        "lum": 18.3,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 31.0,
+        "hex": "#949799",
+        "family": "灰"
+      },
+      "text_ratio": 0.013
+    },
+    {
+      "id": "6a913d1b000000002501826e",
+      "title": "少花冤枉钱:男生通勤穿搭｜明码标价版",
+      "tags": [
+        "男友穿搭",
+        "男士成熟穿搭",
+        "城市通勤穿搭",
+        "轻熟风穿搭",
+        "Cityboy穿搭指北",
+        "男生休闲风穿搭",
+        "痞帅穿搭",
+        "男生穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 118.7,
+      "contrast": 64.8,
+      "sat": 13.7,
+      "top_color": {
+        "hex": "#1d2126",
+        "family": "黑",
+        "share": 0.236
+      },
+      "palette": [
+        "#1d2126",
+        "#95938c",
+        "#797670",
+        "#b1b0a9",
+        "#504f4d"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#25292c",
+        "lum": 40.4,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#a4a39c",
+        "lum": 162.7,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 55.0,
+        "hex": "#9da19c",
+        "family": "灰"
+      },
+      "text_ratio": 0.027
+    },
+    {
+      "id": "6a8ff82a0000000026005cac",
+      "title": "少爷们要的百元价位百搭神鞋来啦",
+      "tags": [
+        "王ze霖",
+        "鞋子不踩雷指南",
+        "howto低能量穿搭",
+        "我的出街必备潮酷好鞋",
+        "男鞋"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 153.0,
+      "contrast": 61.6,
+      "sat": 12.7,
+      "top_color": {
+        "hex": "#3e3832",
+        "family": "棕/大地",
+        "share": 0.211
+      },
+      "palette": [
+        "#3e3832",
+        "#c2bdb3",
+        "#c9c7bf",
+        "#b3afa6",
+        "#968e82"
+      ],
+      "top3_families": [
+        "棕/大地",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#c2c1ba",
+        "lum": 192.7,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#322e29",
+        "lum": 46.5,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 62.1,
+        "hex": "#7d6f66",
+        "family": "棕/大地"
+      },
+      "text_ratio": 0.002
+    },
+    {
+      "id": "6a8e94c0000000000402b023",
+      "title": "10秒教你世界上最舒服的配色",
+      "tags": [
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 127.2,
+      "contrast": 64.3,
+      "sat": 10.1,
+      "top_color": {
+        "hex": "#222529",
+        "family": "黑",
+        "share": 0.242
+      },
+      "palette": [
+        "#222529",
+        "#a4a49d",
+        "#b8b8b1",
+        "#848580",
+        "#575856"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#999a94",
+        "lum": 153.4,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#2e3133",
+        "lum": 48.5,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 35.0,
+        "hex": "#a6a9a7",
+        "family": "灰"
+      },
+      "text_ratio": 0.015
+    },
+    {
+      "id": "6a8d511e000000002202e976",
+      "title": "韩男OOTD｜基础款如何穿出高级感",
+      "tags": [
+        "howto低能量穿搭",
+        "穿搭经验howto",
+        "男友穿搭",
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 137.1,
+      "contrast": 64.7,
+      "sat": 10.2,
+      "top_color": {
+        "hex": "#353332",
+        "family": "黑",
+        "share": 0.203
+      },
+      "palette": [
+        "#353332",
+        "#cecec6",
+        "#aaa89f",
+        "#656561",
+        "#827c72"
+      ],
+      "top3_families": [
+        "黑",
+        "白",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#696a63",
+        "lum": 105.3,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#252423",
+        "lum": 36.1,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 36.6,
+        "hex": "#cdccc3",
+        "family": "灰"
+      },
+      "text_ratio": 0.015
+    },
+    {
+      "id": "6a8be00f00000000330207db",
+      "title": "西装 男人最好的医美",
+      "tags": [
+        "QYCL西服",
+        "王ze霖",
+        "西装一穿就叫感觉",
+        "西装定制",
+        "男士西装穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 96.5,
+      "contrast": 59.1,
+      "sat": 13.4,
+      "top_color": {
+        "hex": "#9a9a99",
+        "family": "灰",
+        "share": 0.219
+      },
+      "palette": [
+        "#9a9a99",
+        "#1b191d",
+        "#393338",
+        "#514a4d",
+        "#7f7c7b"
+      ],
+      "top3_families": [
+        "灰",
+        "黑",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#383134",
+        "lum": 50.7,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#201c1f",
+        "lum": 29.1,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": true,
+        "spread": 17.1,
+        "hex": "#acb1b2",
+        "family": "灰"
+      },
+      "text_ratio": 0.003
+    },
+    {
+      "id": "6a8a8edb00000000330212c5",
+      "title": "这一套，我先穿了！皮衣牛仔谁懂！",
+      "tags": [
+        "穿搭经验howto",
+        "变帅三件套",
+        "男友穿搭",
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 107.8,
+      "contrast": 59.5,
+      "sat": 13.9,
+      "top_color": {
+        "hex": "#1c1d22",
+        "family": "黑",
+        "share": 0.228
+      },
+      "palette": [
+        "#1c1d22",
+        "#848788",
+        "#9fa0a1",
+        "#494c50",
+        "#686665"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#313236",
+        "lum": 50.1,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#27262a",
+        "lum": 38.5,
+        "family": "黑"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 55.3,
+        "hex": "#787a79",
+        "family": "灰"
+      },
+      "text_ratio": 0.004
+    },
+    {
+      "id": "6a89285500000000170034b6",
+      "title": "一周穿搭｜谁懂！早秋毛衣开衫的含金量",
+      "tags": [
+        "男友穿搭",
+        "开衫穿搭",
+        "一周穿搭合集",
+        "毛衣开衫",
+        "秋冬才是穿搭的主战场",
+        "毛衣搭配",
+        "王ze霖",
+        "GBHP"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 136.2,
+      "contrast": 59.9,
+      "sat": 14.8,
+      "top_color": {
+        "hex": "#857b73",
+        "family": "米/卡其",
+        "share": 0.229
+      },
+      "palette": [
+        "#857b73",
+        "#343335",
+        "#9e9d96",
+        "#c8beb1",
+        "#b6ab9f"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "黑",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#585655",
+        "lum": 86.4,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#48413f",
+        "lum": 66.3,
+        "family": "红/酒红"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 27.3,
+        "hex": "#b5b9b5",
+        "family": "灰"
+      },
+      "text_ratio": 0.012
+    },
+    {
+      "id": "6a87decf000000002302298f",
+      "title": "我宣布！人夫感才是穿搭秘籍",
+      "tags": [
+        "midashand",
+        "王ze霖",
+        "穿搭经验howto",
+        "大人感穿搭howto",
+        "howto低能量穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 108.1,
+      "contrast": 60.2,
+      "sat": 10.7,
+      "top_color": {
+        "hex": "#1b1b1f",
+        "family": "黑",
+        "share": 0.23
+      },
+      "palette": [
+        "#1b1b1f",
+        "#878784",
+        "#a2a2a0",
+        "#6b6a67",
+        "#4c4b4b"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#202023",
+        "lum": 32.2,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#5a5b5b",
+        "lum": 90.8,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 39.5,
+        "hex": "#a6aaaa",
+        "family": "灰"
+      },
+      "text_ratio": 0.009
+    },
+    {
+      "id": "6a86b5420000000027028b9b",
+      "title": "当我尝试新中式，我被惊艳到了",
+      "tags": [
+        "永远相信新中式的魅力",
+        "新中式魅力",
+        "论惊艳还得看新中式",
+        "国风才是顶级浪漫",
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 114.1,
+      "contrast": 59.2,
+      "sat": 9.4,
+      "top_color": {
+        "hex": "#212023",
+        "family": "黑",
+        "share": 0.233
+      },
+      "palette": [
+        "#212023",
+        "#8d8e8c",
+        "#a6a8a4",
+        "#6e6b6a",
+        "#574f4d"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#3b3b3b",
+        "lum": 59.0,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#1f1d20",
+        "lum": 29.6,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 18.7,
+        "hex": "#888481",
+        "family": "灰"
+      },
+      "text_ratio": 0.001
+    },
+    {
+      "id": "6a855935000000002403f996",
+      "title": "花了五百左右的西装 上身效果居然是…..",
+      "tags": [
+        "JINZAO锦造西服",
+        "王ze霖",
+        "西装"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 107.3,
+      "contrast": 70.6,
+      "sat": 11.2,
+      "top_color": {
+        "hex": "#16171b",
+        "family": "黑",
+        "share": 0.246
+      },
+      "palette": [
+        "#16171b",
+        "#88898b",
+        "#5c5658",
+        "#b0b0b0",
+        "#333135"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#212225",
+        "lum": 34.0,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#18191e",
+        "lum": 25.1,
+        "family": "黑"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 24.2,
+        "hex": "#878385",
+        "family": "灰"
+      },
+      "text_ratio": 0.036
+    },
+    {
+      "id": "6a82fa0a0000000008012ff8",
+      "title": "少花冤枉钱:男生通勤穿搭明码标价版",
+      "tags": [
+        "midashand",
+        "王ze霖",
+        "轻熟风穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 141.1,
+      "contrast": 65.5,
+      "sat": 9.9,
+      "top_color": {
+        "hex": "#3a3435",
+        "family": "黑",
+        "share": 0.194
+      },
+      "palette": [
+        "#3a3435",
+        "#a9aaa5",
+        "#6d6662",
+        "#cfd3cd",
+        "#858580"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "棕/大地"
+      ],
+      "upper": {
+        "hex": "#4f4847",
+        "lum": 73.4,
+        "family": "红/酒红"
+      },
+      "lower": {
+        "hex": "#5b5957",
+        "lum": 89.3,
+        "family": "灰"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 18.2,
+        "hex": "#9ea19c",
+        "family": "灰"
+      },
+      "text_ratio": 0.036
+    },
+    {
+      "id": "6a7c61dc00000000220319c6",
+      "title": "韩男OOTD/轻松拿捏人夫感 老钱风",
+      "tags": [
+        "男友穿搭",
+        "轻熟风穿搭",
+        "王ze霖",
+        "人夫感",
+        "老钱风"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 165.9,
+      "contrast": 48.5,
+      "sat": 9.2,
+      "top_color": {
+        "hex": "#8f8f86",
+        "family": "灰",
+        "share": 0.203
+      },
+      "palette": [
+        "#8f8f86",
+        "#d1d3ce",
+        "#c0c0b7",
+        "#67645c",
+        "#a3a094"
+      ],
+      "top3_families": [
+        "灰",
+        "白",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#7c7870",
+        "lum": 120.3,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#d2d5d0",
+        "lum": 212.0,
+        "family": "白"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 29.8,
+        "hex": "#908d81",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.013
+    },
+    {
+      "id": "6a7ad3200000000008010810",
+      "title": "韩系男生穿搭｜教你10秒学会韩系街头风",
+      "tags": [
+        "男友穿搭",
+        "穿搭经验howto",
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1920,
+      "ratio": 0.562,
+      "lum": 172.3,
+      "contrast": 52.4,
+      "sat": 8.6,
+      "top_color": {
+        "hex": "#9ba1a1",
+        "family": "灰",
+        "share": 0.318
+      },
+      "palette": [
+        "#9ba1a1",
+        "#aeb5b3",
+        "#e8edec",
+        "#646a6e",
+        "#dee2e1"
+      ],
+      "top3_families": [
+        "灰",
+        "灰",
+        "白"
+      ],
+      "upper": {
+        "hex": "#a0a19d",
+        "lum": 160.5,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#64676b",
+        "lum": 102.7,
+        "family": "灰"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": true,
+        "spread": 16.5,
+        "hex": "#a3aaa9",
+        "family": "灰"
+      },
+      "text_ratio": 0.076
+    },
+    {
+      "id": "6a796b8600000000220339b6",
+      "title": "韩系男生穿搭｜简单干净的风格",
+      "tags": [
+        "idlt",
+        "lxyz理想衣栈",
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 167.4,
+      "contrast": 49.7,
+      "sat": 7.5,
+      "top_color": {
+        "hex": "#d7d6d1",
+        "family": "白",
+        "share": 0.22
+      },
+      "palette": [
+        "#d7d6d1",
+        "#93918a",
+        "#a6a39c",
+        "#69635d",
+        "#c0c0bb"
+      ],
+      "top3_families": [
+        "白",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#a6a097",
+        "lum": 160.6,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#807a73",
+        "lum": 122.8,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 36.2,
+        "hex": "#9e9b93",
+        "family": "灰"
+      },
+      "text_ratio": 0.014
+    },
+    {
+      "id": "6a783b210000000008013d7c",
+      "title": "黑t搭配，你更喜欢哪一套？",
+      "tags": [
+        "王ze霖",
+        "idlt",
+        "lxyz理想衣栈",
+        "顶男创造营",
+        "男友穿搭",
+        "黑色T恤"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1439,
+      "ratio": 0.751,
+      "lum": 150.9,
+      "contrast": 66.9,
+      "sat": 13.2,
+      "top_color": {
+        "hex": "#36393d",
+        "family": "蓝",
+        "share": 0.202
+      },
+      "palette": [
+        "#36393d",
+        "#9d9688",
+        "#b6b5af",
+        "#d6dbd8",
+        "#e4e8e6"
+      ],
+      "top3_families": [
+        "蓝",
+        "米/卡其",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#616363",
+        "lum": 98.6,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#b3b1aa",
+        "lum": 176.9,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 29.6,
+        "hex": "#b2b1a8",
+        "family": "灰"
+      },
+      "text_ratio": 0.027
+    },
+    {
+      "id": "6a76eb2d0000000005029bd8",
+      "title": "没有丑男人只有懒男人｜韩系男生穿搭",
+      "tags": [
+        "男友穿搭",
+        "男生穿搭",
+        "潮男穿搭指南",
+        "男生休闲风穿搭",
+        "男士小众穿搭",
+        "轻熟风穿搭",
+        "男友风穿搭",
+        "痞帅穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 145.7,
+      "contrast": 60.1,
+      "sat": 9.8,
+      "top_color": {
+        "hex": "#81807c",
+        "family": "灰",
+        "share": 0.19
+      },
+      "palette": [
+        "#81807c",
+        "#c6cbc9",
+        "#3f3f3f",
+        "#939089",
+        "#aeaea9"
+      ],
+      "top3_families": [
+        "灰",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#a7a7a1",
+        "lum": 166.6,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#62615f",
+        "lum": 97.1,
+        "family": "灰"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 40.0,
+        "hex": "#9a9b94",
+        "family": "灰"
+      },
+      "text_ratio": 0.005
+    },
+    {
+      "id": "6a754512000000000502a546",
+      "title": "不用动脑的叠穿公式｜针织开衫+格子衬衫",
+      "tags": [
+        "siiiend",
+        "穿搭经验howto",
+        "男友穿搭",
+        "衬衫叠穿",
+        "毛衣开衫"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 144.6,
+      "contrast": 58.4,
+      "sat": 24.4,
+      "top_color": {
+        "hex": "#333d4d",
+        "family": "蓝",
+        "share": 0.22
+      },
+      "palette": [
+        "#333d4d",
+        "#9eb1c1",
+        "#c1cbcb",
+        "#8d8f8b",
+        "#5f84b4"
+      ],
+      "top3_families": [
+        "蓝",
+        "蓝",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#596d8c",
+        "lum": 107.0,
+        "family": "蓝"
+      },
+      "lower": {
+        "hex": "#394d6a",
+        "lum": 74.8,
+        "family": "蓝"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 28.0,
+        "hex": "#959489",
+        "family": "灰"
+      },
+      "text_ratio": 0.001
+    },
+    {
+      "id": "6a741b4e0000000006006f85",
+      "title": "适合普通人借鉴的风格穿搭",
+      "tags": [
+        "穿搭经验howto",
+        "男友穿搭",
+        "适合普通人的穿搭方式",
+        "适合自己的穿搭",
+        "siiiend"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 159.8,
+      "contrast": 51.8,
+      "sat": 8.0,
+      "top_color": {
+        "hex": "#828177",
+        "family": "灰",
+        "share": 0.222
+      },
+      "palette": [
+        "#828177",
+        "#d1d7d4",
+        "#5f5b53",
+        "#bdbdb6",
+        "#d7dfdd"
+      ],
+      "top3_families": [
+        "灰",
+        "白",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#b3b4ad",
+        "lum": 179.3,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#988a81",
+        "lum": 140.3,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 59.1,
+        "hex": "#99968e",
+        "family": "灰"
+      },
+      "text_ratio": 0.006
+    },
+    {
+      "id": "6a729599000000000503236c",
+      "title": "韩式西装适合普通人提升气质的穿搭",
+      "tags": [
+        "西装一穿就叫感觉",
+        "西装",
+        "西服套装",
+        "休闲西装"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 145.7,
+      "contrast": 64.7,
+      "sat": 10.2,
+      "top_color": {
+        "hex": "#b6b5b0",
+        "family": "灰",
+        "share": 0.217
+      },
+      "palette": [
+        "#b6b5b0",
+        "#888681",
+        "#303132",
+        "#c6c7c4",
+        "#9a9994"
+      ],
+      "top3_families": [
+        "灰",
+        "灰",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#cccfcd",
+        "lum": 206.2,
+        "family": "白"
+      },
+      "lower": {
+        "hex": "#353535",
+        "lum": 53.0,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 26.7,
+        "hex": "#97958c",
+        "family": "灰"
+      },
+      "text_ratio": 0.0
+    },
+    {
+      "id": "6a71a2b600000000220329c8",
+      "title": "家人们这套怎么样",
+      "tags": [
+        "王ze霖",
+        "张凌赫",
+        "人夫感"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 146.4,
+      "contrast": 60.5,
+      "sat": 15.9,
+      "top_color": {
+        "hex": "#443445",
+        "family": "紫/粉",
+        "share": 0.233
+      },
+      "palette": [
+        "#443445",
+        "#a39f90",
+        "#c7c7bd",
+        "#b8b5a8",
+        "#d6d6cd"
+      ],
+      "top3_families": [
+        "紫/粉",
+        "米/卡其",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#6a4c58",
+        "lum": 83.2,
+        "family": "红/酒红"
+      },
+      "lower": {
+        "hex": "#5c4459",
+        "lum": 74.6,
+        "family": "紫/粉"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 28.9,
+        "hex": "#a2a194",
+        "family": "灰"
+      },
+      "text_ratio": 0.001
+    },
+    {
+      "id": "6a705a860000000005028aff",
+      "title": "到了穿针织衫的季节了",
+      "tags": [
+        "ONUN",
+        "王ze霖",
+        "穿搭经验howto",
+        "穿搭暗号对一下",
+        "针织衫穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 155.6,
+      "contrast": 43.4,
+      "sat": 14.0,
+      "top_color": {
+        "hex": "#969692",
+        "family": "灰",
+        "share": 0.271
+      },
+      "palette": [
+        "#969692",
+        "#beb4a8",
+        "#635f5b",
+        "#bebeba",
+        "#a5aeb1"
+      ],
+      "top3_families": [
+        "灰",
+        "白",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#b7aca0",
+        "lum": 173.5,
+        "family": "米/卡其"
+      },
+      "lower": {
+        "hex": "#9ca7b2",
+        "lum": 165.5,
+        "family": "蓝"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 41.8,
+        "hex": "#9d998d",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.006
+    },
+    {
+      "id": "6a6ecd580000000025007cad",
+      "title": "初秋男生穿搭｜低饱和的裤子真的好穿！",
+      "tags": [
+        "ONUN",
+        "王ze霖",
+        "男友穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 175.8,
+      "contrast": 35.0,
+      "sat": 15.0,
+      "top_color": {
+        "hex": "#8c7f6d",
+        "family": "米/卡其",
+        "share": 0.193
+      },
+      "palette": [
+        "#8c7f6d",
+        "#c6bfae",
+        "#d2ccbe",
+        "#aca390",
+        "#bdaf9d"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "白",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#cac1af",
+        "lum": 193.6,
+        "family": "白"
+      },
+      "lower": {
+        "hex": "#ad9884",
+        "lum": 155.0,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 39.8,
+        "hex": "#aba594",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.008
+    },
+    {
+      "id": "6a6db9fd0000000005030ce1",
+      "title": "少花冤枉钱:初秋男生穿搭｜明码标价版",
+      "tags": [
+        "穿搭经验howto",
+        "男友穿搭",
+        "秋冬男生穿搭",
+        "帅气男友力穿搭",
+        "男生秋季穿搭",
+        "Cityboy穿搭指北",
+        "男生穿搭春季",
+        "痞帅穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 165.5,
+      "contrast": 57.2,
+      "sat": 9.8,
+      "top_color": {
+        "hex": "#93928b",
+        "family": "灰",
+        "share": 0.208
+      },
+      "palette": [
+        "#93928b",
+        "#d3dad8",
+        "#595752",
+        "#c3c4be",
+        "#a8a296"
+      ],
+      "top3_families": [
+        "灰",
+        "白",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#5e5f5c",
+        "lum": 94.6,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#716e68",
+        "lum": 110.2,
+        "family": "灰"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 43.4,
+        "hex": "#a29f94",
+        "family": "灰"
+      },
+      "text_ratio": 0.017
+    },
+    {
+      "id": "6a6c75f60000000005028da2",
+      "title": "尝试一下美式复古风",
+      "tags": [
+        "FORN3",
+        "男生穿搭",
+        "王ze霖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 162.7,
+      "contrast": 56.6,
+      "sat": 9.4,
+      "top_color": {
+        "hex": "#d1d6d5",
+        "family": "白",
+        "share": 0.249
+      },
+      "palette": [
+        "#d1d6d5",
+        "#999891",
+        "#a4a299",
+        "#545453",
+        "#d8dfde"
+      ],
+      "top3_families": [
+        "白",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#97928a",
+        "lum": 146.5,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#b5b9b7",
+        "lum": 184.0,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 18.3,
+        "hex": "#a6a69d",
+        "family": "灰"
+      },
+      "text_ratio": 0.014
+    },
+    {
+      "id": "6a6849c1000000000100327f",
+      "title": "韩系穿搭真的是最适合普通人可以照抄的",
+      "tags": [
+        "Land98Tic",
+        "王ze霖",
+        "少年感穿搭",
+        "人类高质量穿搭",
+        "男生穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 175.3,
+      "contrast": 54.8,
+      "sat": 10.7,
+      "top_color": {
+        "hex": "#a5a298",
+        "family": "灰",
+        "share": 0.241
+      },
+      "palette": [
+        "#a5a298",
+        "#cdc7bb",
+        "#b6aca0",
+        "#dfe0da",
+        "#e9e8e4"
+      ],
+      "top3_families": [
+        "灰",
+        "灰",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#c3bfb4",
+        "lum": 191.1,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#a89689",
+        "lum": 152.9,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 46.7,
+        "hex": "#bdbab1",
+        "family": "灰"
+      },
+      "text_ratio": 0.01
+    },
+    {
+      "id": "6a659e5d000000000503a9a4",
+      "title": "低饱和的衣服真的很耐看！",
+      "tags": [
+        "王ze霖",
+        "Land98Tic"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 177.3,
+      "contrast": 47.4,
+      "sat": 9.0,
+      "top_color": {
+        "hex": "#9d9a90",
+        "family": "灰",
+        "share": 0.229
+      },
+      "palette": [
+        "#9d9a90",
+        "#ccc9c0",
+        "#e1e1db",
+        "#eae8e2",
+        "#78736a"
+      ],
+      "top3_families": [
+        "灰",
+        "灰",
+        "白"
+      ],
+      "upper": {
+        "hex": "#aea89d",
+        "lum": 168.5,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#968f84",
+        "lum": 143.7,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 26.4,
+        "hex": "#ada99d",
+        "family": "灰"
+      },
+      "text_ratio": 0.01
+    },
+    {
+      "id": "6a61eda1000000000101fda4",
+      "title": "少花冤枉钱：男生通勤穿搭明码标价版",
+      "tags": [
+        "howto穿搭",
+        "夏季穿搭howto",
+        "穿搭bot",
+        "男友穿搭",
+        "轻熟风男装",
+        "人类高质量穿搭",
+        "男士成熟穿搭",
+        "男士穿搭EDC"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 151.8,
+      "contrast": 63.4,
+      "sat": 11.9,
+      "top_color": {
+        "hex": "#908b81",
+        "family": "米/卡其",
+        "share": 0.258
+      },
+      "palette": [
+        "#908b81",
+        "#3f413f",
+        "#a6a59e",
+        "#d1d8d7",
+        "#dfe7e9"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#52514b",
+        "lum": 80.8,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#babab5",
+        "lum": 185.6,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": true,
+        "spread": 15.6,
+        "hex": "#aaaba3",
+        "family": "灰"
+      },
+      "text_ratio": 0.034
+    },
+    {
+      "id": "6a6079530000000001002cf6",
+      "title": "西装给人的感觉确实不一样",
+      "tags": [
+        "DT先生"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1920,
+      "ratio": 0.562,
+      "lum": 151.5,
+      "contrast": 56.9,
+      "sat": 11.2,
+      "top_color": {
+        "hex": "#8e8c83",
+        "family": "灰",
+        "share": 0.229
+      },
+      "palette": [
+        "#8e8c83",
+        "#9d988c",
+        "#cacac1",
+        "#b6b2a5",
+        "#4a4a48"
+      ],
+      "top3_families": [
+        "灰",
+        "米/卡其",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#9a9488",
+        "lum": 148.4,
+        "family": "米/卡其"
+      },
+      "lower": {
+        "hex": "#adaca8",
+        "lum": 171.9,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 29.5,
+        "hex": "#9b998f",
+        "family": "灰"
+      },
+      "text_ratio": 0.0
+    },
+    {
+      "id": "6a5f5e9e000000000401c67c",
+      "title": "男生穿搭！这次真的是直接可以照抄了！",
+      "tags": [
+        "男友穿搭",
+        "男生穿搭",
+        "男士夏季穿搭",
+        "男生休闲风穿搭",
+        "阳光男孩穿搭",
+        "帅气男友力穿搭",
+        "人类高质量穿搭",
+        "轻熟风穿搭"
+      ],
+      "type": "video",
+      "w": 720,
+      "h": 961,
+      "ratio": 0.749,
+      "lum": 156.8,
+      "contrast": 46.6,
+      "sat": 9.1,
+      "top_color": {
+        "hex": "#8c8881",
+        "family": "灰",
+        "share": 0.228
+      },
+      "palette": [
+        "#8c8881",
+        "#cbcdcc",
+        "#99948c",
+        "#b3b0a9",
+        "#675f58"
+      ],
+      "top3_families": [
+        "灰",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#938f8a",
+        "lum": 143.5,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#877f75",
+        "lum": 128.0,
+        "family": "米/卡其"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 45.7,
+        "hex": "#87837c",
+        "family": "灰"
+      },
+      "text_ratio": 0.001
+    },
+    {
+      "id": "6a5df18c000000000100c316",
+      "title": "fitcheck｜一周穿搭合集(明码标价版)",
+      "tags": [
+        "howto低能量穿搭",
+        "穿搭经验howto",
+        "男友穿搭",
+        "一周穿搭合辑",
+        "周末穿点不一样",
+        "一周穿搭不重样",
+        "一衣多穿",
+        "打工人一周穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 153.1,
+      "contrast": 61.3,
+      "sat": 12.1,
+      "top_color": {
+        "hex": "#938e83",
+        "family": "米/卡其",
+        "share": 0.266
+      },
+      "palette": [
+        "#938e83",
+        "#414341",
+        "#a8a8a1",
+        "#d1d8d6",
+        "#dde7e8"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#53524c",
+        "lum": 81.8,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#bebeb7",
+        "lum": 189.5,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": true,
+        "spread": 15.8,
+        "hex": "#aeb0a8",
+        "family": "灰"
+      },
+      "text_ratio": 0.022
+    },
+    {
+      "id": "6a5c8df7000000000101d869",
+      "title": "这才是顶男穿的裤子",
+      "tags": [
+        "siiiend",
+        "男友穿搭",
+        "穿搭经验howto",
+        "裤子分享",
+        "男生休闲裤穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 171.7,
+      "contrast": 44.8,
+      "sat": 9.3,
+      "top_color": {
+        "hex": "#99978c",
+        "family": "灰",
+        "share": 0.186
+      },
+      "palette": [
+        "#99978c",
+        "#d7d9d3",
+        "#777163",
+        "#a9a59a",
+        "#c2bfb4"
+      ],
+      "top3_families": [
+        "灰",
+        "白",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#a29a8e",
+        "lum": 154.8,
+        "family": "米/卡其"
+      },
+      "lower": {
+        "hex": "#928778",
+        "lum": 136.3,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 29.7,
+        "hex": "#99988b",
+        "family": "灰"
+      },
+      "text_ratio": 0.009
+    },
+    {
+      "id": "6a5b598a000000000401e587",
+      "title": "普通男生也能照搬的秋冬穿搭",
+      "tags": [
+        "siiiend",
+        "男友穿搭",
+        "男士秋冬穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 167.6,
+      "contrast": 55.4,
+      "sat": 15.3,
+      "top_color": {
+        "hex": "#a79f8e",
+        "family": "米/卡其",
+        "share": 0.2
+      },
+      "palette": [
+        "#a79f8e",
+        "#cfc5b3",
+        "#dad4c5",
+        "#5c574f",
+        "#baaa95"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "白",
+        "白"
+      ],
+      "upper": {
+        "hex": "#d9d6cb",
+        "lum": 213.8,
+        "family": "白"
+      },
+      "lower": {
+        "hex": "#6b6863",
+        "lum": 104.3,
+        "family": "灰"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": true,
+        "spread": 16.9,
+        "hex": "#b3a891",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.006
+    },
+    {
+      "id": "6a58855f000000000100169e",
+      "title": "又浪费了一套完美穿搭",
+      "tags": [
+        "穿搭经验howto",
+        "howto低能量穿搭",
+        "顶男创造营",
+        "howto穿搭",
+        "男友穿搭",
+        "没有耐心穿搭挑战",
+        "我的穿搭之美",
+        "无差别穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1920,
+      "ratio": 0.562,
+      "lum": 137.4,
+      "contrast": 56.7,
+      "sat": 29.3,
+      "top_color": {
+        "hex": "#4c3b27",
+        "family": "棕/大地",
+        "share": 0.206
+      },
+      "palette": [
+        "#4c3b27",
+        "#c7baa6",
+        "#afa08d",
+        "#9f7b52",
+        "#7e7260"
+      ],
+      "top3_families": [
+        "棕/大地",
+        "白",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#5f4b32",
+        "lum": 77.4,
+        "family": "棕/大地"
+      },
+      "lower": {
+        "hex": "#503d27",
+        "lum": 63.5,
+        "family": "棕/大地"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": true,
+        "spread": 16.8,
+        "hex": "#b7a997",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.028
+    },
+    {
+      "id": "6a575432000000001700b7ed",
+      "title": "普通男生如何逆袭",
+      "tags": [
+        "男友穿搭",
+        "穿搭经验howto",
+        "轻熟风男装",
+        "男生衬衫",
+        "没有丑男人只有懒男人",
+        "普通人的逆袭",
+        "改变自己"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 154.3,
+      "contrast": 57.1,
+      "sat": 14.3,
+      "top_color": {
+        "hex": "#9d9889",
+        "family": "米/卡其",
+        "share": 0.217
+      },
+      "palette": [
+        "#9d9889",
+        "#4d3f4c",
+        "#afad9e",
+        "#cdcec5",
+        "#c2bdb1"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "紫/粉",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#b6b0a2",
+        "lum": 176.3,
+        "family": "白"
+      },
+      "lower": {
+        "hex": "#68475e",
+        "lum": 79.7,
+        "family": "紫/粉"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 36.0,
+        "hex": "#a1a092",
+        "family": "灰"
+      },
+      "text_ratio": 0.002
+    },
+    {
+      "id": "6a54abe4000000001603da9f",
+      "title": "秋季穿搭分享(明码标价版)",
+      "tags": [
+        "男友穿搭",
+        "平价穿搭",
+        "用穿搭开启秋天",
+        "穿搭合集",
+        "秋天这样穿",
+        "挑战一周穿搭不重样",
+        "四季穿搭不重样",
+        "早秋穿什么"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1439,
+      "ratio": 0.751,
+      "lum": 145.3,
+      "contrast": 60.3,
+      "sat": 15.1,
+      "top_color": {
+        "hex": "#34393d",
+        "family": "蓝",
+        "share": 0.218
+      },
+      "palette": [
+        "#34393d",
+        "#989387",
+        "#b0afa5",
+        "#cdc9bb",
+        "#7e837f"
+      ],
+      "top3_families": [
+        "蓝",
+        "米/卡其",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#d4cec0",
+        "lum": 206.3,
+        "family": "白"
+      },
+      "lower": {
+        "hex": "#3c434a",
+        "lum": 66.0,
+        "family": "蓝"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 31.3,
+        "hex": "#7e8078",
+        "family": "灰"
+      },
+      "text_ratio": 0.004
+    },
+    {
+      "id": "6a53714f00000000150247ca",
+      "title": "ootd｜这么穿去约会可以吗",
+      "tags": [
+        "Land98Tic",
+        "男友穿搭",
+        "今天就这样穿",
+        "今天这么穿",
+        "想怎么穿就怎么穿",
+        "颜值不够穿搭来凑",
+        "在自己穿搭中加入一点态度",
+        "穿搭只是取悦自己罢了"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 160.5,
+      "contrast": 57.1,
+      "sat": 9.3,
+      "top_color": {
+        "hex": "#99968c",
+        "family": "灰",
+        "share": 0.254
+      },
+      "palette": [
+        "#99968c",
+        "#4c4e50",
+        "#b3b2a8",
+        "#d7dad6",
+        "#dde1dc"
+      ],
+      "top3_families": [
+        "灰",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#bdbab0",
+        "lum": 185.9,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#5e6368",
+        "lum": 98.3,
+        "family": "灰"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 44.7,
+        "hex": "#9f9f95",
+        "family": "灰"
+      },
+      "text_ratio": 0.003
+    },
+    {
+      "id": "6a52030e000000001702e662",
+      "title": "准备好秋天这么穿了吗",
+      "tags": [
+        "Land98Tic",
+        "男友穿搭",
+        "秋冬才是主场",
+        "秋天这么穿",
+        "感觉感穿搭",
+        "期待秋天的穿搭",
+        "穿搭只是取悦自己罢了"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 165.5,
+      "contrast": 46.9,
+      "sat": 10.2,
+      "top_color": {
+        "hex": "#97938a",
+        "family": "灰",
+        "share": 0.188
+      },
+      "palette": [
+        "#97938a",
+        "#a69f93",
+        "#6f655c",
+        "#d2d4d3",
+        "#bdbab0"
+      ],
+      "top3_families": [
+        "灰",
+        "米/卡其",
+        "棕/大地"
+      ],
+      "upper": {
+        "hex": "#afaba0",
+        "lum": 171.1,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#958d86",
+        "lum": 142.2,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 31.7,
+        "hex": "#adada3",
+        "family": "灰"
+      },
+      "text_ratio": 0.009
+    },
+    {
+      "id": "6a50d7eb000000001c024ba3",
+      "title": "人夫感穿搭分享(明码标价版)",
+      "tags": [
+        "穿搭经验howto",
+        "IDOL穿搭我抄了",
+        "男友穿搭",
+        "轻熟风穿搭",
+        "厅里厅气穿搭",
+        "男生穿搭",
+        "古希腊掌管穿搭的神",
+        "轻熟风男装"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1439,
+      "ratio": 0.751,
+      "lum": 146.8,
+      "contrast": 57.1,
+      "sat": 15.9,
+      "top_color": {
+        "hex": "#adab9e",
+        "family": "灰",
+        "share": 0.224
+      },
+      "palette": [
+        "#adab9e",
+        "#3b3f42",
+        "#a09a8c",
+        "#8c8e88",
+        "#b7bfbc"
+      ],
+      "top3_families": [
+        "灰",
+        "蓝",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#acaba0",
+        "lum": 170.4,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#5d646c",
+        "lum": 99.1,
+        "family": "蓝"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 22.7,
+        "hex": "#99998e",
+        "family": "灰"
+      },
+      "text_ratio": 0.009
+    },
+    {
+      "id": "6a4f59db000000001602476e",
+      "title": "人夫感穿搭分享(明码标价版)",
+      "tags": [
+        "男友穿搭",
+        "轻熟风穿搭",
+        "男生衬衫",
+        "男士成熟穿搭",
+        "男人这样穿才型"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1439,
+      "ratio": 0.751,
+      "lum": 149.0,
+      "contrast": 56.7,
+      "sat": 16.5,
+      "top_color": {
+        "hex": "#9d998c",
+        "family": "米/卡其",
+        "share": 0.275
+      },
+      "palette": [
+        "#9d998c",
+        "#3d4140",
+        "#bdbfb6",
+        "#abaca1",
+        "#b8b2a1"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#bcb7a9",
+        "lum": 183.1,
+        "family": "白"
+      },
+      "lower": {
+        "hex": "#adaca5",
+        "lum": 171.7,
+        "family": "灰"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": true,
+        "spread": 9.7,
+        "hex": "#a2a091",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.003
+    },
+    {
+      "id": "6a4e0b42000000001c027110",
+      "title": "白衬衫才是人夫感的归属",
+      "tags": [
+        "Land98Tic",
+        "男友穿搭",
+        "白衬衫",
+        "正装",
+        "白衬衫穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 175.0,
+      "contrast": 44.4,
+      "sat": 12.1,
+      "top_color": {
+        "hex": "#aaa49a",
+        "family": "灰",
+        "share": 0.222
+      },
+      "palette": [
+        "#aaa49a",
+        "#c6c2b8",
+        "#d4d3cd",
+        "#b8afa0",
+        "#7d736a"
+      ],
+      "top3_families": [
+        "灰",
+        "灰",
+        "白"
+      ],
+      "upper": {
+        "hex": "#c5bdb0",
+        "lum": 189.8,
+        "family": "白"
+      },
+      "lower": {
+        "hex": "#a29890",
+        "lum": 153.5,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 31.2,
+        "hex": "#afaa9c",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.015
+    },
+    {
+      "id": "6a4cc1a800000000150251f0",
+      "title": "准备好秋天这么穿了吗",
+      "tags": [
+        "Land98Tic",
+        "男友穿搭",
+        "秋冬这样穿",
+        "秋天这么穿"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 142.9,
+      "contrast": 66.4,
+      "sat": 15.2,
+      "top_color": {
+        "hex": "#2c343d",
+        "family": "黑",
+        "share": 0.238
+      },
+      "palette": [
+        "#2c343d",
+        "#b8b5ac",
+        "#d4d0c7",
+        "#8f8d8a",
+        "#58656e"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "白"
+      ],
+      "upper": {
+        "hex": "#4d5156",
+        "lum": 80.5,
+        "family": "蓝"
+      },
+      "lower": {
+        "hex": "#363e47",
+        "lum": 60.9,
+        "family": "蓝"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 47.5,
+        "hex": "#9f9d92",
+        "family": "灰"
+      },
+      "text_ratio": 0.004
+    },
+    {
+      "id": "6a4b983b000000001603ea21",
+      "title": "被我找到了：早秋穿什么！",
+      "tags": [
+        "ONUN",
+        "早秋这么穿",
+        "已经开始期待秋天了",
+        "用穿搭开启秋天",
+        "果然秋冬才是穿搭的主场"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 161.5,
+      "contrast": 64.0,
+      "sat": 14.4,
+      "top_color": {
+        "hex": "#c6c4b9",
+        "family": "灰",
+        "share": 0.211
+      },
+      "palette": [
+        "#c6c4b9",
+        "#87969b",
+        "#3f4248",
+        "#dad9ce",
+        "#e3e3dc"
+      ],
+      "top3_families": [
+        "灰",
+        "蓝",
+        "蓝"
+      ],
+      "upper": {
+        "hex": "#d3cfc2",
+        "lum": 206.9,
+        "family": "白"
+      },
+      "lower": {
+        "hex": "#b2b6b2",
+        "lum": 180.9,
+        "family": "灰"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 31.7,
+        "hex": "#9b988f",
+        "family": "灰"
+      },
+      "text_ratio": 0.004
+    },
+    {
+      "id": "6a4a03b3000000001603fb09",
+      "title": "天热了，衬衫穿搭我先安排了👔",
+      "tags": [
+        "CUIBUJU",
+        "明星不止AB面",
+        "男生衬衫",
+        "氛围感衬衫",
+        "衬衣穿搭",
+        "男士衬衫",
+        "时髦衬衫穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 172.3,
+      "contrast": 42.1,
+      "sat": 12.4,
+      "top_color": {
+        "hex": "#9a9e99",
+        "family": "灰",
+        "share": 0.207
+      },
+      "palette": [
+        "#9a9e99",
+        "#d2d0c5",
+        "#77736c",
+        "#b5c5cc",
+        "#b0ab9f"
+      ],
+      "top3_families": [
+        "灰",
+        "白",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#9d978b",
+        "lum": 151.4,
+        "family": "米/卡其"
+      },
+      "lower": {
+        "hex": "#8e9293",
+        "lum": 145.2,
+        "family": "灰"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 35.9,
+        "hex": "#acaca2",
+        "family": "灰"
+      },
+      "text_ratio": 0.002
+    },
+    {
+      "id": "6a48ea9b0000000015025e52",
+      "title": "人夫感穿搭分享(明码标价版)",
+      "tags": [
+        "男友穿搭",
+        "帅气男友力穿搭",
+        "轻熟风穿搭",
+        "男人这样穿才型",
+        "男士成熟穿搭",
+        "阳光男孩穿搭",
+        "男生穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1439,
+      "ratio": 0.751,
+      "lum": 157.6,
+      "contrast": 56.8,
+      "sat": 15.3,
+      "top_color": {
+        "hex": "#a39e92",
+        "family": "米/卡其",
+        "share": 0.271
+      },
+      "palette": [
+        "#a39e92",
+        "#4c4743",
+        "#c4bda9",
+        "#cacbc0",
+        "#b5b8af"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "棕/大地",
+        "白"
+      ],
+      "upper": {
+        "hex": "#aca391",
+        "lum": 163.6,
+        "family": "米/卡其"
+      },
+      "lower": {
+        "hex": "#5f5c58",
+        "lum": 92.3,
+        "family": "灰"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 37.7,
+        "hex": "#9b998a",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.001
+    },
+    {
+      "id": "6a47b9400000000015025a6c",
+      "title": "176身高男生韩系穿搭分享(含🔗)",
+      "tags": [
+        "穿搭经验howto",
+        "howto低能量穿搭",
+        "howto穿搭",
+        "男友穿搭",
+        "轻熟风男装",
+        "男生穿搭",
+        "阳光男孩穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1439,
+      "ratio": 0.751,
+      "lum": 148.3,
+      "contrast": 59.9,
+      "sat": 18.7,
+      "top_color": {
+        "hex": "#b9b2a0",
+        "family": "白",
+        "share": 0.231
+      },
+      "palette": [
+        "#b9b2a0",
+        "#393939",
+        "#c5c0b1",
+        "#ae9f8d",
+        "#8c908c"
+      ],
+      "top3_families": [
+        "白",
+        "灰",
+        "白"
+      ],
+      "upper": {
+        "hex": "#c3b9a4",
+        "lum": 185.6,
+        "family": "白"
+      },
+      "lower": {
+        "hex": "#b0a79f",
+        "lum": 168.3,
+        "family": "灰"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": true,
+        "spread": 14.2,
+        "hex": "#aca999",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.011
+    },
+    {
+      "id": "6a460109000000001702b31b",
+      "title": "衬衫这个东西真的太好穿了",
+      "tags": [
+        "穿搭经验howto",
+        "衬衣控",
+        "衬衣穿搭",
+        "衬衫外套",
+        "男生衬衫",
+        "男士衬衫"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 162.8,
+      "contrast": 56.0,
+      "sat": 13.7,
+      "top_color": {
+        "hex": "#a5a194",
+        "family": "米/卡其",
+        "share": 0.289
+      },
+      "palette": [
+        "#a5a194",
+        "#505354",
+        "#b5b5ad",
+        "#d0d3cd",
+        "#dfe4e1"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#535b63",
+        "lum": 89.9,
+        "family": "蓝"
+      },
+      "lower": {
+        "hex": "#bfbaac",
+        "lum": 186.1,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": true,
+        "spread": 17.1,
+        "hex": "#b4b2a3",
+        "family": "灰"
+      },
+      "text_ratio": 0.009
+    },
+    {
+      "id": "6a44c908000000001503c20c",
+      "title": "👔男生夏季一周穿搭合集",
+      "tags": [
+        "howto低能量穿搭",
+        "穿搭经验howto",
+        "夏季男生穿搭",
+        "痞帅穿搭",
+        "男生夏季穿搭",
+        "轻熟风男装",
+        "男友穿搭",
+        "回到少年感穿撘"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 152.5,
+      "contrast": 58.0,
+      "sat": 14.4,
+      "top_color": {
+        "hex": "#b5b2a7",
+        "family": "灰",
+        "share": 0.206
+      },
+      "palette": [
+        "#b5b2a7",
+        "#424649",
+        "#8d8c85",
+        "#a29a8d",
+        "#c9cac2"
+      ],
+      "top3_families": [
+        "灰",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#75726b",
+        "lum": 114.1,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#bfbbb0",
+        "lum": 187.1,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 19.8,
+        "hex": "#acab9f",
+        "family": "灰"
+      },
+      "text_ratio": 0.016
+    },
+    {
+      "id": "6a4350070000000017009b5e",
+      "title": "普通男生的极简穿搭",
+      "tags": [
+        "男友穿搭",
+        "回到少年感穿搭",
+        "男生穿搭",
+        "阳光男孩穿搭就是这么简单",
+        "男生休闲风穿搭",
+        "男人这样穿才型"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 155.7,
+      "contrast": 55.9,
+      "sat": 14.9,
+      "top_color": {
+        "hex": "#b8b4a9",
+        "family": "灰",
+        "share": 0.203
+      },
+      "palette": [
+        "#b8b4a9",
+        "#96958d",
+        "#474b4f",
+        "#cacac1",
+        "#a9a091"
+      ],
+      "top3_families": [
+        "灰",
+        "灰",
+        "蓝"
+      ],
+      "upper": {
+        "hex": "#b7b7b0",
+        "lum": 182.5,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#8f8c84",
+        "lum": 140.1,
+        "family": "灰"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 22.5,
+        "hex": "#b6b6aa",
+        "family": "灰"
+      },
+      "text_ratio": 0.006
+    },
+    {
+      "id": "6a410ca5000000001702c488",
+      "title": "当普通男生开始尝试韩系穿搭",
+      "tags": [
+        "简单干净",
+        "从穿搭开始改变",
+        "男生穿搭",
+        "真听劝改造",
+        "男友穿搭",
+        "痞帅穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 155.7,
+      "contrast": 55.9,
+      "sat": 14.9,
+      "top_color": {
+        "hex": "#b8b4a9",
+        "family": "灰",
+        "share": 0.203
+      },
+      "palette": [
+        "#b8b4a9",
+        "#96958d",
+        "#474b4f",
+        "#cacac1",
+        "#a9a091"
+      ],
+      "top3_families": [
+        "灰",
+        "灰",
+        "蓝"
+      ],
+      "upper": {
+        "hex": "#b7b7b0",
+        "lum": 182.5,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#8f8c84",
+        "lum": 140.1,
+        "family": "灰"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 22.5,
+        "hex": "#b6b6aa",
+        "family": "灰"
+      },
+      "text_ratio": 0.006
+    },
+    {
+      "id": "6a3f91100000000015024af2",
+      "title": "inspo｜怎么穿都穿不腻的白衬衫",
+      "tags": [
+        "白衬衫穿搭",
+        "衬衫就像是好朋友",
+        "白衬衫",
+        "衬衣控",
+        "时髦衬衫穿搭",
+        "衬衫叠穿"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 178.0,
+      "contrast": 50.8,
+      "sat": 11.6,
+      "top_color": {
+        "hex": "#aaa698",
+        "family": "米/卡其",
+        "share": 0.213
+      },
+      "palette": [
+        "#aaa698",
+        "#dfdfd5",
+        "#d1cbbb",
+        "#6e6960",
+        "#bcb29e"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "白",
+        "白"
+      ],
+      "upper": {
+        "hex": "#beb3a1",
+        "lum": 180.0,
+        "family": "白"
+      },
+      "lower": {
+        "hex": "#c2bfb4",
+        "lum": 190.8,
+        "family": "灰"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 22.3,
+        "hex": "#b1ad9c",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.027
+    },
+    {
+      "id": "6a3e5de60000000017008768",
+      "title": "当普通男生开始尝试韩系穿搭",
+      "tags": [
+        "男友穿搭",
+        "颜值不够穿搭来凑",
+        "男生穿搭",
+        "阳光男孩穿搭就是这么简单",
+        "男生休闲风穿搭",
+        "潮流关键词",
+        "轻熟风穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 161.1,
+      "contrast": 56.1,
+      "sat": 13.8,
+      "top_color": {
+        "hex": "#a39e91",
+        "family": "米/卡其",
+        "share": 0.288
+      },
+      "palette": [
+        "#a39e91",
+        "#525250",
+        "#b0b4ad",
+        "#d0d3cf",
+        "#dbe4e3"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#88847b",
+        "lum": 132.2,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#bcb9ac",
+        "lum": 184.7,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": true,
+        "spread": 12.9,
+        "hex": "#bcbbae",
+        "family": "灰"
+      },
+      "text_ratio": 0.015
+    },
+    {
+      "id": "6a3cf6f1000000001c02523e",
+      "title": "当我开始认真打扮自己",
+      "tags": [
+        "不打扮真以为我长这样啊",
+        "没有丑男人只有懒男人",
+        "听劝改造自己",
+        "从穿搭开始改变",
+        "我活成了自己的理想型"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 161.1,
+      "contrast": 56.1,
+      "sat": 13.8,
+      "top_color": {
+        "hex": "#a39e91",
+        "family": "米/卡其",
+        "share": 0.288
+      },
+      "palette": [
+        "#a39e91",
+        "#525250",
+        "#b0b4ad",
+        "#d0d3cf",
+        "#dbe4e3"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#88847b",
+        "lum": 132.2,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#bcb9ac",
+        "lum": 184.7,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": true,
+        "spread": 12.9,
+        "hex": "#bcbbae",
+        "family": "灰"
+      },
+      "text_ratio": 0.015
+    },
+    {
+      "id": "6a3b96cc000000001702c9f2",
+      "title": "夏天亚麻裤太好搭了",
+      "tags": [
+        "亚麻衬衫",
+        "舒服最重要",
+        "夏日干净穿搭"
+      ],
+      "type": "video",
+      "w": 1041,
+      "h": 1389,
+      "ratio": 0.749,
+      "lum": 177.6,
+      "contrast": 40.4,
+      "sat": 8.1,
+      "top_color": {
+        "hex": "#b2aca0",
+        "family": "米/卡其",
+        "share": 0.206
+      },
+      "palette": [
+        "#b2aca0",
+        "#a6a298",
+        "#d7d8d5",
+        "#867d72",
+        "#c2c0b9"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "灰",
+        "白"
+      ],
+      "upper": {
+        "hex": "#a7a095",
+        "lum": 160.7,
+        "family": "米/卡其"
+      },
+      "lower": {
+        "hex": "#a49b91",
+        "lum": 156.2,
+        "family": "米/卡其"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 28.4,
+        "hex": "#95938b",
+        "family": "灰"
+      },
+      "text_ratio": 0.028
+    },
+    {
+      "id": "6a3a26e7000000001700bb9b",
+      "title": "老钱风&人夫感",
+      "tags": [
+        "老钱风"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 135.4,
+      "contrast": 42.0,
+      "sat": 8.3,
+      "top_color": {
+        "hex": "#7c7d80",
+        "family": "灰",
+        "share": 0.234
+      },
+      "palette": [
+        "#7c7d80",
+        "#93959f",
+        "#a2a6b1",
+        "#504e4d",
+        "#88878c"
+      ],
+      "top3_families": [
+        "灰",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#818084",
+        "lum": 128.5,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#96979f",
+        "lum": 151.4,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 39.3,
+        "hex": "#60615e",
+        "family": "灰"
+      },
+      "text_ratio": 0.0
+    },
+    {
+      "id": "6a38dd450000000015027de2",
+      "title": "尝试一下轻熟风",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 125.2,
+      "contrast": 58.0,
+      "sat": 17.6,
+      "top_color": {
+        "hex": "#2c251d",
+        "family": "黑",
+        "share": 0.266
+      },
+      "palette": [
+        "#2c251d",
+        "#9f9390",
+        "#81736d",
+        "#ad9e9f",
+        "#cfc3c1"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "棕/大地"
+      ],
+      "upper": {
+        "hex": "#64564f",
+        "lum": 88.5,
+        "family": "棕/大地"
+      },
+      "lower": {
+        "hex": "#a39591",
+        "lum": 151.7,
+        "family": "红/酒红"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 43.5,
+        "hex": "#6e655e",
+        "family": "棕/大地"
+      },
+      "text_ratio": 0.0
+    },
+    {
+      "id": "6a3784ca000000001503fb0d",
+      "title": "韩系 通勤风穿搭分享",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 114.4,
+      "contrast": 73.2,
+      "sat": 18.3,
+      "top_color": {
+        "hex": "#0a0b0a",
+        "family": "黑",
+        "share": 0.302
+      },
+      "palette": [
+        "#0a0b0a",
+        "#9a908c",
+        "#c0b6ad",
+        "#aca39f",
+        "#d5ccc1"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#464144",
+        "lum": 66.3,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#151515",
+        "lum": 21.0,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": true,
+        "spread": 7.6,
+        "hex": "#928676",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.0
+    },
+    {
+      "id": "6a363ae000000000150274aa",
+      "title": "当普通男生开始尝试韩系穿搭",
+      "tags": [
+        "男友穿搭",
+        "适合普通人的穿搭方式",
+        "男生穿搭",
+        "从穿搭开始改变",
+        "男生休闲风穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 166.0,
+      "contrast": 61.1,
+      "sat": 12.3,
+      "top_color": {
+        "hex": "#ab9c90",
+        "family": "米/卡其",
+        "share": 0.199
+      },
+      "palette": [
+        "#ab9c90",
+        "#cac1bd",
+        "#554b44",
+        "#dcd7d5",
+        "#b9aba1"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "灰",
+        "棕/大地"
+      ],
+      "upper": {
+        "hex": "#bfb5ae",
+        "lum": 182.6,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#988880",
+        "lum": 138.8,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 28.3,
+        "hex": "#ccc2b6",
+        "family": "白"
+      },
+      "text_ratio": 0.026
+    },
+    {
+      "id": "6a341d6b000000001700b4e6",
+      "title": "普通男生夏天穿搭合集",
+      "tags": [
+        "夏季男生穿搭",
+        "痞帅穿搭",
+        "男生夏季穿搭",
+        "懒人穿搭攻略",
+        "男友穿搭",
+        "男生短袖"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 138.9,
+      "contrast": 50.2,
+      "sat": 10.8,
+      "top_color": {
+        "hex": "#847d76",
+        "family": "米/卡其",
+        "share": 0.217
+      },
+      "palette": [
+        "#847d76",
+        "#a49d9a",
+        "#bab4b0",
+        "#474341",
+        "#928780"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#383939",
+        "lum": 56.8,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#7c746e",
+        "lum": 117.3,
+        "family": "棕/大地"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": true,
+        "spread": 8.6,
+        "hex": "#867f75",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.0
+    },
+    {
+      "id": "6a30d960000000001c027c99",
+      "title": "无从下手？初夏男生穿搭合集",
+      "tags": [
+        "夏日男生穿搭",
+        "男人这样穿才型",
+        "男生夏季穿搭",
+        "男生T恤穿搭",
+        "男生穿搭春季",
+        "痞帅穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 141.5,
+      "contrast": 60.5,
+      "sat": 25.2,
+      "top_color": {
+        "hex": "#373d2f",
+        "family": "绿",
+        "share": 0.203
+      },
+      "palette": [
+        "#373d2f",
+        "#9aa7ae",
+        "#918d80",
+        "#70796f",
+        "#a3cbe6"
+      ],
+      "top3_families": [
+        "绿",
+        "蓝",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#9a988e",
+        "lum": 151.7,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#9dc3de",
+        "lum": 188.9,
+        "family": "蓝"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 37.6,
+        "hex": "#96a0a8",
+        "family": "蓝"
+      },
+      "text_ratio": 0.046
+    },
+    {
+      "id": "6a2e9c26000000001503e422",
+      "title": "初夏一周穿搭合集来啦！！",
+      "tags": [
+        "这题我真会",
+        "一周穿搭合辑",
+        "一周穿不重样",
+        "OOTD穿搭",
+        "穿搭只是取悦自己罢了"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 136.6,
+      "contrast": 48.9,
+      "sat": 37.4,
+      "top_color": {
+        "hex": "#c7b197",
+        "family": "米/卡其",
+        "share": 0.212
+      },
+      "palette": [
+        "#c7b197",
+        "#5b4426",
+        "#b59d80",
+        "#83694a",
+        "#9c8060"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "棕/大地",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#664d2e",
+        "lum": 80.1,
+        "family": "棕/大地"
+      },
+      "lower": {
+        "hex": "#bda68a",
+        "lum": 168.9,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 38.2,
+        "hex": "#b39876",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.002
+    },
+    {
+      "id": "6a2e4f4e00000000150277aa",
+      "title": "清清爽爽的亚麻穿搭～",
+      "tags": [
+        "亚麻穿搭",
+        "高级的尽头是松弛感",
+        "亚麻",
+        "老钱穿搭",
+        "放松感穿搭",
+        "低调老钱风",
+        "棉麻穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 118.0,
+      "contrast": 51.3,
+      "sat": 28.4,
+      "top_color": {
+        "hex": "#252f24",
+        "family": "黑",
+        "share": 0.237
+      },
+      "palette": [
+        "#252f24",
+        "#6e6c61",
+        "#83aad1",
+        "#938979",
+        "#7c8282"
+      ],
+      "top3_families": [
+        "黑",
+        "米/卡其",
+        "蓝"
+      ],
+      "upper": {
+        "hex": "#3d4535",
+        "lum": 66.1,
+        "family": "绿"
+      },
+      "lower": {
+        "hex": "#2e362d",
+        "lum": 51.6,
+        "family": "黑"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 33.5,
+        "hex": "#8095ab",
+        "family": "蓝"
+      },
+      "text_ratio": 0.004
+    },
+    {
+      "id": "6a2d2d82000000001603d419",
+      "title": "夏天就要穿点不一样的",
+      "tags": [
+        "OOTD穿搭",
+        "男生衬衫",
+        "回到少年感穿搭",
+        "男生拍照姿势",
+        "颜值不够穿搭来凑"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 130.8,
+      "contrast": 53.5,
+      "sat": 30.2,
+      "top_color": {
+        "hex": "#8d8373",
+        "family": "米/卡其",
+        "share": 0.255
+      },
+      "palette": [
+        "#8d8373",
+        "#8bafcb",
+        "#343a2d",
+        "#797766",
+        "#c5d3d3"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "蓝",
+        "绿"
+      ],
+      "upper": {
+        "hex": "#4a4f3b",
+        "lum": 76.5,
+        "family": "绿"
+      },
+      "lower": {
+        "hex": "#908778",
+        "lum": 135.8,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 32.3,
+        "hex": "#748aa0",
+        "family": "蓝"
+      },
+      "text_ratio": 0.031
+    },
+    {
+      "id": "6a2bc4290000000015025c9e",
+      "title": "普通男生可以穿出的松弛感穿搭～",
+      "tags": [
+        "男友穿搭",
+        "帅气男友力穿搭",
+        "男生休闲风穿搭",
+        "Cityboy穿搭指北"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 120.7,
+      "contrast": 61.7,
+      "sat": 18.7,
+      "top_color": {
+        "hex": "#6b655c",
+        "family": "米/卡其",
+        "share": 0.275
+      },
+      "palette": [
+        "#6b655c",
+        "#2a2f24",
+        "#dde3e6",
+        "#747369",
+        "#8c887c"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "黑",
+        "白"
+      ],
+      "upper": {
+        "hex": "#393f2c",
+        "lum": 60.4,
+        "family": "绿"
+      },
+      "lower": {
+        "hex": "#746d65",
+        "lum": 109.9,
+        "family": "棕/大地"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 65.4,
+        "hex": "#999b9b",
+        "family": "灰"
+      },
+      "text_ratio": 0.013
+    },
+    {
+      "id": "6a2a6929000000001702f0d2",
+      "title": "OMG！条纹和白裤子绝配！",
+      "tags": [
+        "回到少年感穿搭",
+        "身批阳光越晒越能晒"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 117.4,
+      "contrast": 52.9,
+      "sat": 26.6,
+      "top_color": {
+        "hex": "#958c7d",
+        "family": "米/卡其",
+        "share": 0.256
+      },
+      "palette": [
+        "#958c7d",
+        "#283024",
+        "#505a42",
+        "#a19d94",
+        "#b0c5d7"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "黑",
+        "绿"
+      ],
+      "upper": {
+        "hex": "#2d331f",
+        "lum": 48.3,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#978c7f",
+        "lum": 141.4,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 47.8,
+        "hex": "#748da8",
+        "family": "蓝"
+      },
+      "text_ratio": 0.016
+    },
+    {
+      "id": "6a28f8620000000016024dc2",
+      "title": "高智感穿搭",
+      "tags": [
+        "穿搭的尽头是去繁就简",
+        "都市轻熟风",
+        "人类高质量穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 117.4,
+      "contrast": 52.2,
+      "sat": 41.1,
+      "top_color": {
+        "hex": "#978063",
+        "family": "米/卡其",
+        "share": 0.202
+      },
+      "palette": [
+        "#978063",
+        "#48351e",
+        "#685439",
+        "#81613d",
+        "#b8a790"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "棕/大地",
+        "棕/大地"
+      ],
+      "upper": {
+        "hex": "#503e29",
+        "lum": 64.3,
+        "family": "棕/大地"
+      },
+      "lower": {
+        "hex": "#4f3d26",
+        "lum": 63.2,
+        "family": "棕/大地"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 37.0,
+        "hex": "#846847",
+        "family": "棕/大地"
+      },
+      "text_ratio": 0.003
+    },
+    {
+      "id": "6a26c01f0000000016027cdc",
+      "title": "普通男生松弛感穿搭来了！",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 129.4,
+      "contrast": 55.6,
+      "sat": 27.7,
+      "top_color": {
+        "hex": "#beb8ad",
+        "family": "灰",
+        "share": 0.189
+      },
+      "palette": [
+        "#beb8ad",
+        "#443525",
+        "#725d41",
+        "#a49a8b",
+        "#867762"
+      ],
+      "top3_families": [
+        "灰",
+        "棕/大地",
+        "棕/大地"
+      ],
+      "upper": {
+        "hex": "#7a654a",
+        "lum": 103.5,
+        "family": "棕/大地"
+      },
+      "lower": {
+        "hex": "#523d27",
+        "lum": 63.9,
+        "family": "棕/大地"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 53.7,
+        "hex": "#aba192",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.006
+    },
+    {
+      "id": "6a2572af000000001603d56e",
+      "title": "普通男生夏天直接抄的穿搭来了！",
+      "tags": [
+        "夏季男生穿搭",
+        "潮男穿搭指南",
+        "男友穿搭",
+        "帅气男友力穿搭",
+        "男生夏季穿搭",
+        "男生T恤穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 130.0,
+      "contrast": 52.3,
+      "sat": 34.2,
+      "top_color": {
+        "hex": "#4b3922",
+        "family": "棕/大地",
+        "share": 0.23
+      },
+      "palette": [
+        "#4b3922",
+        "#846e55",
+        "#c3b095",
+        "#a7947b",
+        "#bba589"
+      ],
+      "top3_families": [
+        "棕/大地",
+        "棕/大地",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#513d24",
+        "lum": 63.4,
+        "family": "棕/大地"
+      },
+      "lower": {
+        "hex": "#c3ae90",
+        "lum": 176.3,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": true,
+        "spread": 15.3,
+        "hex": "#d1c0a3",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.003
+    },
+    {
+      "id": "6a23f8cf0000000017028617",
+      "title": "天空灰的像哭过",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1920,
+      "ratio": 0.562,
+      "lum": 131.8,
+      "contrast": 74.4,
+      "sat": 14.1,
+      "top_color": {
+        "hex": "#656057",
+        "family": "米/卡其",
+        "share": 0.29
+      },
+      "palette": [
+        "#656057",
+        "#262b20",
+        "#dbdeda",
+        "#79766c",
+        "#e5e6e1"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "黑",
+        "白"
+      ],
+      "upper": {
+        "hex": "#dddfd8",
+        "lum": 222.1,
+        "family": "白"
+      },
+      "lower": {
+        "hex": "#262c21",
+        "lum": 41.9,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 63.7,
+        "hex": "#9f9e99",
+        "family": "灰"
+      },
+      "text_ratio": 0.02
+    },
+    {
+      "id": "6a227fd100000000380347d2",
+      "title": "男生过了20就该打扮成熟点",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 139.5,
+      "contrast": 57.7,
+      "sat": 17.1,
+      "top_color": {
+        "hex": "#343b33",
+        "family": "绿",
+        "share": 0.235
+      },
+      "palette": [
+        "#343b33",
+        "#989aa0",
+        "#848588",
+        "#a7a2a4",
+        "#cfe0f7"
+      ],
+      "top3_families": [
+        "绿",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#465244",
+        "lum": 78.4,
+        "family": "绿"
+      },
+      "lower": {
+        "hex": "#98949a",
+        "lum": 149.3,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 45.1,
+        "hex": "#a1acbf",
+        "family": "蓝"
+      },
+      "text_ratio": 0.006
+    },
+    {
+      "id": "6a2141f20000000036032c1c",
+      "title": "依旧睁不开眼",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 132.3,
+      "contrast": 54.5,
+      "sat": 13.8,
+      "top_color": {
+        "hex": "#b0b9c1",
+        "family": "灰",
+        "share": 0.205
+      },
+      "palette": [
+        "#b0b9c1",
+        "#343c32",
+        "#696c6b",
+        "#989b9a",
+        "#7f7e7b"
+      ],
+      "top3_families": [
+        "灰",
+        "绿",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#505743",
+        "lum": 84.1,
+        "family": "绿"
+      },
+      "lower": {
+        "hex": "#8e8b89",
+        "lum": 139.5,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 33.6,
+        "hex": "#7d8895",
+        "family": "蓝"
+      },
+      "text_ratio": 0.007
+    },
+    {
+      "id": "6a1fd37f000000003701f161",
+      "title": "美式街头风",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 124.7,
+      "contrast": 50.7,
+      "sat": 23.0,
+      "top_color": {
+        "hex": "#8a9090",
+        "family": "灰",
+        "share": 0.214
+      },
+      "palette": [
+        "#8a9090",
+        "#323d34",
+        "#707579",
+        "#616a6b",
+        "#65bcf8"
+      ],
+      "top3_families": [
+        "灰",
+        "绿",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#313f2d",
+        "lum": 58.7,
+        "family": "绿"
+      },
+      "lower": {
+        "hex": "#7e8285",
+        "lum": 129.4,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 39.9,
+        "hex": "#6994b8",
+        "family": "蓝"
+      },
+      "text_ratio": 0.015
+    },
+    {
+      "id": "6a1ea770000000003601fb6e",
+      "title": "约会这么穿可以吗",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 122.5,
+      "contrast": 56.8,
+      "sat": 18.4,
+      "top_color": {
+        "hex": "#b5af9e",
+        "family": "白",
+        "share": 0.253
+      },
+      "palette": [
+        "#b5af9e",
+        "#2c3226",
+        "#696c5f",
+        "#5a6251",
+        "#c9cec7"
+      ],
+      "top3_families": [
+        "白",
+        "黑",
+        "黄/橙"
+      ],
+      "upper": {
+        "hex": "#333d29",
+        "lum": 57.4,
+        "family": "绿"
+      },
+      "lower": {
+        "hex": "#b1a896",
+        "lum": 168.6,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 44.1,
+        "hex": "#5c605b",
+        "family": "灰"
+      },
+      "text_ratio": 0.01
+    },
+    {
+      "id": "6a1c01b80000000036031bad",
+      "title": "老钱风是这么穿的吗？",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 123.3,
+      "contrast": 49.3,
+      "sat": 18.2,
+      "top_color": {
+        "hex": "#31372b",
+        "family": "黑",
+        "share": 0.222
+      },
+      "palette": [
+        "#31372b",
+        "#8c8e8e",
+        "#817e7c",
+        "#90a2b2",
+        "#bbc4cd"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#2a3426",
+        "lum": 48.9,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#938f8c",
+        "lum": 143.6,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 38.1,
+        "hex": "#969ea8",
+        "family": "蓝"
+      },
+      "text_ratio": 0.001
+    },
+    {
+      "id": "6a1aac5b000000003700e8a6",
+      "title": "答应我只看前八秒",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 136.8,
+      "contrast": 58.8,
+      "sat": 13.2,
+      "top_color": {
+        "hex": "#757676",
+        "family": "灰",
+        "share": 0.29
+      },
+      "palette": [
+        "#757676",
+        "#364439",
+        "#7d8a95",
+        "#eef3f6",
+        "#b7c3cf"
+      ],
+      "top3_families": [
+        "灰",
+        "绿",
+        "蓝"
+      ],
+      "upper": {
+        "hex": "#324034",
+        "lum": 60.2,
+        "family": "绿"
+      },
+      "lower": {
+        "hex": "#85888b",
+        "lum": 135.6,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 39.8,
+        "hex": "#8898b0",
+        "family": "蓝"
+      },
+      "text_ratio": 0.095
+    },
+    {
+      "id": "6a1960c60000000036033255",
+      "title": "约会三选一 家人们给点建议",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 126.8,
+      "contrast": 58.4,
+      "sat": 20.6,
+      "top_color": {
+        "hex": "#9e9a90",
+        "family": "灰",
+        "share": 0.285
+      },
+      "palette": [
+        "#9e9a90",
+        "#222c24",
+        "#8c8e84",
+        "#626958",
+        "#c1d0d7"
+      ],
+      "top3_families": [
+        "灰",
+        "黑",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#364232",
+        "lum": 62.3,
+        "family": "绿"
+      },
+      "lower": {
+        "hex": "#2e322f",
+        "lum": 48.9,
+        "family": "黑"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 38.8,
+        "hex": "#a1acb6",
+        "family": "蓝"
+      },
+      "text_ratio": 0.003
+    },
+    {
+      "id": "6a17e651000000003803674f",
+      "title": "松弛感穿搭get～",
+      "tags": [
+        "穿搭的尽头是去繁就简",
+        "不费力气的穿撘",
+        "当氛围感穿搭",
+        "淡人的穿搭",
+        "舒服最重要"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 151.2,
+      "contrast": 54.1,
+      "sat": 15.9,
+      "top_color": {
+        "hex": "#838b8d",
+        "family": "灰",
+        "share": 0.192
+      },
+      "palette": [
+        "#838b8d",
+        "#4a5749",
+        "#a0a39d",
+        "#768286",
+        "#c9cfc4"
+      ],
+      "top3_families": [
+        "灰",
+        "绿",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#41503c",
+        "lum": 75.4,
+        "family": "绿"
+      },
+      "lower": {
+        "hex": "#747e86",
+        "lum": 124.5,
+        "family": "蓝"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 49.6,
+        "hex": "#aebaba",
+        "family": "灰"
+      },
+      "text_ratio": 0.095
+    },
+    {
+      "id": "6a14284e000000003601c4a1",
+      "title": "上深下浅的层次感",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 120.9,
+      "contrast": 58.1,
+      "sat": 23.2,
+      "top_color": {
+        "hex": "#8f908f",
+        "family": "灰",
+        "share": 0.212
+      },
+      "palette": [
+        "#8f908f",
+        "#2b322d",
+        "#4f5a63",
+        "#97bcdb",
+        "#5e656b"
+      ],
+      "top3_families": [
+        "灰",
+        "黑",
+        "蓝"
+      ],
+      "upper": {
+        "hex": "#273024",
+        "lum": 45.2,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#474a4f",
+        "lum": 73.7,
+        "family": "蓝"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 47.1,
+        "hex": "#768a9f",
+        "family": "蓝"
+      },
+      "text_ratio": 0.003
+    },
+    {
+      "id": "6a11813b000000003601e06f",
+      "title": "人夫感？",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1920,
+      "ratio": 0.562,
+      "lum": 124.1,
+      "contrast": 64.5,
+      "sat": 24.2,
+      "top_color": {
+        "hex": "#84b6e8",
+        "family": "蓝",
+        "share": 0.275
+      },
+      "palette": [
+        "#84b6e8",
+        "#1c1e1b",
+        "#8c8a88",
+        "#c6cdd2",
+        "#575c4f"
+      ],
+      "top3_families": [
+        "蓝",
+        "黑",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#85b9ea",
+        "lum": 177.5,
+        "family": "蓝"
+      },
+      "lower": {
+        "hex": "#171817",
+        "lum": 23.7,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 34.6,
+        "hex": "#758cac",
+        "family": "蓝"
+      },
+      "text_ratio": 0.009
+    },
+    {
+      "id": "6a10193e000000003700d117",
+      "title": "🖤🤍黑白配",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 107.7,
+      "contrast": 54.9,
+      "sat": 20.2,
+      "top_color": {
+        "hex": "#969c98",
+        "family": "灰",
+        "share": 0.211
+      },
+      "palette": [
+        "#969c98",
+        "#272b22",
+        "#444e3a",
+        "#7a8176",
+        "#5b5c4a"
+      ],
+      "top3_families": [
+        "灰",
+        "黑",
+        "绿"
+      ],
+      "upper": {
+        "hex": "#23271c",
+        "lum": 37.4,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#393e3b",
+        "lum": 60.7,
+        "family": "灰"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 54.9,
+        "hex": "#6b7369",
+        "family": "灰"
+      },
+      "text_ratio": 0.01
+    },
+    {
+      "id": "6a0ef18d0000000036030432",
+      "title": "男生的清爽穿搭～💚",
+      "tags": [
+        "夏日男生穿搭",
+        "男生穿搭夏装",
+        "阳光男孩穿搭"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 105.8,
+      "contrast": 55.0,
+      "sat": 25.0,
+      "top_color": {
+        "hex": "#2a2a1f",
+        "family": "黑",
+        "share": 0.211
+      },
+      "palette": [
+        "#2a2a1f",
+        "#9b9684",
+        "#7f7b67",
+        "#434831",
+        "#605942"
+      ],
+      "top3_families": [
+        "黑",
+        "米/卡其",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#332f20",
+        "lum": 46.8,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#30312b",
+        "lum": 48.4,
+        "family": "黑"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 46.5,
+        "hex": "#8a8f71",
+        "family": "黄/橙"
+      },
+      "text_ratio": 0.002
+    },
+    {
+      "id": "6a0dc12d0000000038022695",
+      "title": "夏天就应该穿蓝色",
+      "tags": [
+        "蓝色系穿搭",
+        "不能我一个人蓝",
+        "有人喜欢蓝",
+        "清爽穿搭",
+        "是谁说蓝色就等于忧伤"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 107.0,
+      "contrast": 50.7,
+      "sat": 22.1,
+      "top_color": {
+        "hex": "#797c71",
+        "family": "灰",
+        "share": 0.257
+      },
+      "palette": [
+        "#797c71",
+        "#2c2f26",
+        "#485141",
+        "#64634e",
+        "#bdc7c0"
+      ],
+      "top3_families": [
+        "灰",
+        "黑",
+        "绿"
+      ],
+      "upper": {
+        "hex": "#313423",
+        "lum": 50.1,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#393f39",
+        "lum": 61.3,
+        "family": "灰"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 47.8,
+        "hex": "#8b9485",
+        "family": "绿"
+      },
+      "text_ratio": 0.008
+    },
+    {
+      "id": "6a099b0c0000000037035cc5",
+      "title": "家人们给点建议 ！",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 118.7,
+      "contrast": 54.0,
+      "sat": 24.1,
+      "top_color": {
+        "hex": "#343a2c",
+        "family": "绿",
+        "share": 0.238
+      },
+      "palette": [
+        "#343a2c",
+        "#5c634b",
+        "#6f8162",
+        "#9da491",
+        "#8d8e84"
+      ],
+      "top3_families": [
+        "绿",
+        "绿",
+        "绿"
+      ],
+      "upper": {
+        "hex": "#3e442b",
+        "lum": 64.9,
+        "family": "黄/橙"
+      },
+      "lower": {
+        "hex": "#41463a",
+        "lum": 68.1,
+        "family": "绿"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 59.2,
+        "hex": "#99a684",
+        "family": "绿"
+      },
+      "text_ratio": 0.026
+    },
+    {
+      "id": "6a087f5e0000000036019e0f",
+      "title": "夏天就应该这么穿",
+      "tags": [],
+      "type": "video",
+      "w": 994,
+      "h": 1327,
+      "ratio": 0.749,
+      "lum": 121.0,
+      "contrast": 50.7,
+      "sat": 25.9,
+      "top_color": {
+        "hex": "#7e8c94",
+        "family": "蓝",
+        "share": 0.227
+      },
+      "palette": [
+        "#7e8c94",
+        "#323c37",
+        "#4e6460",
+        "#8e9ea0",
+        "#becfd7"
+      ],
+      "top3_families": [
+        "蓝",
+        "绿",
+        "绿"
+      ],
+      "upper": {
+        "hex": "#384337",
+        "lum": 63.8,
+        "family": "绿"
+      },
+      "lower": {
+        "hex": "#45555c",
+        "lum": 82.1,
+        "family": "蓝"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 42.6,
+        "hex": "#94a495",
+        "family": "灰"
+      },
+      "text_ratio": 0.02
+    },
+    {
+      "id": "6a044b02000000003700e91c",
+      "title": "白衬衫穿搭｜干净又随性",
+      "tags": [
+        "白衬衫穿搭",
+        "白T",
+        "白衬衫",
+        "白色长袖",
+        "清爽白色系穿搭",
+        "白色系",
+        "白色穿搭",
+        "干净穿搭"
+      ],
+      "type": "normal",
+      "w": 1080,
+      "h": 1461,
+      "ratio": 0.739,
+      "lum": 114.1,
+      "contrast": 40.3,
+      "sat": 32.8,
+      "top_color": {
+        "hex": "#887662",
+        "family": "米/卡其",
+        "share": 0.197
+      },
+      "palette": [
+        "#887662",
+        "#524535",
+        "#665a4a",
+        "#a58c74",
+        "#796047"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "棕/大地",
+        "棕/大地"
+      ],
+      "upper": {
+        "hex": "#685139",
+        "lum": 84.2,
+        "family": "棕/大地"
+      },
+      "lower": {
+        "hex": "#a48e79",
+        "lum": 145.2,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 53.8,
+        "hex": "#897e6a",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.005
+    },
+    {
+      "id": "6a030a42000000003601c7d7",
+      "title": "出去度假这么穿，可以吗？",
+      "tags": [
+        "穿成这样出去晒",
+        "假日风出游穿搭",
+        "浅交一下夏季穿搭作业",
+        "假装去度假",
+        "出去玩这样穿",
+        "换一种穿搭风格",
+        "出游度假风"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 119.7,
+      "contrast": 51.0,
+      "sat": 27.8,
+      "top_color": {
+        "hex": "#7e897e",
+        "family": "灰",
+        "share": 0.244
+      },
+      "palette": [
+        "#7e897e",
+        "#333d30",
+        "#4a6349",
+        "#6b6e5c",
+        "#c5d3ca"
+      ],
+      "top3_families": [
+        "灰",
+        "绿",
+        "绿"
+      ],
+      "upper": {
+        "hex": "#39442a",
+        "lum": 63.8,
+        "family": "绿"
+      },
+      "lower": {
+        "hex": "#3f4e46",
+        "lum": 74.2,
+        "family": "绿"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 42.8,
+        "hex": "#657660",
+        "family": "绿"
+      },
+      "text_ratio": 0.016
+    },
+    {
+      "id": "6a029e0d00000000380238c2",
+      "title": "女朋友说这件衬衫穿起来像厨师 有吗？",
+      "tags": [
+        "Softcore",
+        "潮流POV",
+        "男生衬衫",
+        "短袖衬衫",
+        "衬衫就像是好朋友",
+        "白衬衫穿搭",
+        "衬衫",
+        "衬衣控"
+      ],
+      "type": "video",
+      "w": 1022,
+      "h": 1364,
+      "ratio": 0.749,
+      "lum": 94.3,
+      "contrast": 52.3,
+      "sat": 22.4,
+      "top_color": {
+        "hex": "#656a63",
+        "family": "灰",
+        "share": 0.28
+      },
+      "palette": [
+        "#656a63",
+        "#202420",
+        "#384236",
+        "#515548",
+        "#bcc4af"
+      ],
+      "top3_families": [
+        "灰",
+        "黑",
+        "绿"
+      ],
+      "upper": {
+        "hex": "#2d2e25",
+        "lum": 45.1,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#232826",
+        "lum": 38.8,
+        "family": "黑"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 45.9,
+        "hex": "#8a916c",
+        "family": "黄/橙"
+      },
+      "text_ratio": 0.012
+    },
+    {
+      "id": "6a01b350000000003803742d",
+      "title": "不一定斩男，但一定斩女",
+      "tags": [
+        "男生穿搭",
+        "衬衫",
+        "牛仔裤"
+      ],
+      "type": "video",
+      "w": 1080,
+      "h": 1441,
+      "ratio": 0.749,
+      "lum": 103.9,
+      "contrast": 54.2,
+      "sat": 25.3,
+      "top_color": {
+        "hex": "#6a7775",
+        "family": "蓝",
+        "share": 0.257
+      },
+      "palette": [
+        "#6a7775",
+        "#262b28",
+        "#3e4c46",
+        "#575e53",
+        "#86917b"
+      ],
+      "top3_families": [
+        "蓝",
+        "黑",
+        "绿"
+      ],
+      "upper": {
+        "hex": "#383a2d",
+        "lum": 56.6,
+        "family": "黄/橙"
+      },
+      "lower": {
+        "hex": "#2a3131",
+        "lum": 47.5,
+        "family": "黑"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 44.7,
+        "hex": "#747c72",
+        "family": "灰"
+      },
+      "text_ratio": 0.026
+    },
+    {
+      "id": "6939240b000000000d039890",
+      "title": "",
+      "tags": [],
+      "type": "normal",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 109.9,
+      "contrast": 66.9,
+      "sat": 52.6,
+      "top_color": {
+        "hex": "#24150e",
+        "family": "黑",
+        "share": 0.229
+      },
+      "palette": [
+        "#24150e",
+        "#b9815c",
+        "#91593b",
+        "#d9a77c",
+        "#6e3820"
+      ],
+      "top3_families": [
+        "黑",
+        "棕/大地",
+        "棕/大地"
+      ],
+      "upper": {
+        "hex": "#bb8b68",
+        "lum": 146.7,
+        "family": "棕/大地"
+      },
+      "lower": {
+        "hex": "#391f13",
+        "lum": 35.7,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 50.1,
+        "hex": "#b98872",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.01
+    },
+    {
+      "id": "6928c133000000000d00d8e3",
+      "title": "打卡🇰🇷！东西还是蛮好吃的没有踩雷",
+      "tags": [],
+      "type": "normal",
+      "w": 1080,
+      "h": 1920,
+      "ratio": 0.562,
+      "lum": 129.8,
+      "contrast": 56.3,
+      "sat": 19.3,
+      "top_color": {
+        "hex": "#353234",
+        "family": "黑",
+        "share": 0.215
+      },
+      "palette": [
+        "#353234",
+        "#a5978a",
+        "#b9ad9f",
+        "#8b7f73",
+        "#707172"
+      ],
+      "top3_families": [
+        "黑",
+        "米/卡其",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#baae9d",
+        "lum": 175.3,
+        "family": "白"
+      },
+      "lower": {
+        "hex": "#433f40",
+        "lum": 63.9,
+        "family": "灰"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 46.9,
+        "hex": "#9f9ea2",
+        "family": "灰"
+      },
+      "text_ratio": 0.007
+    },
+    {
+      "id": "68fb303a000000000300d17c",
+      "title": "创意写真",
+      "tags": [
+        "漫椿映画",
+        "许昌写真",
+        "韩系写真",
+        "男士写真"
+      ],
+      "type": "normal",
+      "w": 1080,
+      "h": 1620,
+      "ratio": 0.667,
+      "lum": 90.5,
+      "contrast": 58.8,
+      "sat": 23.9,
+      "top_color": {
+        "hex": "#373633",
+        "family": "黑",
+        "share": 0.35
+      },
+      "palette": [
+        "#373633",
+        "#1f1916",
+        "#bc9b86",
+        "#d1b39d",
+        "#a07f6c"
+      ],
+      "top3_families": [
+        "黑",
+        "黑",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#271e1a",
+        "lum": 31.6,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#4c4139",
+        "lum": 66.8,
+        "family": "棕/大地"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": true,
+        "spread": 16.6,
+        "hex": "#39342f",
+        "family": "黑"
+      },
+      "text_ratio": 0.0
+    },
+    {
+      "id": "681fb43d0000000012000a32",
+      "title": "出去玩玩露营吧！🏕️",
+      "tags": [],
+      "type": "normal",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 121.4,
+      "contrast": 54.7,
+      "sat": 27.0,
+      "top_color": {
+        "hex": "#999071",
+        "family": "米/卡其",
+        "share": 0.203
+      },
+      "palette": [
+        "#999071",
+        "#302c25",
+        "#726c58",
+        "#b1a584",
+        "#8a7961"
+      ],
+      "top3_families": [
+        "米/卡其",
+        "黑",
+        "米/卡其"
+      ],
+      "upper": {
+        "hex": "#a69c77",
+        "lum": 155.5,
+        "family": "米/卡其"
+      },
+      "lower": {
+        "hex": "#a29475",
+        "lum": 148.7,
+        "family": "米/卡其"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 45.3,
+        "hex": "#9c8f73",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.007
+    },
+    {
+      "id": "67527709000000000203a237",
+      "title": "过生日可以这么拍！",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1920,
+      "ratio": 0.562,
+      "lum": 69.4,
+      "contrast": 63.4,
+      "sat": 24.2,
+      "top_color": {
+        "hex": "#08090a",
+        "family": "黑",
+        "share": 0.251
+      },
+      "palette": [
+        "#08090a",
+        "#534a4f",
+        "#2b201f",
+        "#988284",
+        "#d3b9b8"
+      ],
+      "top3_families": [
+        "黑",
+        "紫/粉",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#261d1c",
+        "lum": 30.8,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#3e2f2f",
+        "lum": 50.2,
+        "family": "黑"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 23.5,
+        "hex": "#262021",
+        "family": "黑"
+      },
+      "text_ratio": 0.001
+    },
+    {
+      "id": "6678f03e000000001c02b971",
+      "title": "",
+      "tags": [],
+      "type": "normal",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 125.2,
+      "contrast": 60.1,
+      "sat": 26.8,
+      "top_color": {
+        "hex": "#627076",
+        "family": "蓝",
+        "share": 0.234
+      },
+      "palette": [
+        "#627076",
+        "#29261f",
+        "#9a958d",
+        "#c9b4af",
+        "#d1c5c2"
+      ],
+      "top3_families": [
+        "蓝",
+        "黑",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#1d1911",
+        "lum": 25.3,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#616871",
+        "lum": 103.2,
+        "family": "蓝"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 20.2,
+        "hex": "#aaa39c",
+        "family": "灰"
+      },
+      "text_ratio": 0.001
+    },
+    {
+      "id": "66319cc1000000001e022602",
+      "title": "五一快乐",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1920,
+      "ratio": 0.562,
+      "lum": 86.9,
+      "contrast": 59.8,
+      "sat": 30.8,
+      "top_color": {
+        "hex": "#171619",
+        "family": "黑",
+        "share": 0.205
+      },
+      "palette": [
+        "#171619",
+        "#836b56",
+        "#232328",
+        "#b39676",
+        "#3c302d"
+      ],
+      "top3_families": [
+        "黑",
+        "棕/大地",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#2d2323",
+        "lum": 37.1,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#16181d",
+        "lum": 23.9,
+        "family": "黑"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 30.1,
+        "hex": "#9d9183",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.001
+    },
+    {
+      "id": "66211a12000000000d0318e9",
+      "title": "主播 我的幸福在几号链接",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1920,
+      "ratio": 0.562,
+      "lum": 126.5,
+      "contrast": 67.1,
+      "sat": 27.0,
+      "top_color": {
+        "hex": "#27201e",
+        "family": "黑",
+        "share": 0.237
+      },
+      "palette": [
+        "#27201e",
+        "#b8a28e",
+        "#d2bca6",
+        "#977a66",
+        "#e7d4bc"
+      ],
+      "top3_families": [
+        "黑",
+        "米/卡其",
+        "白"
+      ],
+      "upper": {
+        "hex": "#59483c",
+        "lum": 74.7,
+        "family": "棕/大地"
+      },
+      "lower": {
+        "hex": "#cdad94",
+        "lum": 178.0,
+        "family": "米/卡其"
+      },
+      "upper_lower": "上深下浅",
+      "bg": {
+        "solid": false,
+        "spread": 76.0,
+        "hex": "#6e655a",
+        "family": "棕/大地"
+      },
+      "text_ratio": 0.0
+    },
+    {
+      "id": "66056254000000001302642d",
+      "title": "穿西装夜爬泰山",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1920,
+      "ratio": 0.562,
+      "lum": 86.2,
+      "contrast": 62.9,
+      "sat": 27.3,
+      "top_color": {
+        "hex": "#0a0606",
+        "family": "黑",
+        "share": 0.278
+      },
+      "palette": [
+        "#0a0606",
+        "#857a78",
+        "#958d8f",
+        "#5b4e42",
+        "#1b1615"
+      ],
+      "top3_families": [
+        "黑",
+        "灰",
+        "灰"
+      ],
+      "upper": {
+        "hex": "#8c848a",
+        "lum": 134.1,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#282424",
+        "lum": 36.9,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 38.9,
+        "hex": "#665b49",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.004
+    },
+    {
+      "id": "65bed5db000000000c00576e",
+      "title": "说不上来什么感觉",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1920,
+      "ratio": 0.562,
+      "lum": 28.0,
+      "contrast": 37.2,
+      "sat": 36.8,
+      "top_color": {
+        "hex": "#090804",
+        "family": "黑",
+        "share": 0.238
+      },
+      "palette": [
+        "#090804",
+        "#040403",
+        "#131210",
+        "#31302b",
+        "#070503"
+      ],
+      "top3_families": [
+        "黑",
+        "黑",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#0e0e0e",
+        "lum": 14.0,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#080603",
+        "lum": 6.2,
+        "family": "黑"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 71.5,
+        "hex": "#4e4b44",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.0
+    },
+    {
+      "id": "65b833080000000011002dc6",
+      "title": "韩剧男主来了",
+      "tags": [],
+      "type": "video",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 57.3,
+      "contrast": 41.5,
+      "sat": 25.5,
+      "top_color": {
+        "hex": "#2e3540",
+        "family": "黑",
+        "share": 0.223
+      },
+      "palette": [
+        "#2e3540",
+        "#16161c",
+        "#242833",
+        "#1d222f",
+        "#515359"
+      ],
+      "top3_families": [
+        "黑",
+        "黑",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#343a48",
+        "lum": 57.7,
+        "family": "蓝"
+      },
+      "lower": {
+        "hex": "#202530",
+        "lum": 36.7,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 21.8,
+        "hex": "#2e373d",
+        "family": "黑"
+      },
+      "text_ratio": 0.005
+    },
+    {
+      "id": "65aee6460000000011001f23",
+      "title": "第二次去撸猫^_^",
+      "tags": [],
+      "type": "normal",
+      "w": 1080,
+      "h": 1440,
+      "ratio": 0.75,
+      "lum": 86.8,
+      "contrast": 59.6,
+      "sat": 23.7,
+      "top_color": {
+        "hex": "#101418",
+        "family": "黑",
+        "share": 0.239
+      },
+      "palette": [
+        "#101418",
+        "#a78f7a",
+        "#433d38",
+        "#736559",
+        "#2a2b2c"
+      ],
+      "top3_families": [
+        "黑",
+        "米/卡其",
+        "棕/大地"
+      ],
+      "upper": {
+        "hex": "#3f3e3c",
+        "lum": 62.1,
+        "family": "灰"
+      },
+      "lower": {
+        "hex": "#252527",
+        "lum": 37.1,
+        "family": "黑"
+      },
+      "upper_lower": "上浅下深",
+      "bg": {
+        "solid": false,
+        "spread": 18.1,
+        "hex": "#68635a",
+        "family": "米/卡其"
+      },
+      "text_ratio": 0.001
+    },
+    {
+      "id": "659de914000000000f03360a",
+      "title": "3张照片感觉3个人",
+      "tags": [],
+      "type": "normal",
+      "w": 1080,
+      "h": 1621,
+      "ratio": 0.666,
+      "lum": 25.4,
+      "contrast": 34.2,
+      "sat": 60.2,
+      "top_color": {
+        "hex": "#0e0907",
+        "family": "黑",
+        "share": 0.223
+      },
+      "palette": [
+        "#0e0907",
+        "#030302",
+        "#3b1d0c",
+        "#140d0b",
+        "#211007"
+      ],
+      "top3_families": [
+        "黑",
+        "黑",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#080603",
+        "lum": 6.2,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#130c0b",
+        "lum": 13.4,
+        "family": "黑"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 21.6,
+        "hex": "#2b190c",
+        "family": "黑"
+      },
+      "text_ratio": 0.004
+    },
+    {
+      "id": "65921c8800000000130355f8",
+      "title": "没有风格的写真",
+      "tags": [
+        "男生写真"
+      ],
+      "type": "normal",
+      "w": 1080,
+      "h": 1621,
+      "ratio": 0.666,
+      "lum": 29.3,
+      "contrast": 32.9,
+      "sat": 34.7,
+      "top_color": {
+        "hex": "#040505",
+        "family": "黑",
+        "share": 0.202
+      },
+      "palette": [
+        "#040505",
+        "#2a3437",
+        "#040707",
+        "#161d1f",
+        "#070b0c"
+      ],
+      "top3_families": [
+        "黑",
+        "黑",
+        "黑"
+      ],
+      "upper": {
+        "hex": "#121616",
+        "lum": 21.1,
+        "family": "黑"
+      },
+      "lower": {
+        "hex": "#050808",
+        "lum": 7.4,
+        "family": "黑"
+      },
+      "upper_lower": "同色系",
+      "bg": {
+        "solid": false,
+        "spread": 28.4,
+        "hex": "#22292e",
+        "family": "黑"
+      },
+      "text_ratio": 0.0
+    }
+  ]
+}
