@@ -1,0 +1,79 @@
+# 项目计划 · 机器可读版
+# 供 AI / 自动化脚本解析；人类可读版见同目录其它 .md
+project:
+  name: 型格 LOOKBOOK
+  slug: xingge-lookbook
+  version: 1.0.0
+  updated: 2026-10-22
+  one_liner: 男士穿搭灵感图鉴，小红书式瀑布流
+  locale: zh-CN
+
+paths:
+  content_root: content/
+  looks: content/looks.json
+  editorials: content/editorials.json
+  taxonomy: content/taxonomy.json
+  schema: content/schema/look.schema.json
+  template: content/templates/look.template.json
+  images: content/images/looks/
+  web: web/
+  icons: assets/icons/
+  raw_private: raw/          # 不提交 Git
+
+platforms:
+  web:
+    status: active
+    path: web/
+    entry: web/index.html
+    stack: [html, css, vanilla-esm, pwa]
+    build: none              # 刻意不引入构建步骤
+    storage: localStorage    # 键 xingge.v1
+    deploy: github-pages
+  android:
+    status: planned
+    path: android/
+    approach_options: [trusted-web-activity, kotlin-compose + shared-json]
+    shares: content/
+    note: 优先 TWA（复用 PWA），需要原生特性时再转 Compose
+  ios:
+    status: planned
+    path: ios/
+    approach_options: [wkwebview-shell, swiftui + shared-json]
+    shares: content/
+
+data_contract:
+  version: 1
+  enums_source: content/taxonomy.json
+  required_look_fields: [id, title, styles, scenes, image, items, palette, status]
+  status_values: [published, draft]
+  image_ratio_meaning: width / height
+  validation: node scripts/check-content.mjs
+
+commands:
+  preview: python -m http.server 8765
+  validate: node scripts/check-content.mjs
+  process_images: python scripts/process_images.py
+
+milestones:
+  - id: m1
+    name: Web 原型 + 瀑布流 + 内容数据层
+    status: done
+    date: 2026-10-22
+  - id: m2
+    name: 内容填充至 30+ 套搭配
+    status: todo
+  - id: m3
+    name: 账号与多端收藏同步
+    status: todo
+    blocked_by: 云服务开通
+  - id: m4
+    name: Android 打包上架（TWA 优先）
+    status: todo
+  - id: m5
+    name: iOS 打包（WKWebView 壳 → SwiftUI）
+    status: todo
+
+known_limits:
+  - 收藏仅本机，无账号体系
+  - 无社区能力（评论/作者主页/合集）
+  - 图片为 AI 生成，商用需替换

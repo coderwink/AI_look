@@ -1,0 +1,28 @@
+{
+  "$comment": "新建 look 时复制本文件 → 改名 → 填入 looks.json 数组。字段含义见 plan/20-data-schema.md",
+  "id": "look-XXX",
+  "title": "上装 × 下装（12 字以内）",
+  "summary": "一句话卖点，会显示在卡片标题下方（20 字以内）",
+  "styles": ["cityboy"],
+  "scenes": ["daily"],
+  "seasons": ["spring", "autumn"],
+  "image": {
+    "src": "look-XXX.jpg",
+    "ratio": 0.7,
+    "alt": "图片内容描述（无障碍必填）",
+    "credit": "AI 生成"
+  },
+  "desc": "2-3 句话说明这套搭配为什么成立，以及适合谁穿。",
+  "items": [
+    { "cat": "top", "name": "单品名称", "note": "选购 / 版型要点" },
+    { "cat": "bottom", "name": "单品名称", "note": "" },
+    { "cat": "shoes", "name": "单品名称", "note": "" }
+  ],
+  "palette": ["#111111", "#888888", "#eeeeee", "#ffffff"],
+  "tip": "一条可执行的搭配提醒，不要写空话。",
+  "tags": ["标签1", "标签2"],
+  "author": "编辑部",
+  "status": "draft",
+  "createdAt": "2026-10-22",
+  "updatedAt": "2026-10-22"
+}

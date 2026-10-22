@@ -1,0 +1,24 @@
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
+
+# 依赖（本项目零依赖，留作兜底）
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+
+# 工作区内部数据（AI 记忆、临时文件），不入库
+.workbuddy/
+.tmp/
+
+# 图片原图：体积大且可再生（scripts/process_images.py），只在本地保留
+raw/
+
+# 日志
+*.log
+npm-debug.log*

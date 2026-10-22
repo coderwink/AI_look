@@ -1,0 +1,34 @@
+{
+  "$comment": "分类字典 · 唯一真源。新增风格/场景/季节/品类时只改这里，前端会自动读取标签。",
+  "version": 1,
+  "styles": [
+    { "key": "cityboy", "label": "日系", "desc": "City Boy 松弛感：上紧下宽、大地色、九分裤" },
+    { "key": "street", "label": "街头", "desc": "廓形对比、宽松叠穿、球鞋与金属配饰" },
+    { "key": "business", "label": "商务", "desc": "西装、衬衫、皮鞋，结构与合身优先" },
+    { "key": "minimal", "label": "极简", "desc": "同色系、低饱和、无 logo，靠材质出层次" },
+    { "key": "techwear", "label": "机能", "desc": "冲锋衣、束脚裤、越野鞋、多口袋" },
+    { "key": "retro", "label": "复古", "desc": "水洗牛仔、拼色、复古跑鞋、黄铜配件" },
+    { "key": "smart", "label": "半正式", "desc": "比正装松、比休闲正，约会与周五通勤" }
+  ],
+  "scenes": [
+    { "key": "daily", "label": "日常" },
+    { "key": "commute", "label": "通勤" },
+    { "key": "date", "label": "约会" },
+    { "key": "trip", "label": "出行" },
+    { "key": "party", "label": "聚会" }
+  ],
+  "seasons": [
+    { "key": "spring", "label": "春" },
+    { "key": "summer", "label": "夏" },
+    { "key": "autumn", "label": "秋" },
+    { "key": "winter", "label": "冬" }
+  ],
+  "itemCategories": [
+    { "key": "outer", "label": "外套" },
+    { "key": "top", "label": "上装" },
+    { "key": "bottom", "label": "下装" },
+    { "key": "shoes", "label": "鞋" },
+    { "key": "bag", "label": "包" },
+    { "key": "accessory", "label": "配饰" }
+  ]
+}

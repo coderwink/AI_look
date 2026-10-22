@@ -1,0 +1,22 @@
+{
+  "name": "型格 LOOKBOOK · 男士穿搭图鉴",
+  "short_name": "型格",
+  "description": "男士穿搭灵感图鉴：多派系搭配合集、单品拆解与配色心法。",
+  "lang": "zh-CN",
+  "id": "./",
+  "start_url": "./web/index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f4f0",
+  "theme_color": "#17181a",
+  "categories": ["lifestyle", "shopping"],
+  "icons": [
+    { "src": "./assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "我的收藏", "url": "./web/index.html?tab=favs" }
+  ]
+}

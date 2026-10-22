@@ -1,0 +1,41 @@
+{
+  "$comment": "编辑部排版卡 · 穿插在瀑布流里的非图片内容（配色心法、清单、观点）。type 支持 palette | list | quote。",
+  "version": 1,
+  "updatedAt": "2026-10-22",
+  "editorials": [
+    {
+      "id": "ed-1",
+      "type": "palette",
+      "kicker": "配色心法",
+      "title": "三色原则",
+      "body": "全身颜色不超过三个色系：一个主色、一个辅助色、一个点缀色。拿不准时，把鞋包算进主色里。",
+      "swatches": ["#17181a", "#cbb493", "#f5f2ec"],
+      "status": "published"
+    },
+    {
+      "id": "ed-2",
+      "type": "list",
+      "kicker": "胶囊衣橱",
+      "title": "通勤七件套",
+      "body": "有了这七件，一周五天的通勤装不重样：",
+      "list": [
+        "白色正装衬衫 ×2",
+        "炭灰 / 藏蓝西装裤",
+        "无结构西装外套",
+        "黑色圆领 T 恤 ×2",
+        "黑色乐福鞋",
+        "棕色皮带",
+        "灰色针织衫"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "ed-3",
+      "type": "quote",
+      "kicker": "编辑说",
+      "title": "合身 > 品牌",
+      "body": "一件两百块的 T 恤，改短两公分衣长、收紧一寸袖口，看起来就像一千块。先把尺寸做对，再谈风格。",
+      "status": "published"
+    }
+  ]
+}
