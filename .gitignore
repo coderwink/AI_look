@@ -22,3 +22,6 @@ raw/
 # 日志
 *.log
 npm-debug.log*
+
+# 采集器中间状态（含 token，仅本地保留）
+content/xhs/_state.json

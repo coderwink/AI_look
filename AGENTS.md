@@ -23,6 +23,10 @@
 | `content/schema/look.schema.json` | 单条搭配的 JSON Schema | 结构变更时才改 |
 | `content/templates/look.template.json` | 新建搭配的空白模板 | 结构变更时才改 |
 | `content/images/looks/` | 搭配图（命名 `look-N.jpg`） | ✅ 放图 |
+| `content/xhs/` | **外部素材库**：从小红书博主采集的穿搭素材（每条笔记一个目录：图片 + `content/xhs/index.json` 索引） | 由脚本生成 |
+| `web/materials.html` | 素材库浏览页（搜索 / 标签筛选 / 瀑布流 / 详情弹层），读 `content/xhs/index.json` | 改功能才动 |
+| `scripts/xhs-collect.cjs` | 小红书采集器（`list` 收集索引 / `detail` 抓详情下载图，需登录，可断点续跑） | — |
+| `scripts/build-xhs-index.cjs` | 从采集状态生成 `content/xhs/index.json` | — |
 | `web/` | Web / PWA 端（页面、样式、逻辑） | 改功能才动 |
 | `web/js/app.js` | 全部前端逻辑：加载内容、瀑布流排版、详情层、收藏 | 改功能才动 |
 | `web/css/style.css` | 全部样式（含瀑布流容器规则） | 改视觉才动 |
@@ -62,7 +66,15 @@ node scripts/check-content.mjs
 
 # 重新处理图片（裁水印、压缩、按画幅裁切、生成图标）
 python scripts/process_images.py
+
+# 小红书素材采集（需要扫码登录一次，登录态存 ~/.workbuddy/xhs-session）
+node scripts/xhs-collect.cjs list "<博主主页URL>"     # 阶段一：滚动收集全部笔记索引
+node scripts/xhs-collect.cjs detail "<博主主页URL>"   # 阶段二：逐条抓详情+下载封面图（可重复执行续跑）
+node scripts/build-xhs-index.cjs                      # 阶段三：生成 content/xhs/index.json
 ```
+
+素材库浏览页：`/web/materials.html`（支持关键词搜索、标签筛选、视频角标、原文链接）。
+采集注意事项：请求间隔 3–6 秒防风控；素材仅供个人学习参考，不得二次发布。
 
 ## 6. 前端实现要点（改代码前必读）
 
@@ -87,6 +99,7 @@ python scripts/process_images.py
 ## 8. 待办与已知限制
 
 - 内容量：当前 9 套搭配，需要持续填充（这是当前最该做的事）
+- 外部素材：`content/xhs/` 已采集小红书博主「王ze霖」117 条笔记（以视频为主，存封面+文案+标签）
 - 收藏仅存本机，未做账号与多端同步
 - 无「穿搭合集 / 作者主页 / 评论」等社区能力
 - 图片为 AI 生成，商用需替换为自有版权图
