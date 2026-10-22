@@ -10,7 +10,10 @@ const fs = require('fs');
 const path = require('path');
 
 const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
-const SESSION_DIR = 'C:/Users/10677/.workbuddy/xhs-session';
+// 优先用「日常 Chrome 登录态」的镜像目录（scripts/sync-chrome-login.cjs 生成），否则退回专用会话目录
+const DAILY_PROFILE = 'C:/Users/10677/.workbuddy/chrome-profile';
+const SESSION_DIR = process.env.XHS_PROFILE_DIR
+  || (fs.existsSync(path.join(DAILY_PROFILE, 'Local State')) ? DAILY_PROFILE : 'C:/Users/10677/.workbuddy/xhs-session');
 const ROOT = 'C:/Users/10677/WorkBuddy/2026-10-22-09-12-51/content/xhs';
 const STATE_FILE = path.join(ROOT, '_state.json');
 const PROFILE_URL = process.argv[3];

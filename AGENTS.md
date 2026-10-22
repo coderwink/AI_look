@@ -27,6 +27,9 @@
 | `web/materials.html` | 素材库浏览页（搜索 / 标签筛选 / 瀑布流 / 详情弹层），读 `content/xhs/index.json` | 改功能才动 |
 | `scripts/xhs-collect.cjs` | 小红书采集器（`list` 收集索引 / `detail` 抓详情下载图，需登录，可断点续跑） | — |
 | `scripts/build-xhs-index.cjs` | 从采集状态生成 `content/xhs/index.json` | — |
+| `scripts/sync-chrome-login.cjs` | 同步日常 Chrome 登录态到采集工作目录（需先退出 Chrome） | — |
+| `scripts/prepare-chrome-profile.cjs` | 仅复制 Chrome 配置目录（Chrome 已关闭时使用） | — |
+| `scripts/analyze-covers.py` | 封面图量化分析（主色/明度/饱和度/画幅）→ `content/xhs/analysis.json` | — |
 | `web/` | Web / PWA 端（页面、样式、逻辑） | 改功能才动 |
 | `web/js/app.js` | 全部前端逻辑：加载内容、瀑布流排版、详情层、收藏 | 改功能才动 |
 | `web/css/style.css` | 全部样式（含瀑布流容器规则） | 改视觉才动 |
@@ -67,7 +70,7 @@ node scripts/check-content.mjs
 # 重新处理图片（裁水印、压缩、按画幅裁切、生成图标）
 python scripts/process_images.py
 
-# 小红书素材采集（需要扫码登录一次，登录态存 ~/.workbuddy/xhs-session）
+# 小红书素材采集（登录态见下方「登录态复用」说明）
 node scripts/xhs-collect.cjs list "<博主主页URL>"     # 阶段一：滚动收集全部笔记索引
 node scripts/xhs-collect.cjs detail "<博主主页URL>"   # 阶段二：逐条抓详情+下载封面图（可重复执行续跑）
 node scripts/build-xhs-index.cjs                      # 阶段三：生成 content/xhs/index.json
@@ -75,6 +78,15 @@ node scripts/build-xhs-index.cjs                      # 阶段三：生成 conte
 
 素材库浏览页：`/web/materials.html`（支持关键词搜索、标签筛选、视频角标、原文链接）。
 采集注意事项：请求间隔 3–6 秒防风控；素材仅供个人学习参考，不得二次发布。
+
+**登录态复用**（避免每次扫码）：Windows 下 Chrome 的 Cookie 文件被独占锁定，必须先退出 Chrome 才能复制。
+
+```bash
+node scripts/sync-chrome-login.cjs --relaunch   # 等 Chrome 关闭 → 复制登录态 → 自动重开 Chrome
+node scripts/prepare-chrome-profile.cjs         # 等价拆分：仅复制配置（Chrome 已关闭时用）
+```
+
+复制目标为 `~/.workbuddy/chrome-profile`。`xhs-collect.cjs` 启动时自动检测该目录：存在则用它（日常 Chrome 登录态），否则退回 `~/.workbuddy/xhs-session`（采集专用会话，首次需扫码）。可用环境变量 `XHS_PROFILE_DIR` 强制指定。
 
 ## 6. 前端实现要点（改代码前必读）
 
