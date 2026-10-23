@@ -132,6 +132,22 @@ function relayoutVisible() {
   }, 100);
 }
 
+/* ---------- 骨架屏 ---------- */
+function renderSkeleton() {
+  const box = $('#masonry');
+  const ratios = [0.66, 0.71, 0.63, 0.68, 0.73, 0.65];
+  box.innerHTML = ratios.map((r) => `
+    <div class="sk-card">
+      <div class="sk-img" style="aspect-ratio:${r}"></div>
+      <div class="sk-body">
+        <i style="width:82%"></i>
+        <i style="width:56%"></i>
+        <span class="sk-foot"><i class="sk-dot"></i><i style="width:38px;height:8px"></i></span>
+      </div>
+    </div>`).join('');
+  layoutMasonry(box);
+}
+
 /* ---------- 卡片模板 ---------- */
 function lookCard(look, idx) {
   const faved = storage.isFav(look.id);
@@ -510,6 +526,53 @@ function exportDrafts() {
 }
 
 /* ---------- 搜索 ---------- */
+const SEARCH_HISTORY_KEY = 'xingge.search.history';
+
+function readHistory() {
+  try {
+    const arr = JSON.parse(localStorage.getItem(SEARCH_HISTORY_KEY) || '[]');
+    return Array.isArray(arr) ? arr.filter((x) => typeof x === 'string').slice(0, 8) : [];
+  } catch (e) { return []; }
+}
+
+function pushHistory(q) {
+  const kw = q.trim();
+  if (!kw) return;
+  const arr = readHistory().filter((x) => x !== kw);
+  arr.unshift(kw);
+  try { localStorage.setItem(SEARCH_HISTORY_KEY, JSON.stringify(arr.slice(0, 8))); } catch (e) {}
+}
+
+/** 热门标签：取出现频次最高的标签词，凑 8 个 */
+function hotTags() {
+  const freq = {};
+  publishedLooks().forEach((l) => {
+    (l.tags || []).forEach((t) => { freq[t] = (freq[t] || 0) + 1; });
+    (l.styles || []).forEach((s) => {
+      const lb = content.styleLabel[s];
+      if (lb) freq[lb] = (freq[lb] || 0) + 1;
+    });
+  });
+  return Object.entries(freq).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([t]) => t);
+}
+
+function renderSearchHome() {
+  const box = $('#search-results');
+  const hist = readHistory();
+  const hot = hotTags();
+  box.innerHTML = `
+    ${hist.length ? `
+      <div class="search-block">
+        <div class="search-block-head"><span>最近搜索</span><button class="search-clear" id="clear-history">清空</button></div>
+        <div class="search-chips">${hist.map((h) => `<button class="schip" data-q="${esc(h)}">${esc(h)}</button>`).join('')}</div>
+      </div>` : ''}
+    <div class="search-block">
+      <div class="search-block-head"><span>热门标签</span></div>
+      <div class="search-chips">${hot.map((h) => `<button class="schip hot" data-q="${esc(h)}">${esc(h)}</button>`).join('')}</div>
+    </div>
+    <p class="search-hint">也可以试试「西装」「白色」「约会」…</p>`;
+}
+
 function searchLooks(q) {
   const kw = q.trim().toLowerCase();
   if (!kw) return [];
@@ -529,7 +592,7 @@ function searchLooks(q) {
 function renderSearch(q) {
   const box = $('#search-results');
   if (!q.trim()) {
-    box.innerHTML = `<p class="search-hint">试试搜「西装」「白色」「约会」…</p>`;
+    renderSearchHome();
     return;
   }
   const hits = searchLooks(q);
@@ -545,6 +608,7 @@ function openSearch() {
   $('#search-layer').hidden = false;
   document.body.style.overflow = 'hidden';
   searchOpen = true;
+  renderSearchHome();
   pushClose('search');
   setTimeout(() => $('#search-input').focus(), 60);
 }
@@ -668,6 +732,25 @@ function bindEvents() {
   $('#btn-search').addEventListener('click', openSearch);
   $('#btn-cancel-search').addEventListener('click', () => closeSearch());
   $('#search-input').addEventListener('input', (e) => renderSearch(e.target.value));
+  $('#search-input').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { pushHistory(e.target.value); e.target.blur(); renderSearch(e.target.value); }
+  });
+  $('#search-results').addEventListener('click', (e) => {
+    const chip = e.target.closest('[data-q]');
+    if (chip) {
+      const q = chip.dataset.q;
+      $('#search-input').value = q;
+      pushHistory(q);
+      renderSearch(q);
+      return;
+    }
+    if (e.target.closest('#clear-history')) {
+      try { localStorage.removeItem(SEARCH_HISTORY_KEY); } catch (err) {}
+      renderSearchHome();
+      return;
+    }
+    if (e.target.closest('[data-look]')) pushHistory($('#search-input').value);
+  });
 
   $('#btn-share-top').addEventListener('click', shareApp);
   $('#btn-share-app').addEventListener('click', shareApp);
@@ -746,6 +829,8 @@ function loadDrafts() {
 
 async function boot() {
   storage.load();
+  $('#loading').hidden = true;
+  renderSkeleton();
   try {
     await loadContent();
   } catch (e) {
