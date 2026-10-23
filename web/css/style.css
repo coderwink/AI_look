@@ -318,6 +318,22 @@ main { padding-bottom: calc(var(--tab-h) + env(safe-area-inset-bottom) + 48px); 
 
 .sheet-img { position: relative; background: #eae6df; }
 .sheet-img img { width: 100%; height: auto; }
+/* 详情页上一套 / 下一套 */
+.sheet-nav {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 36px; height: 36px; border-radius: 50%;
+  background: rgba(255,255,255,.88); color: var(--ink);
+  font-size: 20px; line-height: 1; display: grid; place-items: center;
+  box-shadow: 0 1px 6px rgba(0,0,0,.18);
+}
+.sheet-nav.prev { left: 10px; }
+.sheet-nav.next { right: 10px; }
+.sheet-pos {
+  position: absolute; left: 12px; bottom: 10px;
+  font-size: 10.5px; color: #fff; letter-spacing: 1px;
+  background: rgba(23,24,26,.55); border-radius: 999px; padding: 2px 9px;
+  font-variant-numeric: tabular-nums; backdrop-filter: blur(4px);
+}
 .sheet-close {
   position: absolute; top: 14px; right: 14px;
   width: 34px; height: 34px; border-radius: 50%;

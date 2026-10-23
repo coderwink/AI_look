@@ -17,6 +17,7 @@
     { "src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ],
   "shortcuts": [
-    { "name": "我的收藏", "url": "./web/index.html?tab=favs" }
+    { "name": "我的收藏", "url": "./web/index.html?tab=favs" },
+    { "name": "素材库", "url": "./web/materials.html" }
   ]
 }

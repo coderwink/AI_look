@@ -24,6 +24,12 @@ LOOK_MAP = {
     "Editorial_full_body_fashion_ph_2026-10-22T01-40-32.png": ("look-7", 0.65),
     "Editorial_full_body_fashion_ph_2026-10-22T01-40-33.png": ("look-8", 0.71),
     "Editorial_full_body_fashion_ph_2026-10-22T01-40-52.png": ("look-9", 0.68),
+    "Editorial_full_body_fashion_ph_2026-10-23T09-01-58.png": ("look-10", 0.70),
+    "Editorial_full_body_fashion_ph_2026-10-23T09-02-11.png": ("look-11", 0.72),
+    "Editorial_full_body_fashion_ph_2026-10-23T09-02-21.png": ("look-12", 0.65),
+    "Editorial_full_body_fashion_ph_2026-10-23T09-03-17.png": ("look-13", 0.68),
+    "Editorial_full_body_fashion_ph_2026-10-23T09-03-28.png": ("look-14", 0.63),
+    "Editorial_full_body_fashion_ph_2026-10-23T09-03-43.png": ("look-15", 0.66),
 }
 WATERMARK_RATIO = 0.085  # 底部水印条
 

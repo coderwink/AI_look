@@ -290,14 +290,18 @@ window.addEventListener('popstate', () => {
 });
 
 /* ---------- 详情层 ---------- */
-function openSheet(id) {
-  const look = lookById[id];
-  if (!look) return;
-  storage.markSeen(id);
-  updateStats();
+let sheetCtx = { list: [], idx: -1 };
 
-  const sameStyle = publishedLooks().filter((l) => l.id !== id && l.styles.some((s) => look.styles.includes(s)));
-  const others = publishedLooks().filter((l) => l.id !== id && !sameStyle.includes(l));
+/** 详情层的上一套 / 下一套，按当前筛选后的信息流顺序 */
+function feedOrder() {
+  return filteredLooks().concat(filteredDrafts());
+}
+
+function renderSheet(look) {
+  const list = sheetCtx.list;
+  const pos = sheetCtx.idx;
+  const sameStyle = publishedLooks().filter((l) => l.id !== look.id && l.styles.some((s) => look.styles.includes(s)));
+  const others = publishedLooks().filter((l) => l.id !== look.id && !sameStyle.includes(l));
   const related = sameStyle.concat(others).slice(0, 4);
 
   const meta = [
@@ -309,9 +313,13 @@ function openSheet(id) {
   $('#sheet').innerHTML = `
     <div class="sheet-img">
       <img src="${imageSrc(look)}" alt="${esc(look.image.alt || look.title)}" />
+      ${list.length > 1 ? `
+        ${pos > 0 ? '<button class="sheet-nav prev" data-sheet-nav="-1" aria-label="上一套">‹</button>' : ''}
+        ${pos < list.length - 1 ? '<button class="sheet-nav next" data-sheet-nav="1" aria-label="下一套">›</button>' : ''}
+        <span class="sheet-pos">${pos + 1} / ${list.length}</span>` : ''}
       <button class="sheet-close" id="sheet-close" aria-label="关闭">✕</button>
-      <button class="sheet-fav ${storage.isFav(id) ? 'faved' : ''}" data-fav="${id}" aria-label="收藏">
-        ${heartSvg(storage.isFav(id))}
+      <button class="sheet-fav ${storage.isFav(look.id) ? 'faved' : ''}" data-fav="${look.id}" aria-label="收藏">
+        ${heartSvg(storage.isFav(look.id))}
       </button>
     </div>
     <div class="sheet-body">
@@ -365,9 +373,25 @@ function openSheet(id) {
           </div>`).join('')}
       </div>
     </div>`;
+}
+
+function openSheet(id) {
+  const look = lookById[id];
+  if (!look) return;
+
+  // 记录当前信息流顺序，详情里可以左右切换
+  const list = feedOrder();
+  const idx = list.findIndex((l) => l.id === id);
+  if (idx >= 0) sheetCtx = { list, idx };
+  else if (!sheetCtx.list.some((l) => l.id === id)) sheetCtx = { list: [look], idx: 0 };
+
+  storage.markSeen(id);
+  updateStats();
+  renderSheet(look);
 
   const backdrop = $('#sheet-backdrop');
   const sheet = $('#sheet');
+  if (sheetOpen) { sheet.scrollTop = 0; return; } // 已在详情层内切换
   backdrop.hidden = false;
   sheet.hidden = false;
   sheet.classList.add('sheet-init');
@@ -611,13 +635,30 @@ function bindEvents() {
   document.addEventListener('click', (e) => {
     const favBtn = e.target.closest('[data-fav]');
     if (favBtn) { e.stopPropagation(); onFavToggle(favBtn); return; }
+    const nav = e.target.closest('[data-sheet-nav]');
+    if (nav) { e.stopPropagation(); const next = sheetCtx.list[sheetCtx.idx + Number(nav.dataset.sheetNav)]; if (next) openSheet(next.id); return; }
+    const drop = e.target.closest('[data-drop]');
+    if (drop) { e.stopPropagation(); dropDraft(drop.dataset.drop); return; }
     const card = e.target.closest('[data-look]');
     if (card) { openSheet(card.dataset.look); return; }
     const goto = e.target.closest('[data-goto]');
     if (goto) switchTab(goto.dataset.goto);
-    const drop = e.target.closest('[data-drop]');
-    if (drop) { e.stopPropagation(); dropDraft(drop.dataset.drop); }
   });
+
+  // 详情层左右滑动切换上一套 / 下一套
+  let swipeX = null, swipeY = null;
+  $('#sheet').addEventListener('touchstart', (e) => {
+    const t = e.touches[0]; swipeX = t.clientX; swipeY = t.clientY;
+  }, { passive: true });
+  $('#sheet').addEventListener('touchend', (e) => {
+    if (swipeX == null || !sheetOpen) return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - swipeX, dy = t.clientY - swipeY;
+    swipeX = swipeY = null;
+    if (Math.abs(dx) < 60 || Math.abs(dy) > 50) return;
+    const next = sheetCtx.list[sheetCtx.idx + (dx < 0 ? 1 : -1)];
+    if (next) openSheet(next.id);
+  }, { passive: true });
 
   $('#sheet-backdrop').addEventListener('click', () => closeSheet());
   $('#sheet').addEventListener('click', (e) => { if (e.target.closest('#sheet-close')) closeSheet(); });
