@@ -92,7 +92,7 @@ const content = {
   styleLabel: {}, sceneLabel: {}, seasonLabel: {}, catLabel: {},
 };
 
-const state = { tab: 'home', style: 'all', scene: 'all', height: 'all', deferredInstall: null };
+const state = { tab: 'home', style: 'all', scene: 'all', height: 'all', favStyle: 'all', deferredInstall: null };
 let sheetOpen = false;
 let searchOpen = false;
 const lookById = {};
@@ -451,9 +451,28 @@ function onFavToggle(btn) {
 }
 
 function renderFavs() {
-  const favs = storage.data.favs.map((id) => lookById[id]).filter(Boolean);
+  const all = storage.data.favs.map((id) => lookById[id]).filter(Boolean);
+  const bar = $('#fav-filters');
+  const styleKeys = [];
+  all.forEach((l) => (l.styles || []).forEach((s) => { if (!styleKeys.includes(s)) styleKeys.push(s); }));
+
+  // 收藏少于 3 套或只有一个风格时，不需要分组
+  const showBar = all.length >= 3 && styleKeys.length > 1;
+  bar.hidden = !showBar;
+  if (showBar) {
+    bar.innerHTML = [{ key: 'all', label: `全部 ${all.length}` }]
+      .concat(styleKeys.map((s) => ({ key: s, label: `${content.styleLabel[s] || s} ${all.filter((l) => l.styles.includes(s)).length}` })))
+      .map((c) => `<button class="chip ${state.favStyle === c.key ? 'active' : ''}" data-fav-style="${c.key}">${esc(c.label)}</button>`)
+      .join('');
+  }
+
+  let favs = state.favStyle === 'all' ? all : all.filter((l) => (l.styles || []).includes(state.favStyle));
+  // 取消收藏后当前分组可能空了：自动退回「全部」
+  if (all.length && !favs.length && state.favStyle !== 'all') { state.favStyle = 'all'; return renderFavs(); }
   $('#fav-empty').hidden = favs.length > 0;
-  $('#fav-count').textContent = `${favs.length} 套搭配`;
+  $('#fav-count').textContent = state.favStyle === 'all'
+    ? `${all.length} 套搭配`
+    : `${content.styleLabel[state.favStyle] || state.favStyle} · ${favs.length} / ${all.length} 套`;
   $('#fav-masonry').innerHTML = favs.map((l, i) => lookCard(l, i)).join('');
   if (!$('#view-favs').hidden) layoutMasonry($('#fav-masonry'));
 }
@@ -679,6 +698,14 @@ function bindEvents() {
     if (btn.scrollIntoView) btn.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
   });
 
+  $('#fav-filters').addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-fav-style]');
+    if (!btn) return;
+    state.favStyle = btn.dataset.favStyle;
+    renderFavs();
+    layoutMasonry($('#fav-masonry'));
+  });
+
   $('#height-picks').addEventListener('click', (e) => {
     const btn = e.target.closest('[data-myheight]');
     if (!btn) return;
@@ -770,7 +797,7 @@ function bindEvents() {
   $('#btn-clear-favs').addEventListener('click', () => {
     if (!storage.data.favs.length) return toast('收藏已经是空的啦');
     if (confirm('确定清空全部收藏吗？此操作不可恢复。')) {
-      storage.clearFavs(); renderFavs(); updateStats(); toast('已清空收藏');
+      storage.clearFavs(); state.favStyle = 'all'; renderFavs(); updateStats(); toast('已清空收藏');
     }
   });
 
