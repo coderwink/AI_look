@@ -1,8 +1,8 @@
 {
   "version": 2,
   "source": "xiaohongshu",
-  "generatedAt": "2026-10-23T03:12:04.059Z",
-  "count": 156,
+  "generatedAt": "2026-10-23T03:48:57.292Z",
+  "count": 235,
   "sources": [
     {
       "file": "_state.json",
@@ -21,6 +21,24 @@
       "author": "",
       "url": "https://www.xiaohongshu.com/search_result?keyword=166%E5%B0%8F%E4%B8%AA%E5%AD%90%E7%A9%BF%E6%90%AD",
       "count": 39
+    },
+    {
+      "file": "_state.search-170.json",
+      "kind": "search",
+      "label": "搜索 · 170男生穿搭",
+      "keyword": "170男生穿搭",
+      "author": "",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=170%E7%94%B7%E7%94%9F%E7%A9%BF%E6%90%AD",
+      "count": 40
+    },
+    {
+      "file": "_state.search-180.json",
+      "kind": "search",
+      "label": "搜索 · 180高个子穿搭",
+      "keyword": "180高个子穿搭",
+      "author": "",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=180%E9%AB%98%E4%B8%AA%E5%AD%90%E7%A9%BF%E6%90%AD",
+      "count": 39
     }
   ],
   "heights": [
@@ -38,7 +56,7 @@
       "min": 160,
       "max": 165,
       "tag": "小个子",
-      "count": 8
+      "count": 9
     },
     {
       "key": "h165",
@@ -46,7 +64,7 @@
       "min": 165,
       "max": 170,
       "tag": "小个子",
-      "count": 16
+      "count": 23
     },
     {
       "key": "h170",
@@ -54,7 +72,7 @@
       "min": 170,
       "max": 175,
       "tag": "标准",
-      "count": 1
+      "count": 35
     },
     {
       "key": "h175",
@@ -62,7 +80,7 @@
       "min": 175,
       "max": 180,
       "tag": "标准",
-      "count": 0
+      "count": 4
     },
     {
       "key": "h180",
@@ -70,7 +88,7 @@
       "min": 180,
       "max": 220,
       "tag": "高个子",
-      "count": 2
+      "count": 18
     },
     {
       "key": "unknown",
@@ -78,7 +96,7 @@
       "min": null,
       "max": null,
       "tag": "",
-      "count": 128
+      "count": 145
     }
   ],
   "notes": [
@@ -112,6 +130,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -144,6 +164,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -176,6 +198,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -207,6 +231,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -240,6 +266,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -272,6 +300,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -306,6 +336,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -338,6 +370,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -371,6 +405,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -402,6 +438,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -435,6 +473,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -470,6 +510,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -503,6 +545,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -536,6 +580,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -567,8 +613,11 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
-        "confidence": "none",
-        "tag": ""
+        "raw": "小个子",
+        "kind": "semantic",
+        "confidence": "low",
+        "range": null,
+        "tag": "小个子"
       }
     },
     {
@@ -600,6 +649,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -638,6 +689,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -671,6 +724,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -700,6 +755,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -732,6 +789,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -765,6 +824,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -797,6 +858,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -833,6 +896,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -866,6 +931,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -899,6 +966,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -930,6 +999,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -961,6 +1032,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -994,6 +1067,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1025,6 +1100,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1056,6 +1133,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1090,6 +1169,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1128,6 +1209,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1161,6 +1244,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1194,6 +1279,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1226,6 +1313,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1257,6 +1346,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1290,6 +1381,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1321,6 +1414,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1359,6 +1454,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1390,6 +1487,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1423,6 +1522,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1453,6 +1554,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1491,6 +1594,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1520,6 +1625,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1558,6 +1665,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1596,6 +1705,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1629,6 +1740,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1660,6 +1773,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1697,6 +1812,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1732,6 +1849,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1770,6 +1889,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1808,6 +1929,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1843,6 +1966,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1879,6 +2004,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1912,6 +2039,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1945,6 +2074,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -1977,6 +2108,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2010,6 +2143,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2045,6 +2180,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2080,6 +2217,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2112,11 +2251,14 @@
         "01.jpg"
       ],
       "height": {
-        "value": null,
-        "band": "unknown",
-        "label": "未标注",
-        "confidence": "none",
-        "tag": ""
+        "value": 176,
+        "band": "h175",
+        "label": "175–180",
+        "raw": "176",
+        "kind": "leading",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
       }
     },
     {
@@ -2149,6 +2291,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2185,6 +2329,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2219,6 +2365,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2253,6 +2401,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2287,6 +2437,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2322,6 +2474,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2355,6 +2509,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2386,6 +2542,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2415,6 +2573,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2442,6 +2602,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2469,6 +2631,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2502,6 +2666,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2536,6 +2702,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2570,6 +2738,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2603,6 +2773,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2638,6 +2810,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2671,6 +2845,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2703,6 +2879,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2733,6 +2911,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2764,6 +2944,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2791,6 +2973,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2825,6 +3009,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2852,6 +3038,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2879,6 +3067,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2906,6 +3096,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2933,6 +3125,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2960,6 +3154,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -2987,6 +3183,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3014,6 +3212,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3041,6 +3241,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3074,6 +3276,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3101,6 +3305,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3128,6 +3334,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3155,6 +3363,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3186,6 +3396,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3219,6 +3431,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3246,6 +3460,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3273,6 +3489,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3317,6 +3535,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3352,6 +3572,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3390,6 +3612,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3421,6 +3645,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3449,6 +3675,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3479,6 +3707,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3516,6 +3746,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3544,6 +3776,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3571,6 +3805,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3598,6 +3834,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3625,6 +3863,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3652,6 +3892,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3679,6 +3921,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3706,6 +3950,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3733,6 +3979,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3763,6 +4011,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3792,6 +4042,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -3823,6 +4075,8 @@
         "value": null,
         "band": "unknown",
         "label": "未标注",
+        "raw": "",
+        "kind": "none",
         "confidence": "none",
         "tag": ""
       }
@@ -5528,6 +5782,3547 @@
         "kind": "none",
         "confidence": "none",
         "tag": ""
+      }
+    },
+    {
+      "id": "6a0ad7640000000007027f75",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "谁说168小个子男生难穿搭❓显高干货必看",
+      "desc": "很多168男生夏天穿搭，总被“压个子、五五分、显邋遢困扰！\n衣服买了一堆，要么衣长过长盖胯显矮，要么裤长拖沓堆鞋面，明明不算胖，却穿出比实际矮5cm的效果\n其实核心根本不是穿得少，而是精准控制衣长+裤长，优化上下身比例\n✳️168男生「黄金衣长公式」｜\n▪️短袖衬衫 66-68cm（首选）/ 不超过72cm\n▪️常规T恤 64-66cm（首选）/ 不超过72cm\n▪️短款卫衣/薄外套 62-64cm（首选）/ 不超过70cm\n▪️长袖衬衫/薄外套 68-70cm（首选）/ 不超过76cm\n💡 补充核心技巧：\n上衣优先选正肩微宽松版型，宁短勿长\n✳️168男生「黄金裤长公式」\n▪️五分短裤 48-52cm（首选）45-56cm安全区\n▪️九分休闲裤 88-92cm（首选）\n▪️直筒/弯刀裤 98-100cm（首选）\n阔腿休闲裤 100-102cm（首选）\n💡 补充核心技巧：\n夏天优先选高腰款下装，腰线卡在肚脐上方2-3cm；同色鞋裤搭配（比如白鞋+白裤、黑鞋+黑裤）延伸腿长，视觉上显高3cm\n✅避坑雷区（90%的小个子都踩过）\n❌ 衣长过长盖胯/裤长堆鞋面，把身高压成五五分\n❌ 低腰裤+长款上衣，遮住腰线，重心直接下移\n❌ 多层复杂叠穿/大面积撞色，视觉拉矮身高\n不用羡慕高个子，穿搭才是小个子的变帅捷径！赶紧收藏这篇尺寸公式，买衣服直接对标抄作业，夏天再也不用踩雷显矮啦～\n\t\n#男生穿搭 #男友穿搭 #适合普通人的穿搭方式 #穿搭技巧 #穿搭灵感 #男生必看 #男生夏季穿搭 #男士穿搭 #轻熟风穿搭 #穿搭bot @海上公路",
+      "tags": [
+        "男生穿搭",
+        "男友穿搭",
+        "适合普通人的穿搭方式",
+        "穿搭技巧",
+        "穿搭灵感",
+        "男生必看",
+        "男生夏季穿搭",
+        "男士穿搭",
+        "轻熟风穿搭",
+        "穿搭bot"
+      ],
+      "author": "小易玩穿搭",
+      "time": 1779095396000,
+      "liked": 2996,
+      "likedRaw": "2996",
+      "url": "https://www.xiaohongshu.com/explore/6a0ad7640000000007027f75",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg"
+      ],
+      "height": {
+        "value": 168,
+        "band": "h165",
+        "label": "165–170",
+        "raw": "168小个子",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "小个子"
+      }
+    },
+    {
+      "id": "692be9c4000000001e00bacf",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170男生约会穿搭三大禁忌！避开显矮显邋遢",
+      "desc": "170男生约会三大禁忌！！！\n1. 忌过长衣裤：超过臀部的长款外套、盖脚面的拖地裤，会直接拉低腰线、分割比例，170cm穿秒变“五五分”；九分裤/短款外套才是显高关键。\n​\n2. 忌宽松堆砌：全身oversize卫衣+阔腿裤、多层叠穿（比如卫衣+毛衣+外套），会让身形显得臃肿拖沓，小个子容易被衣服“压垮”，简洁合身才显干净利落。\n​\n3. 忌杂乱配色+不当细节：超过3种高饱和色混搭、大Logo堆砌，会分散视觉焦点显杂乱；另外，没塞进裤子的长衬衫下摆、堆在脚踝的袜子，都会拉低精致度，还显矮。\n#男生穿搭 #170男生穿搭 #165男生穿搭 #男生穿搭 #男生日常穿搭 #穿搭干货 #男人这样穿才型 #年轻人穿搭 #摆脱穿衣廉价感\n\t\n如需搭配请留言，仅限男生，仅为增长经验，免费[红色心形R] #男友穿搭",
+      "tags": [
+        "男生穿搭",
+        "170男生穿搭",
+        "165男生穿搭",
+        "男生日常穿搭",
+        "穿搭干货",
+        "男人这样穿才型",
+        "年轻人穿搭",
+        "摆脱穿衣廉价感",
+        "男友穿搭"
+      ],
+      "author": "爱穿搭的健身狗",
+      "time": 1764485572000,
+      "liked": 368,
+      "likedRaw": "368",
+      "url": "https://www.xiaohongshu.com/explore/692be9c4000000001e00bacf",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6aa67f4b000000002a025a1f",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170男生直接复制",
+      "desc": "简单点穿#男生穿搭 #简单干净 #cleanﬁt #简约搭配",
+      "tags": [
+        "男生穿搭",
+        "简单干净",
+        "cleanﬁt",
+        "简约搭配"
+      ],
+      "author": "工藤旧一",
+      "time": 1789296459000,
+      "liked": 50,
+      "likedRaw": "50",
+      "url": "https://www.xiaohongshu.com/explore/6aa67f4b000000002a025a1f",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6970b53f000000000b011af2",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "建议170男生复制一下",
+      "desc": "#ootd每日穿搭 #通勤穿搭 #日系穿搭 #潮流REDVibe #廓系穿搭",
+      "tags": [
+        "ootd每日穿搭",
+        "通勤穿搭",
+        "日系穿搭",
+        "潮流REDVibe",
+        "廓系穿搭"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1768994111000,
+      "liked": 1505,
+      "likedRaw": "1505",
+      "url": "https://www.xiaohongshu.com/explore/6970b53f000000000b011af2",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6a9c1d070000000026014eb7",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170cm男生｜穿对视觉直逼175，告别五五分",
+      "desc": "很多170左右的男生，总觉得自己个子不高，穿什么都显矮。\n其实不是身高的问题，大多是版型、腰线、裤长没有选对。\n不需要追求大牌，也不用靠厚底鞋硬撑，把比例调整好，视觉上直接拉高好几厘米。\n整理了一套普通人可以落地的穿搭思路，从上衣、裤子、鞋子到避坑全部讲清楚。\n✅重点：优先拉高腰线，优化上下身比例，不要一味追求紧身。\n❌避开压个子的雷区，很多衣服本身好看，但是小个子男生穿上直接显矮。\n建议收藏起来，买衣服的时候拿出来对照参考。\n#穿搭经验howto #工装档案 #世界潮流地图 #穿搭暗号对一下 #男生穿搭春季 #轻熟风穿搭 #男友穿搭 #帅气男友力穿搭 #男生休闲风穿搭 #fancore",
+      "tags": [
+        "穿搭经验howto",
+        "工装档案",
+        "世界潮流地图",
+        "穿搭暗号对一下",
+        "男生穿搭春季",
+        "轻熟风穿搭",
+        "男友穿搭",
+        "帅气男友力穿搭",
+        "男生休闲风穿搭",
+        "fancore"
+      ],
+      "author": "男相研习",
+      "time": 1788615943000,
+      "liked": 206,
+      "likedRaw": "206",
+      "url": "https://www.xiaohongshu.com/explore/6a9c1d070000000026014eb7",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170cm",
+        "kind": "explicit",
+        "confidence": "high",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6aa53270000000002b0124c0",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "小个子逆袭！170男生穿出178既视感❕",
+      "desc": "很多 170 左右的男生总觉得自己穿衣服容易“被压身高、变成五五分”。\n其实，身高不够，比例来凑！ 只要掌握了视觉重心和比例法则，170 也能穿出 178+ 的挺拔利落感。\n\t\n今天总结了 5 条小个子男生必须焊在身上的显高穿搭核心逻辑，建议点赞收藏反复看👇\n\t\n📏 一、 守住腰线！【上短下长 3:7 法则】\n衣长别过臀： 卫衣、T 恤、夹克长度控制在胯骨位置，一旦盖过臀部，直接显腿短 10cm！\n学会塞衣角： 衬衫、打底内搭塞进高腰裤里，视觉腰线抬高，腿长立刻延伸。\n多穿短款外套： 短夹克、短款西装、短羽绒是小个子男生的天然外挂。\n👖 二、 裤子决定腿长！【高腰垂感 ＋ 拒绝堆积】\n❌ 避雷小脚紧身裤： 紧绷容易暴露腿短、小腿粗的问题。\n✅ 选高腰直筒/微阔西裤： 选择带压褶、垂坠感好的面料，线条纵向一泻而下。\n鞋裤顺色大法： 黑裤子配黑鞋、灰裤子配灰鞋！鞋裤同色能无缝延伸腿部视觉长度。\n🎨 三、 视线往上走！【上浅下深 ＋ 上半身点睛】\n上浅下深： 上身穿白/米/浅灰吸睛，下身穿黑/深灰收缩，视线第一眼永远落在上半身。\n内搭同色显瘦长： 内搭全身一色（如全黑），外搭敞开穿，身前露出一条纵向窄长线条，显瘦又显挺拔。\n配饰往上移： 戴顶棒球帽、戴一副精致眼镜，巧妙抬高视觉焦点。\n🚫 四、 170 男生必须避开的「显矮雷区」\n❌ 裤脚堆叠成千层浪： 裤腿过长在脚踝处堆成一坨，极其拖沓压个子。\n❌ 领口紧绷裹脖子： 衬衫多解开两颗扣子，多穿翻领/V领，露出颈部更显精神。\n❌ 上下身截断过多： 避免上衣一截颜色、皮带一截颜色、裤子一截、鞋子又撞色，身体被切成四段。\n💡 【一句话显高口诀】：\n“上短下长提腰线，鞋裤顺色腿无限；上浅下深视线上，裤脚干净不拖沓！”\n你平时穿搭最苦恼的是腿型还是比例？\n评论区留下你的【身高 / 体重】，下期专门出针对你体型的显高单品清单！\n#170男生穿搭 #小个子男生穿搭 #男生显高穿搭 #男生穿搭技巧 #小个子穿搭干货 #穿搭公式 #男生改造 #Cleanfit男装 #男生衣品提升 #小红书爆款文案#男友穿搭 #穿搭干货 #男生穿搭 #阳光男孩穿搭 #男生裤子 #帅气男友力穿搭 #阳光男孩穿搭就是这么简单 #痞帅穿搭 #男人这样穿才型 #潮男穿搭指南",
+      "tags": [
+        "170男生穿搭",
+        "小个子男生穿搭",
+        "男生显高穿搭",
+        "男生穿搭技巧",
+        "小个子穿搭干货",
+        "穿搭公式",
+        "男生改造",
+        "Cleanfit男装",
+        "男生衣品提升",
+        "小红书爆款文案",
+        "男友穿搭",
+        "穿搭干货",
+        "男生穿搭",
+        "阳光男孩穿搭",
+        "男生裤子",
+        "帅气男友力穿搭",
+        "阳光男孩穿搭就是这么简单",
+        "痞帅穿搭",
+        "男人这样穿才型",
+        "潮男穿搭指南"
+      ],
+      "author": "wave boost",
+      "time": 1789211248000,
+      "liked": 134,
+      "likedRaw": "134",
+      "url": "https://www.xiaohongshu.com/explore/6aa53270000000002b0124c0",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "69588e70000000001e016825",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170男生春季穿搭准备好了！",
+      "desc": "#男生穿搭 #过年穿搭",
+      "tags": [
+        "男生穿搭",
+        "过年穿搭"
+      ],
+      "author": "Groot",
+      "time": 1767411312000,
+      "liked": 1099,
+      "likedRaw": "1099",
+      "url": "https://www.xiaohongshu.com/explore/69588e70000000001e016825",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "69f368950000000038036339",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "168矮个子也可以cleanfit穿搭！",
+      "desc": "#今天穿什么香 #超会穿企划 #小个子穿搭 #韩系穿搭 #cleanfit简单出门 #ootd每日穿搭 #fitcheck #男生穿搭 #每天一个穿搭灵感 #cleanfit",
+      "tags": [
+        "今天穿什么香",
+        "超会穿企划",
+        "小个子穿搭",
+        "韩系穿搭",
+        "cleanfit简单出门",
+        "ootd每日穿搭",
+        "fitcheck",
+        "男生穿搭",
+        "每天一个穿搭灵感",
+        "cleanfit"
+      ],
+      "author": "Ciki",
+      "time": 1777559701000,
+      "liked": 260,
+      "likedRaw": "260",
+      "url": "https://www.xiaohongshu.com/explore/69f368950000000038036339",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg"
+      ],
+      "height": {
+        "value": 168,
+        "band": "h165",
+        "label": "165–170",
+        "raw": "168矮个子",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "小个子"
+      }
+    },
+    {
+      "id": "6901f910000000000302167e",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "没有人愿意通过你邋遢的外表去了解你的内在",
+      "desc": "#小个子男生穿搭 #矮个子男生穿搭 #男生穿搭 #显高显瘦显腿长 #反差 #穿搭技巧",
+      "tags": [
+        "小个子男生穿搭",
+        "矮个子男生穿搭",
+        "男生穿搭",
+        "显高显瘦显腿长",
+        "反差",
+        "穿搭技巧"
+      ],
+      "author": "168的伟科",
+      "time": 1761736976000,
+      "liked": 920,
+      "likedRaw": "920",
+      "url": "https://www.xiaohongshu.com/explore/6901f910000000000302167e",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "小个子",
+        "kind": "semantic",
+        "confidence": "low",
+        "range": null,
+        "tag": "小个子"
+      }
+    },
+    {
+      "id": "6ac7802e000000001203f5f2",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "建议170男生复制一下",
+      "desc": "入秋穿点简单的\n#ootd #通勤穿搭 #繁荣主义",
+      "tags": [
+        "ootd",
+        "通勤穿搭",
+        "繁荣主义"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1791459374000,
+      "liked": 146,
+      "likedRaw": "146",
+      "url": "https://www.xiaohongshu.com/explore/6ac7802e000000001203f5f2",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6ab919f2000000001400262d",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "入秋一周穿搭合集🍂",
+      "desc": "#Ootd #男生穿搭 #一周穿搭不重样 #简单干净",
+      "tags": [
+        "Ootd",
+        "男生穿搭",
+        "一周穿搭不重样",
+        "简单干净"
+      ],
+      "author": "吴文",
+      "time": 1790515698000,
+      "liked": 621,
+      "likedRaw": "621",
+      "url": "https://www.xiaohongshu.com/explore/6ab919f2000000001400262d",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6a23fde10000000007028d39",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "男生170怎么穿？衣长裤长给你算好了！",
+      "desc": "兄弟们，身高170左右，是不是总觉得自己穿啥都显矮？\n明明身材还行，一穿就五五分，看着比实际还矮？\n今天直接给你一套 170显高密码” ，从衣长到鞋子，给你拆明白\n视觉猛增5cm+，而且都是夏季款，立马能用\n\t\n1️⃣ 腰线就是生命线——上短下长\n🔍裤子买高腰：裤腰靠近肚脐，别低腰挂胯上\n🔍上衣别过胯：外穿选60-65cm， 衬衫T恤塞衣角，瞬间腿拉长\n\t\n2️⃣ 衣长别超过63cm——夏季上衣对号入座\n📍超过63cm就是分割线，超过62cm就显腿短。\n📍合身款（衬衫Polo）衣长控制在60-63cm，干净利落\n📍防晒衫、薄外套短款，别盖住屁\n\t\n3️⃣ 裤长两条路——短裤或长裤\n📍短裤安全区：46-52cm，刚好遮住大腿1/3处，最显腿长。\n📍长裤黄金裤长：98-102cm，搭配低帮小白鞋，裤脚轻盖鞋面，不堆脚。\n📍裤型选直筒或微宽松，不紧身也不拖地\n\t\n🔥直接抄作业的搭配（来自“海上公路”参考）\n🚩叠穿+短裤：T恤外搭衬衫，扎进去层次显高\n🚩Polo+休闲裤：低饱和度色系，干净清爽\n🚩背心+阔腿卫裤：腰线一定要露出来\n\t\n觉得有用，直接截图保存，或者转发给你那个总穿成五五分的兄弟。\n咱不跟身高较劲，跟搭配较真就对了！\n#男友穿搭 #男生穿搭 #轻熟风穿搭 #男生穿搭春季 #提升衣品 #男生休闲风穿搭 #夏季男生穿搭 #穿搭灵感 #男生夏季穿搭 #男生必看@searoad海上公路",
+      "tags": [
+        "男友穿搭",
+        "男生穿搭",
+        "轻熟风穿搭",
+        "男生穿搭春季",
+        "提升衣品",
+        "男生休闲风穿搭",
+        "夏季男生穿搭",
+        "穿搭灵感",
+        "男生夏季穿搭",
+        "男生必看"
+      ],
+      "author": "小易玩穿搭",
+      "time": 1780743649000,
+      "liked": 1066,
+      "likedRaw": "1066",
+      "url": "https://www.xiaohongshu.com/explore/6a23fde10000000007028d39",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "身高170",
+        "kind": "explicit",
+        "confidence": "high",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6ad45878000000002601cd20",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "简单干净一周穿搭 建议一米七男生照搬",
+      "desc": "#男生穿搭 #阳光男孩穿搭 #秋日男生穿搭 #男友穿搭 #honeytt全脂牛奶 #树叶时装 #一周穿搭合辑 #穿搭bot #繁荣主义",
+      "tags": [
+        "男生穿搭",
+        "阳光男孩穿搭",
+        "秋日男生穿搭",
+        "男友穿搭",
+        "honeytt全脂牛奶",
+        "树叶时装",
+        "一周穿搭合辑",
+        "穿搭bot",
+        "繁荣主义"
+      ],
+      "author": "里会川",
+      "time": 1792301176000,
+      "liked": 38,
+      "likedRaw": "38",
+      "url": "https://www.xiaohongshu.com/explore/6ad45878000000002601cd20",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6a92c3d8000000002003d234",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170偏瘦男生｜做到这3点 视觉直接+5cm",
+      "desc": "170cm/58kg 偏瘦男生，想显高不用靠P图，穿搭上做到这3点就够了👇\n\t\n① 提高腰线，这是命脉\n裤子选高腰款，上衣塞进去或者选短款上衣\n腰线每提高1cm，腿就视觉上长1cm\n的身高，腰线到位直接看起来175\n❌ 低腰裤+长T=五五分身材\n✅ 高腰裤+短款上衣=三七分比例\n\t\n② 上下同色系，纵向拉伸\n上衣和裤子颜色接近，整体形成一条纵向线条\n视觉上不把身体\"截断\"，自然显高\n推荐组合：\n黑色上衣+深灰裤子\n白色上衣+米白裤子\n全身黑/全身白 最安全\n❌ 上白下黑反差太大，把身体切成两截\n✅ 同色系过渡，整个人看起来更修长\n\t\n③ 鞋子带点厚度，低调增高\n选厚底鞋/老爹鞋/德训鞋，悄悄增高3-4cm\n关键是和裤子颜色衔接，不要形成明显的\"截断感\"\n推荐：\n白鞋+浅色裤子（衔接自然）\n黑鞋+深色裤子（整体统一）\n❌ 薄底帆布鞋+高帮=吃掉脚踝长度\n✅ 厚底鞋+九分裤=露脚踝+增高双重效果\n📌 记住这3点：高腰线+同色系+厚底鞋\n也能穿出175的感觉\n关注我，持续分享170偏瘦男生的穿搭方案💪#170男生穿搭 #男生显高穿搭 #偏瘦男生穿搭 #小个子穿搭 #穿搭技巧 #男生穿搭干货 #170穿什么",
+      "tags": [
+        "170男生穿搭",
+        "男生显高穿搭",
+        "偏瘦男生穿搭",
+        "小个子穿搭",
+        "穿搭技巧",
+        "男生穿搭干货",
+        "170穿什么"
+      ],
+      "author": "小灰170穿搭",
+      "time": 1788004897000,
+      "liked": 55,
+      "likedRaw": "55",
+      "url": "https://www.xiaohongshu.com/explore/6a92c3d8000000002003d234",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170",
+        "kind": "leading",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6a5387f8000000000f004864",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "建议170男生复制一下",
+      "desc": "Muji的风格是不会让我失望的\n#ootd每日穿搭 #通勤穿搭 #日系穿搭 #廓系穿搭 #夏季穿搭howto #weeklypick",
+      "tags": [
+        "ootd每日穿搭",
+        "通勤穿搭",
+        "日系穿搭",
+        "廓系穿搭",
+        "夏季穿搭howto",
+        "weeklypick"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1783859192000,
+      "liked": 1119,
+      "likedRaw": "1119",
+      "url": "https://www.xiaohongshu.com/explore/6a5387f8000000000f004864",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg",
+        "11.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6aa3e911000000000b00c151",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170男生早秋穿搭｜藏蓝🧢与纯白的清爽碰撞",
+      "desc": "今天ootd:\n👕：☘️藏蓝色外套\n👖：白色牛仔西裤\n早秋天气～这套完全适配任何场景，约会，压马路，咖啡室完全没问题！中秋这么穿，夯爆！🥹\n\t\n#oots #Blokecore #sportychic #潮流REDVibe #170男生穿搭 #街头穿搭 #男生穿搭 #少年感穿搭 #秋天穿搭 #中秋穿搭",
+      "tags": [
+        "oots",
+        "Blokecore",
+        "sportychic",
+        "潮流REDVibe",
+        "170男生穿搭",
+        "街头穿搭",
+        "男生穿搭",
+        "少年感穿搭",
+        "秋天穿搭",
+        "中秋穿搭"
+      ],
+      "author": "JH",
+      "time": 1789126929000,
+      "liked": 67,
+      "likedRaw": "67",
+      "url": "https://www.xiaohongshu.com/explore/6aa3e911000000000b00c151",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6a7f32b2000000002202dbd9",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170/125｜普通男生秋季一周穿搭不重样💤",
+      "desc": "#街头穿搭 #男生约会穿啥 #中性风穿搭 #男生穿搭 #男生秋季穿搭 #男生街头风穿搭 #秋冬男生穿搭 #男友穿搭 #一周搭配不重样 #工装裤",
+      "tags": [
+        "街头穿搭",
+        "男生约会穿啥",
+        "中性风穿搭",
+        "男生穿搭",
+        "男生秋季穿搭",
+        "男生街头风穿搭",
+        "秋冬男生穿搭",
+        "男友穿搭",
+        "一周搭配不重样",
+        "工装裤"
+      ],
+      "author": "一个麦子",
+      "time": 1786720946000,
+      "liked": 99,
+      "likedRaw": "99",
+      "url": "https://www.xiaohongshu.com/explore/6a7f32b2000000002202dbd9",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170/125",
+        "kind": "height-weight",
+        "confidence": "high",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "696cc6e3000000000b00add5",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "分享一下170男生日系穿搭",
+      "desc": "#ootd每日穿搭 #通勤穿搭 #日系穿搭 #潮流REDVibe #",
+      "tags": [
+        "ootd每日穿搭",
+        "通勤穿搭",
+        "日系穿搭",
+        "潮流REDVibe"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1768736483000,
+      "liked": 951,
+      "likedRaw": "951",
+      "url": "https://www.xiaohongshu.com/explore/696cc6e3000000000b00add5",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6a8acc61000000003300f101",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170/70男生有什么简约穿搭吗",
+      "desc": "看了几天博主，好多都是上衣小与裤子阔大，有点跟个“A”似的，有的塞进裤子里也许还行？有的内搭到屁股再来个短外套，有的觉得太作秀，有的带着个包也不知道干什么的吸引注意力不去看衣服吗，还有弄个腰带不塞好久专门出来一部分的。\n\t\n还有他们的身材怎么都是瘦子啊，这真的让我不知道怎么选，还都在凹角度凹造型，也不去外面展示一下就在家里穿然后扭两下。\n\t\n看着那些推荐的穿搭就像是专门给微分碎盖黑框眼镜阳光开朗180男大男高那样的，我方脸细软塌头发比较阴暗再加上身子比他们粗我真的不知道该选什么。（有点想要重金属乐队那样的衣服了当然不敢穿出去哈哈哈哈）\n\t\n想问问大伙有啥推荐的吗，真的谢谢你们了\n\t\n#男生穿搭 #不知道穿啥 #穿搭推荐 #男友穿搭 #懒人穿搭攻略 #年轻人穿搭 #穿搭 #大学生 #男生 #男生衣服",
+      "tags": [
+        "男生穿搭",
+        "不知道穿啥",
+        "穿搭推荐",
+        "男友穿搭",
+        "懒人穿搭攻略",
+        "年轻人穿搭",
+        "穿搭",
+        "大学生",
+        "男生",
+        "男生衣服"
+      ],
+      "author": "senia",
+      "time": 1787481185000,
+      "liked": 95,
+      "likedRaw": "95",
+      "url": "https://www.xiaohongshu.com/explore/6a8acc61000000003300f101",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170/70",
+        "kind": "height-weight",
+        "confidence": "high",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6a9d2a92000000001103613d",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170男生挑战井柏然同款穿搭",
+      "desc": "井柏然私服很有品啊\n大家觉得我穿怎么样\n#井柏然 #秋季穿搭 #男友穿搭 #老钱风 #北京最有腔调的男人 #人夫感穿搭 #轻熟风穿搭 #男明星穿搭 #小个子男生穿搭 #男生穿搭",
+      "tags": [
+        "井柏然",
+        "秋季穿搭",
+        "男友穿搭",
+        "老钱风",
+        "北京最有腔调的男人",
+        "人夫感穿搭",
+        "轻熟风穿搭",
+        "男明星穿搭",
+        "小个子男生穿搭",
+        "男生穿搭"
+      ],
+      "author": "跟着阿赵学穿搭",
+      "time": 1788684946000,
+      "liked": 1971,
+      "likedRaw": "1971",
+      "url": "https://www.xiaohongshu.com/explore/6a9d2a92000000001103613d",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg",
+        "11.jpg",
+        "12.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6a9d691c000000002900c2f0",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "建议170男生复制一下",
+      "desc": "今天阳光明媚\n好的精神状态让人阳光\n#ootd每日穿搭 #通勤穿搭 #日系穿搭 #廓系穿搭 #oots",
+      "tags": [
+        "ootd每日穿搭",
+        "通勤穿搭",
+        "日系穿搭",
+        "廓系穿搭",
+        "oots"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1788700956000,
+      "liked": 234,
+      "likedRaw": "234",
+      "url": "https://www.xiaohongshu.com/explore/6a9d691c000000002900c2f0",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6a9a79e80000000011034a03",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "当170普通男生开始尝试韩系穿搭时",
+      "desc": "#男生秋季穿搭 #男生穿搭 #男友穿搭 #论穿搭的重要性 #男生冬季穿搭 #秋冬才是穿搭的主战场 #帅气男友力穿搭 #一周穿搭合集 #试着提升自己的穿搭 #秋季穿搭",
+      "tags": [
+        "男生秋季穿搭",
+        "男生穿搭",
+        "男友穿搭",
+        "论穿搭的重要性",
+        "男生冬季穿搭",
+        "秋冬才是穿搭的主战场",
+        "帅气男友力穿搭",
+        "一周穿搭合集",
+        "试着提升自己的穿搭",
+        "秋季穿搭"
+      ],
+      "author": "陈新新",
+      "time": 1788508648000,
+      "liked": 304,
+      "likedRaw": "304",
+      "url": "https://www.xiaohongshu.com/explore/6a9a79e80000000011034a03",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6aa6af2e000000002901a62c",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170–175cm 男生穿搭，真的没必要天天研究怎",
+      "desc": "170–175cm 男生穿搭，真的没必要天天研究怎么“增高10cm”。\n\t\n比起硬显高，更重要的是：比例、合身度、纵向线条。\n\t\n穿对了，未必让你看起来像180，但会明显更挺拔、更利落。\n\t\n我总结成几个最实用的原则👇\n\t\n① 上短下长\n上衣别盖住太多臀部，裤子优先中高腰。\n短夹克/针织衫 + 中高腰直筒裤，基本不会出错。\n\t\n② 合身，但不要紧身\n最怕两个极端：\n❌ 紧身T恤+紧身裤\n❌ 超大Oversize+低腰宽裤\n\t\n理想状态是肩线合适、身体有余量、裤腿自然垂落。\n\t\n③ 裤子比上衣更重要\n推荐：直筒、微锥、轻阔腿。\n裤脚最好刚好碰到鞋面，最多一处折痕。\n\t\n裤腿堆一大坨，再好的衣服都会显拖沓。\n\t\n④ 减少颜色切割\n想显比例好，不等于必须全黑。\n\t\n可以试试：\n深灰+黑\n藏蓝+深蓝\n米白+卡其\n白T+深色裤\n\t\n重点是让上下线条连贯，不要上衣、裤子、鞋子三种强烈撞色。\n\t\n⑤ 鞋别太笨重\n白色低帮鞋、德训鞋、乐福鞋、德比鞋、切尔西靴都比较友好。\n\t\n厚底不是不能穿，但别为了增高直接上“大砖头”。\n\t\n如果只记一套万能公式：\n\t\n短夹克 + 合身T恤 + 中高腰直筒裤 + 简洁低帮鞋\n\t\n通勤、约会、周末出去玩基本都能穿。\n\t\n170–175cm最需要避免的，其实不是“矮”，而是：\n衣服太长、裤腰太低、裤脚太堆、鞋子太重。\n\t\n比起想办法假装180，\n把肩线、腰线、裤长处理好，整个人反而更自然、更有精神。\n\t\n#男生穿搭 #男生穿搭分享 #小个子男生穿搭 #通勤穿搭 #约会穿搭 #男生变帅 #基础款穿搭 #男生穿搭技巧",
+      "tags": [
+        "男生穿搭",
+        "男生穿搭分享",
+        "小个子男生穿搭",
+        "通勤穿搭",
+        "约会穿搭",
+        "男生变帅",
+        "基础款穿搭",
+        "男生穿搭技巧"
+      ],
+      "author": "minagata",
+      "time": 1789308718000,
+      "liked": 465,
+      "likedRaw": "465",
+      "url": "https://www.xiaohongshu.com/explore/6aa6af2e000000002901a62c",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170–175",
+        "kind": "range",
+        "confidence": "medium",
+        "range": [
+          170,
+          175
+        ],
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6aa0c55b000000000d025443",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170男生参考Luke搭配思路",
+      "desc": "#井柏然 #男生穿搭 #秋季穿搭 #luke #男士小众穿搭 #男人这样穿才型 #男友穿搭 #最有腔调的男人 #小个子男生穿搭 #痞帅穿搭",
+      "tags": [
+        "井柏然",
+        "男生穿搭",
+        "秋季穿搭",
+        "luke",
+        "男士小众穿搭",
+        "男人这样穿才型",
+        "男友穿搭",
+        "最有腔调的男人",
+        "小个子男生穿搭",
+        "痞帅穿搭"
+      ],
+      "author": "跟着阿赵学穿搭",
+      "time": 1788921179000,
+      "liked": 302,
+      "likedRaw": "302",
+      "url": "https://www.xiaohongshu.com/explore/6aa0c55b000000000d025443",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "69146e810000000007022edc",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170男生来跟菅田将晖学穿搭",
+      "desc": "简单叠穿就可以很帅气\n#LLEXP#LLEXP双层领夹克#城市机能风#ootd每日穿搭 #通勤穿搭 #日系穿搭 #潮流REDVibe #潮流POV #柔系美式",
+      "tags": [
+        "LLEXP",
+        "LLEXP双层领夹克",
+        "城市机能风",
+        "ootd每日穿搭",
+        "通勤穿搭",
+        "日系穿搭",
+        "潮流REDVibe",
+        "潮流POV",
+        "柔系美式"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1762946689000,
+      "liked": 549,
+      "likedRaw": "549",
+      "url": "https://www.xiaohongshu.com/explore/69146e810000000007022edc",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6ad0c180000000001803ab2f",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170/130改造男友穿搭分享｜今天穿什么🤔",
+      "desc": "#男生穿搭 #男友穿搭 #颜值不够穿搭来凑 #男生休闲风穿搭 #秋冬男生穿搭 #男友风穿搭",
+      "tags": [
+        "男生穿搭",
+        "男友穿搭",
+        "颜值不够穿搭来凑",
+        "男生休闲风穿搭",
+        "秋冬男生穿搭",
+        "男友风穿搭"
+      ],
+      "author": "只吃蛋挞芯",
+      "time": 1792065920000,
+      "liked": 81,
+      "likedRaw": "81",
+      "url": "https://www.xiaohongshu.com/explore/6ad0c180000000001803ab2f",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170/130",
+        "kind": "height-weight",
+        "confidence": "high",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6909ebeb0000000007008e59",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170男生通勤排骨羽绒穿搭",
+      "desc": "#ootd每日穿搭 #通勤穿搭 #日系穿搭 #cityboy #羽绒服 #潮流REDVibe #潮流POV #柔系美式#PMW",
+      "tags": [
+        "ootd每日穿搭",
+        "通勤穿搭",
+        "日系穿搭",
+        "cityboy",
+        "羽绒服",
+        "潮流REDVibe",
+        "潮流POV",
+        "柔系美式",
+        "PMW"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1762257900000,
+      "liked": 2221,
+      "likedRaw": "2221",
+      "url": "https://www.xiaohongshu.com/explore/6909ebeb0000000007008e59",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "69b3e75b0000000022000ffe",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "浅交一下小个子男生春季穿搭作业～🍃",
+      "desc": "适合小个子男生的春季穿搭～\n\t\n都是衣长裤长合适的穿搭，上身显瘦显高显腿长[偷笑R]\n\t\n#男生穿搭春季 #男友穿搭 #Cityboy #回到少年感穿撘 #小个子男生穿搭 #矮个子男生穿搭 #165男生穿搭 #小个子男生显高穿搭 #穿搭合集 #阳光男孩穿搭就是这么简单",
+      "tags": [
+        "男生穿搭春季",
+        "男友穿搭",
+        "Cityboy",
+        "回到少年感穿撘",
+        "小个子男生穿搭",
+        "矮个子男生穿搭",
+        "165男生穿搭",
+        "小个子男生显高穿搭",
+        "穿搭合集",
+        "阳光男孩穿搭就是这么简单"
+      ],
+      "author": "杰飞165",
+      "time": 1773397851000,
+      "liked": 593,
+      "likedRaw": "593",
+      "url": "https://www.xiaohongshu.com/explore/69b3e75b0000000022000ffe",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": 165,
+        "band": "h165",
+        "label": "165–170",
+        "raw": "165男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "小个子"
+      }
+    },
+    {
+      "id": "6ac7a25a0000000002011087",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "165-175 男生秋冬通勤穿搭|小个子显高技巧",
+      "desc": "165-175 男生秋冬通勤穿搭看这里！兼顾职场得体感，掌握几个简单显高技巧，不用刻意垫内增高，日常上班干净利落，气场直接拉满。\n✅ 显高核心4招\n1⃣ 颜色拉长术：全身同色系⚪⚫（日系休闲/低调暗黑风直接套用！）\n2⃣ 腰线即生命：短上衣+高腰裤👖（活力美式/复古街头风必备！）\n3⃣ 版型不摆烂：合身≠紧身！硬朗工装选挺括面料，雅致轻熟用垂感衬衫👔\n4⃣ 物理作弊：厚底鞋/内增高👟（户外机能风+老爹鞋，秒高5cm！）\n通勤穿搭不用复杂，抓准腰线和版型，165-175 男生也能轻松穿出利落显高的效果，上班族直接抄作业🍂\n\t\n#男生穿搭 #小个子男生穿搭 #秋季穿搭 #氛围感穿搭 #日常穿搭 #ootd穿搭 #帅气男友力穿搭 #降温穿搭 #潮男穿搭指南 #通勤穿搭 #男生穿搭",
+      "tags": [
+        "男生穿搭",
+        "小个子男生穿搭",
+        "秋季穿搭",
+        "氛围感穿搭",
+        "日常穿搭",
+        "ootd穿搭",
+        "帅气男友力穿搭",
+        "降温穿搭",
+        "潮男穿搭指南",
+        "通勤穿搭"
+      ],
+      "author": "Ian先生",
+      "time": 1791468122000,
+      "liked": 30,
+      "likedRaw": "30",
+      "url": "https://www.xiaohongshu.com/explore/6ac7a25a0000000002011087",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": 165,
+        "band": "h165",
+        "label": "165–170",
+        "raw": "165-175",
+        "kind": "range",
+        "confidence": "medium",
+        "range": [
+          165,
+          175
+        ],
+        "tag": "小个子"
+      }
+    },
+    {
+      "id": "6ad4b697000000001d02c649",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "十图总结秋冬穿搭",
+      "desc": "#男生穿搭 #穿搭合集",
+      "tags": [
+        "男生穿搭",
+        "穿搭合集"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1792325271000,
+      "liked": 369,
+      "likedRaw": "369",
+      "url": "https://www.xiaohongshu.com/explore/6ad4b697000000001d02c649",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6a250c8600000000060210ec",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "✨170男生快速出门一周穿搭合集",
+      "desc": "#ootdinspo #街头穿搭 #ootd #穿搭合集 #男生穿搭 #潮流online #潮流REDVibe #潮流POI #howto穿搭 #howto穿衣显瘦",
+      "tags": [
+        "ootdinspo",
+        "街头穿搭",
+        "ootd",
+        "穿搭合集",
+        "男生穿搭",
+        "潮流online",
+        "潮流REDVibe",
+        "潮流POI",
+        "howto穿搭",
+        "howto穿衣显瘦"
+      ],
+      "author": "几天没吃饭了",
+      "time": 1780812934000,
+      "liked": 14,
+      "likedRaw": "14",
+      "url": "https://www.xiaohongshu.com/explore/6a250c8600000000060210ec",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "698b2030000000000a02f757",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170男生这么穿日系",
+      "desc": "很爱绿色系叠穿\n#ootd每日穿搭 #通勤穿搭 #日系穿搭 #潮流REDVibe #廓系穿搭",
+      "tags": [
+        "ootd每日穿搭",
+        "通勤穿搭",
+        "日系穿搭",
+        "潮流REDVibe",
+        "廓系穿搭"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1770725424000,
+      "liked": 475,
+      "likedRaw": "475",
+      "url": "https://www.xiaohongshu.com/explore/698b2030000000000a02f757",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg",
+        "11.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "697b98fb000000001a024e4e",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "建议一米七男生直接复制！！",
+      "desc": "#秋冬男生穿搭 #男生冬季穿搭 #男友穿搭 #男生穿搭 #男生裤子 #男士夏季穿搭 #男生休闲风穿搭",
+      "tags": [
+        "秋冬男生穿搭",
+        "男生冬季穿搭",
+        "男友穿搭",
+        "男生穿搭",
+        "男生裤子",
+        "男士夏季穿搭",
+        "男生休闲风穿搭"
+      ],
+      "author": "Youki 穿搭",
+      "time": 1769707771000,
+      "liked": 14,
+      "likedRaw": "14",
+      "url": "https://www.xiaohongshu.com/explore/697b98fb000000001a024e4e",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6aa69ae2000000002900da6d",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "建议170男生复制一下",
+      "desc": "早秋的氛围感是毛衣给的\n建议男生秋天试试美拉德色系\n温柔舒服的味道\n#ootd每日穿搭 #通勤穿搭 #日系穿搭 #早秋穿搭 #weeklypick #毛衣",
+      "tags": [
+        "ootd每日穿搭",
+        "通勤穿搭",
+        "日系穿搭",
+        "早秋穿搭",
+        "weeklypick",
+        "毛衣"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1789303522000,
+      "liked": 245,
+      "likedRaw": "245",
+      "url": "https://www.xiaohongshu.com/explore/6aa69ae2000000002900da6d",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg",
+        "11.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6a3930700000000011017e8d",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "建议170男生复制一下",
+      "desc": "#ootd每日穿搭 #通勤穿搭 #日系穿搭 #廓系穿搭 #夏季穿搭howto #howto穿衣显瘦",
+      "tags": [
+        "ootd每日穿搭",
+        "通勤穿搭",
+        "日系穿搭",
+        "廓系穿搭",
+        "夏季穿搭howto",
+        "howto穿衣显瘦"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1782132848000,
+      "liked": 1414,
+      "likedRaw": "1414",
+      "url": "https://www.xiaohongshu.com/explore/6a3930700000000011017e8d",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "69a2d0d0000000002602d84f",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170男生日系简单穿搭",
+      "desc": "一件两穿版\n#ootd每日穿搭 #通勤穿搭 #日系穿搭 #潮流REDVibe",
+      "tags": [
+        "ootd每日穿搭",
+        "通勤穿搭",
+        "日系穿搭",
+        "潮流REDVibe"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1772277968000,
+      "liked": 444,
+      "likedRaw": "444",
+      "url": "https://www.xiaohongshu.com/explore/69a2d0d0000000002602d84f",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6a7f13ed0000000026036b5a",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "建议170男生复制一下",
+      "desc": "凉快了点\n#ootd每日穿搭 #通勤穿搭 #日系穿搭 #工装#weeklypick",
+      "tags": [
+        "ootd每日穿搭",
+        "通勤穿搭",
+        "日系穿搭",
+        "工装",
+        "weeklypick"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1786713070000,
+      "liked": 212,
+      "likedRaw": "212",
+      "url": "https://www.xiaohongshu.com/explore/6a7f13ed0000000026036b5a",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6aabeb8200000000280017d3",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "170男生通勤冲锋衣叠穿",
+      "desc": "提前预制十一出游穿搭\n去川西还是得带件冲锋衣\n叠穿也很出片\n#穿搭 #国庆出游穿搭 #旅行穿搭 #早秋叠穿#ootd#黑色冲锋衣穿搭#oots街拍",
+      "tags": [
+        "穿搭",
+        "国庆出游穿搭",
+        "旅行穿搭",
+        "早秋叠穿",
+        "ootd",
+        "黑色冲锋衣穿搭",
+        "oots街拍"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1789651842000,
+      "liked": 141,
+      "likedRaw": "141",
+      "url": "https://www.xiaohongshu.com/explore/6aabeb8200000000280017d3",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "696a0fd6000000000b009b36",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "分享一下170男生牛仔穿搭",
+      "desc": "衣柜少不了的牛仔外套和原牛牛仔裤\n牛仔与大黄靴格外适合搭在一起\n复古味十足\n再叠个条纹衬衫\n早春日系叠穿拿捏一下\n#ootd每日穿搭#通勤穿搭 #日系穿搭 #潮流REDVibe #潮流REDVibe #fitcheck",
+      "tags": [
+        "ootd每日穿搭",
+        "通勤穿搭",
+        "日系穿搭",
+        "潮流REDVibe",
+        "fitcheck"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1768558550000,
+      "liked": 178,
+      "likedRaw": "178",
+      "url": "https://www.xiaohongshu.com/explore/696a0fd6000000000b009b36",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg",
+        "11.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "69b6d7a8000000001a030da0",
+      "sourceFile": "_state.search-170.json",
+      "sourceLabel": "搜索 · 170男生穿搭",
+      "sourceKind": "search",
+      "keyword": "170男生穿搭",
+      "type": "video",
+      "title": "当168的男友意识到可以这样穿...",
+      "desc": "上短下长穿搭真的会显高啊✌️\n尝试了几款这样的穿搭，真的很显高~~\n而且这几款基本都是短宽版型的，对小个子微胖男生也很友好[害羞R]\n#小个子男生穿搭思路  #矮胖男生穿搭  #小个子男生显高穿搭  #外套穿搭  #矮个子男生穿搭  #小个子男生穿搭  #小个子微胖男生穿搭  #165男生穿搭  #显高显瘦穿搭  #胖胖男生穿搭",
+      "tags": [
+        "小个子男生穿搭思路",
+        "矮胖男生穿搭",
+        "小个子男生显高穿搭",
+        "外套穿搭",
+        "矮个子男生穿搭",
+        "小个子男生穿搭",
+        "小个子微胖男生穿搭",
+        "165男生穿搭",
+        "显高显瘦穿搭",
+        "胖胖男生穿搭"
+      ],
+      "author": "苏小北同学",
+      "time": 1773741739000,
+      "liked": 36,
+      "likedRaw": "36",
+      "url": "https://www.xiaohongshu.com/explore/69b6d7a8000000001a030da0",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg"
+      ],
+      "height": {
+        "value": 168,
+        "band": "h165",
+        "label": "165–170",
+        "raw": "168的男友",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "小个子"
+      }
+    },
+    {
+      "id": "6ab919f2000000001400262d",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "入秋一周穿搭合集🍂",
+      "desc": "#Ootd #男生穿搭 #一周穿搭不重样 #简单干净",
+      "tags": [
+        "Ootd",
+        "男生穿搭",
+        "一周穿搭不重样",
+        "简单干净"
+      ],
+      "author": "吴文",
+      "time": 1790515698000,
+      "liked": 622,
+      "likedRaw": "622",
+      "url": "https://www.xiaohongshu.com/explore/6ab919f2000000001400262d",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6a43c21b0000000007011e43",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "180cm｜一群180+",
+      "desc": "#高妹穿搭 #期待下次相聚\n#高个子女生 #高个子\n低于180的朋友不交（开玩笑hhhh）\n[吧唧R]必须带南方的盆友吃地道涮肉➕豆汁[doge]",
+      "tags": [
+        "高妹穿搭",
+        "期待下次相聚",
+        "高个子女生",
+        "高个子"
+      ],
+      "author": "很高的阿ki🍉",
+      "time": 1782825499000,
+      "liked": 897,
+      "likedRaw": "897",
+      "url": "https://www.xiaohongshu.com/explore/6a43c21b0000000007011e43",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg"
+      ],
+      "height": {
+        "value": 180,
+        "band": "h180",
+        "label": "180+",
+        "raw": "180cm",
+        "kind": "explicit",
+        "confidence": "high",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "6aa5128e000000001001d258",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "180别穿成165🔥男生这些穿搭误区巨压身高",
+      "desc": "很多男生明明身高不矮\n一穿衣服直接矮一大截😭\n不是长得矮，是穿搭踩坑把比例穿没了！\n哪怕180cm，穿错也容易视觉上像165\n今天整理了容易压身高的误区✅\n全部是左右对比，看图就能明白\n▪️腰线真的是显高灵魂\n不要把上衣全部塞到裤子外面\n长上衣盖住胯部，直接五五分\n把腰线露出来，腿瞬间拉长\n▪️上衣长度别乱选\n❌太长盖住屁股下半段，压个子\n✅短一点、刚好到胯上方更合适\n▪️裤子一定要避开垮塌款\n低腰、阔腿过大、堆一堆裤脚\n腿看起来又短又笨重\n直筒、微锥、九分裤会利落很多\n▪️颜色别乱七八糟\n全身好几种亮色分割身体线条\n同色系、上浅下深，纵向延伸更显高\n#穿搭经验howto #男生穿搭春季 #男生秋季穿搭 #男友穿搭 #提升衣品 #年轻人穿搭 #穿搭技巧 #男生休闲风穿搭 #适合普通人的穿搭方式 #寻找各界最有腔调之人",
+      "tags": [
+        "穿搭经验howto",
+        "男生穿搭春季",
+        "男生秋季穿搭",
+        "男友穿搭",
+        "提升衣品",
+        "年轻人穿搭",
+        "穿搭技巧",
+        "男生休闲风穿搭",
+        "适合普通人的穿搭方式",
+        "寻找各界最有腔调之人"
+      ],
+      "author": "男相研习",
+      "time": 1789203086000,
+      "liked": 22,
+      "likedRaw": "22",
+      "url": "https://www.xiaohongshu.com/explore/6aa5128e000000001001d258",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg"
+      ],
+      "height": {
+        "value": 180,
+        "band": "h180",
+        "label": "180+",
+        "raw": "身高 180",
+        "kind": "explicit",
+        "confidence": "high",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "6958f69e000000002103005b",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "路人视角下的193*180cm",
+      "desc": "@大头大头大头儿子 图文版我来发\n#情侣日常 #情侣穿搭分享 #180",
+      "tags": [
+        "情侣日常",
+        "情侣穿搭分享",
+        "180"
+      ],
+      "author": "杨一颗大树",
+      "time": 1767437982000,
+      "liked": 8743,
+      "likedRaw": "8743",
+      "url": "https://www.xiaohongshu.com/explore/6958f69e000000002103005b",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg"
+      ],
+      "height": {
+        "value": 180,
+        "band": "h180",
+        "label": "180+",
+        "raw": "180cm",
+        "kind": "explicit",
+        "confidence": "high",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "6a04009b000000003501c1a1",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "180 70kg｜今日健身ootd",
+      "desc": "#见人不如健身\n#健身ootd\n#健身穿搭\n#ootd\n#男生穿搭",
+      "tags": [
+        "见人不如健身",
+        "健身ootd",
+        "健身穿搭",
+        "ootd",
+        "男生穿搭"
+      ],
+      "author": "Albin",
+      "time": 1778647195000,
+      "liked": 33,
+      "likedRaw": "33",
+      "url": "https://www.xiaohongshu.com/explore/6a04009b000000003501c1a1",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg"
+      ],
+      "height": {
+        "value": 180,
+        "band": "h180",
+        "label": "180+",
+        "raw": "180",
+        "kind": "leading",
+        "confidence": "medium",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "6a7929b7000000002403f938",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "180 78肌肉男的slimfit",
+      "desc": "#见人不如健身\n#ootd\n#ootdinspo\n#肌肉",
+      "tags": [
+        "见人不如健身",
+        "ootd",
+        "ootdinspo",
+        "肌肉"
+      ],
+      "author": "免色.",
+      "time": 1786325431000,
+      "liked": 56,
+      "likedRaw": "56",
+      "url": "https://www.xiaohongshu.com/explore/6a7929b7000000002403f938",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg"
+      ],
+      "height": {
+        "value": 180,
+        "band": "h180",
+        "label": "180+",
+        "raw": "180",
+        "kind": "leading",
+        "confidence": "medium",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "6ac39810000000001403a8a9",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "180 65kg｜秋天来啦",
+      "desc": "#180女生 #高个子女生 #一起去露营 #秋日到站计划 #提前入秋",
+      "tags": [
+        "180女生",
+        "高个子女生",
+        "一起去露营",
+        "秋日到站计划",
+        "提前入秋"
+      ],
+      "author": "二五一十",
+      "time": 1791203344000,
+      "liked": 68,
+      "likedRaw": "68",
+      "url": "https://www.xiaohongshu.com/explore/6ac39810000000001403a8a9",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg"
+      ],
+      "height": {
+        "value": 180,
+        "band": "h180",
+        "label": "180+",
+        "raw": "180",
+        "kind": "leading",
+        "confidence": "medium",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "69ee6d980000000036030068",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "180cm | 高个子女生攀岩日记",
+      "desc": "爱心线好好看🩷攀成功啦\n也是能走v2线路的攀岩女孩了哈哈\n\t\n#我的运动日常 #上墙吧攀岩人 #高个子女生穿搭 #攀岩 #攀岩新力量 #极限运动体验 #一爬一个不吱声 #攀岩女孩 #西安攀岩",
+      "tags": [
+        "我的运动日常",
+        "上墙吧攀岩人",
+        "高个子女生穿搭",
+        "攀岩",
+        "攀岩新力量",
+        "极限运动体验",
+        "一爬一个不吱声",
+        "攀岩女孩",
+        "西安攀岩"
+      ],
+      "author": "鹿鹿一米八",
+      "time": 1777262520000,
+      "liked": 553,
+      "likedRaw": "553",
+      "url": "https://www.xiaohongshu.com/explore/69ee6d980000000036030068",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg"
+      ],
+      "height": {
+        "value": 180,
+        "band": "h180",
+        "label": "180+",
+        "raw": "180cm",
+        "kind": "explicit",
+        "confidence": "high",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "6ac0f6a8000000001c00d8f4",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "180/58 谁懂肉腿的杀伤力",
+      "desc": "朋友来北京安排到这里 体验感直接拉满 藏在国贸CBD的宝藏餐吧 热带雨林花园 绿植环绕氛围感绝了 菜品都非常好吃 晚上还有小提琴🎻太优雅啦 吃完饭直接开启小酌模式！朋友聚会轻松又热闹 已经列入复购清单！\n@老牌LEGEND 国贸店\n#180女生 #大方展示美丽 #北京探店 #老牌legend国贸店 #微醺时刻 #夜晚治愈 #高妹穿搭 #当我放弃白幼瘦审美 #永远为自己着迷",
+      "tags": [
+        "180女生",
+        "大方展示美丽",
+        "北京探店",
+        "老牌legend国贸店",
+        "微醺时刻",
+        "夜晚治愈",
+        "高妹穿搭",
+        "当我放弃白幼瘦审美",
+        "永远为自己着迷"
+      ],
+      "author": "Tina-RJ",
+      "time": 1791030952000,
+      "liked": 441,
+      "likedRaw": "441",
+      "url": "https://www.xiaohongshu.com/explore/6ac0f6a8000000001c00d8f4",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg",
+        "11.jpg",
+        "12.jpg",
+        "13.jpg",
+        "14.jpg"
+      ],
+      "height": {
+        "value": 180,
+        "band": "h180",
+        "label": "180+",
+        "raw": "180/58 ",
+        "kind": "height-weight",
+        "confidence": "high",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "6a54d27e0000000007021335",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "172/180 高个子穿都拖地的裤子👖",
+      "desc": "从未穿过如此显瘦的上衣#高妹穿搭 #高个子 #拖地裤 #加长女裤 #情侣ootd #172 #180",
+      "tags": [
+        "高妹穿搭",
+        "高个子",
+        "拖地裤",
+        "加长女裤",
+        "情侣ootd",
+        "172",
+        "180"
+      ],
+      "author": "我不会再吃多了",
+      "time": 1783943806000,
+      "liked": 13,
+      "likedRaw": "13",
+      "url": "https://www.xiaohongshu.com/explore/6a54d27e0000000007021335",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg"
+      ],
+      "height": {
+        "value": 172,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "172/180 ",
+        "kind": "height-weight",
+        "confidence": "high",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6a242167000000003502a7da",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "180 72",
+      "desc": "",
+      "tags": [],
+      "author": "等周六",
+      "time": 1780752743000,
+      "liked": 236,
+      "likedRaw": "236",
+      "url": "https://www.xiaohongshu.com/explore/6a242167000000003502a7da",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg"
+      ],
+      "height": {
+        "value": 180,
+        "band": "h180",
+        "label": "180+",
+        "raw": "180",
+        "kind": "leading",
+        "confidence": "medium",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "6aa7c0fa00000000120347da",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "176/68｜一周穿搭合集🏋️",
+      "desc": "#顶男创造营 #健身穿搭 #男生OOTD #OOTD #一周穿搭合辑 #一周穿不重样",
+      "tags": [
+        "顶男创造营",
+        "健身穿搭",
+        "男生OOTD",
+        "OOTD",
+        "一周穿搭合辑",
+        "一周穿不重样"
+      ],
+      "author": "景泽",
+      "time": 1789378810000,
+      "liked": 65,
+      "likedRaw": "65",
+      "url": "https://www.xiaohongshu.com/explore/6aa7c0fa00000000120347da",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg"
+      ],
+      "height": {
+        "value": 176,
+        "band": "h175",
+        "label": "175–180",
+        "raw": "176/68",
+        "kind": "height-weight",
+        "confidence": "high",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6a26b562000000000702fc42",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "知道怎么挑选合适的衣长裤长了吧",
+      "desc": "#今天穿什么 #ootd穿搭 #穿搭技巧 #男生穿搭 #夏季穿搭",
+      "tags": [
+        "今天穿什么",
+        "ootd穿搭",
+        "穿搭技巧",
+        "男生穿搭",
+        "夏季穿搭"
+      ],
+      "author": "派大欣",
+      "time": 1780921698000,
+      "liked": 890,
+      "likedRaw": "890",
+      "url": "https://www.xiaohongshu.com/explore/6a26b562000000000702fc42",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "69999202000000001a0358bb",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "约会穿什么？178男生春季约会穿搭合集，女友",
+      "desc": "#男生穿搭春季 #回到少年感穿搭 #男友穿搭 #型男穿搭#男生穿搭夏装 #帅气男友力穿搭 #男生街头风穿搭 #男生秋季穿搭 #秋冬男生穿搭 1. 条纹针织衫+浅蓝阔腿牛仔裤\n风格：松弛韩系感\n• 上衣：米白细条纹针织衫，自带同色系披肩设计，叠穿白T增加层次感，软糯亲肤，自带慵懒氛围。\n• 下装：浅蓝渐变阔腿牛仔裤，垂坠感强，修饰腿型，复古水洗色适配春日氛围。\n• 鞋履：浅蓝厚底板鞋，与牛仔裤呼应，增高同时保持整体清爽感。\n• 场景：超市随拍、日常出街，轻松出片。\n2. 粉色衬衫+白色阔腿裤\n风格：元气少年感\n• 上衣：宽松粉色衬衫，内搭白T，低饱和度粉显白又温柔，oversize版型随性不挑身材。\n• 下装：白色阔腿休闲裤，垂坠感佳，中和粉色的甜腻，打造干净利落的视觉效果。\n• 鞋履：浅蓝厚底板鞋，用冷色调平衡整体暖感，增加穿搭亮点。\n• 场景：超市冷柜区、春日约会，元气又上镜。\n3. 黑色立领夹克+白色阔腿裤\n风格：酷感休闲风\n• 上衣：黑色立领夹克，利落剪裁自带气场，内搭黑T，简约又显质感。\n• 下装：白色阔腿休闲裤，与黑色夹克形成经典黑白配，宽松版型弱化硬朗感。\n• 配饰：深棕色托特包，增加复古氛围，提升穿搭精致度。\n• 鞋履：黄白拼色厚底鞋，用亮色打破沉闷，适配休闲场景。\n• 场景：超市生鲜区、街头随拍，酷帅又不失松弛。\n4. 格纹衬衫+黑色阔腿裤\n风格：复古美式感\n• 上衣：棕白格纹衬衫，内搭白亨利领T恤，卷起袖口增加随性细节，复古格纹自带故事感。\n• 下装：黑色阔腿牛仔裤，垂坠感强，修饰腿型，与格纹形成经典复古搭配。\n• 鞋履：米色厚底勃肯鞋，增加慵懒感，适配春日户外场景。\n• 场景：梧桐道街拍、校园漫步，文艺又复古。\n5. 灰蓝棒球夹克+白色阔腿裤\n风格：叠穿学院风\n• 上衣：浅灰棒球夹克，内搭蓝衬衫+白T，层次分明，浅灰显干净，蓝衬衫增加学院感。\n• 下装：白色阔腿休闲裤，保持整体清爽，与浅灰夹克适配度高。\n• 鞋履：浅蓝厚底板鞋，呼应内搭蓝衬衫，统一色调。\n• 场景：超市肉类区、通勤日常，利落又有少年感。\n6. 格纹拼接衬衫+白色阔腿裤\n风格：个性潮酷风\n• 上衣：红蓝格纹拼接衬衫，内搭黑T，撞色设计吸睛，oversize版型随性不羁。",
+      "tags": [
+        "男生穿搭春季",
+        "回到少年感穿搭",
+        "男友穿搭",
+        "型男穿搭",
+        "男生穿搭夏装",
+        "帅气男友力穿搭",
+        "男生街头风穿搭",
+        "男生秋季穿搭",
+        "秋冬男生穿搭"
+      ],
+      "author": "穿搭指南",
+      "time": 1771672066000,
+      "liked": 103,
+      "likedRaw": "103",
+      "url": "https://www.xiaohongshu.com/explore/69999202000000001a0358bb",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg"
+      ],
+      "height": {
+        "value": 178,
+        "band": "h175",
+        "label": "175–180",
+        "raw": "178男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6aadcccc00000000110325be",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "男生别再穿得像小孩！这样穿稳重显成熟✨",
+      "desc": "男生真的别再穿得像小孩子了。\n很多时候不是长相问题，也不是年龄问题，而是穿搭太“学生气”、太随便、太没有成熟感。\n尤其是这几个细节，最容易显得幼稚：\n1. 衣服图案太多\n大卡通、大字母、大logo、夸张印花，上身就容易显孩子气。\n2. 颜色太跳太饱和\n亮黄、亮绿、亮红、荧光色，如果没有搭配能力，很容易显廉价。\n3. 版型又大又垮\n上衣过长、裤子太低裆、整体松垮，看起来不像潮，像没睡醒。\n4. 面料太软塌\n软趴趴的T恤、皱巴巴的衬衫、没型的外套，会让整个人气质往下掉。\n5. 配饰太花哨\n手链、项链、帽子、墨镜一堆叠在一起，反而不够干净。\n男生想穿得成熟一点，其实不用拼命装老，也不用穿得很商务。\n只要先做到：干净、合身、有质感、少一点多余元素。\n给大家几个成熟穿搭方向：\n- 日常通勤：衬衫 + 西裤 + 乐福鞋\n- 约会出门：针织衫 + 直筒裤 + 干净白鞋\n- 周末休闲：轻薄夹克 + T恤 + 牛仔裤\n- 配色优先：大地色、灰色、藏蓝色\n- 显小技巧：上衣别太长，裤脚不要堆一大堆褶皱\n- 质感选择：牛津纺、亚麻、棉麻这类自然面料会加分\n成熟感不是一下子穿出来的，是靠一点点细节堆出来的。\n先把身上幼稚的穿搭感减掉，整个人的衣品和气色自然会上来。\n#穿搭经验howto #柔性穿搭 #男士成熟穿搭 #男士秋冬穿搭 #轻熟风穿搭 #男友穿搭 #轻熟风男装 #雅痞绅士风 #型男穿搭 #howto一人指南",
+      "tags": [
+        "穿搭经验howto",
+        "柔性穿搭",
+        "男士成熟穿搭",
+        "男士秋冬穿搭",
+        "轻熟风穿搭",
+        "男友穿搭",
+        "轻熟风男装",
+        "雅痞绅士风",
+        "型男穿搭",
+        "howto一人指南"
+      ],
+      "author": "男相研习",
+      "time": 1789775052000,
+      "liked": 228,
+      "likedRaw": "228",
+      "url": "https://www.xiaohongshu.com/explore/6aadcccc00000000110325be",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6acf2a50000000001c00c257",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "女生会喜欢人夫感秋冬降温穿搭合集*3️⃣4️⃣",
+      "desc": "#初雪穿搭 #用穿搭开启秋天 #一周穿搭合集 #男友穿搭 #秋冬男生穿搭 #男生冬季穿搭 #降温穿什么 #男生穿搭 #入冬怎么穿#cleanfit简单出门",
+      "tags": [
+        "初雪穿搭",
+        "用穿搭开启秋天",
+        "一周穿搭合集",
+        "男友穿搭",
+        "秋冬男生穿搭",
+        "男生冬季穿搭",
+        "降温穿什么",
+        "男生穿搭",
+        "入冬怎么穿",
+        "cleanfit简单出门"
+      ],
+      "author": "陈更新",
+      "time": 1791961680000,
+      "liked": 426,
+      "likedRaw": "426",
+      "url": "https://www.xiaohongshu.com/explore/6acf2a50000000001c00c257",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg",
+        "11.jpg",
+        "12.jpg",
+        "13.jpg",
+        "14.jpg",
+        "15.jpg",
+        "16.jpg",
+        "17.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6a3bf882000000002103eafa",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "163/186 期待一下秋冬",
+      "desc": "#初雪穿搭 #不一样的情侣装 #穿搭 #冬天才考验穿搭天花板 #果然秋冬才是穿搭的主场 #期待一下秋冬 #好看的冬装也可以抗冻 #初冬穿搭 #入冬怎么穿",
+      "tags": [
+        "初雪穿搭",
+        "不一样的情侣装",
+        "穿搭",
+        "冬天才考验穿搭天花板",
+        "果然秋冬才是穿搭的主场",
+        "期待一下秋冬",
+        "好看的冬装也可以抗冻",
+        "初冬穿搭",
+        "入冬怎么穿"
+      ],
+      "author": "小猫吃梨梨🍐",
+      "time": 1782315138000,
+      "liked": 44,
+      "likedRaw": "44",
+      "url": "https://www.xiaohongshu.com/explore/6a3bf882000000002103eafa",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": 163,
+        "band": "h160",
+        "label": "160–165",
+        "raw": "163/186 ",
+        "kind": "height-weight",
+        "confidence": "high",
+        "range": null,
+        "tag": "小个子"
+      }
+    },
+    {
+      "id": "6ac8b95e000000001802f2da",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "别浪费身高！185男生直接抄这7家穿搭",
+      "desc": "📝很多185男生以为高就随便穿\n其实选不对版型，很容易像“移动晾衣架”😮‍💨\n给高个子整理7家调性不同的男装，找准风格直接冲👇\n🌊 海上公路\n轻熟松弛感，立领夹克版型偏长，很适配高个骨架，不局促、不短一截\n🤎 OSENSMEN\n韩系简约干净，落肩不垮，适合想穿出儒雅气质的男生\n🧶 BLAEXIT\n偏复古先锋，阔版上衣+大直筒，玩叠穿很出效果\n🪨 CHINISM\n美式休闲风，牛仔、工装款衣长对高身型友好，随性有力量\n🍃 熊猫本\n日系机能通勤，配色清爽，日常出门不费力\n📎 WP白川\n温柔轻熟挂，毛呢、针织质感强，适合秋冬氛围感\n🪵 FERMENTEDSHIRT\n工装复古爱好者，做旧外套+宽裤，自带故事感\n💡重点❤️：\n优先选衣长68‑74cm、肩线略外扩的款\n别买衣短短、肩线紧的，高个的优势是气场，不是显细！\n#Aprestyle #每天一个穿搭灵感 #男装店铺 #男生休闲风穿搭 #男友穿搭 #潮流穿搭说明书 #185 #分享店铺",
+      "tags": [
+        "Aprestyle",
+        "每天一个穿搭灵感",
+        "男装店铺",
+        "男生休闲风穿搭",
+        "男友穿搭",
+        "潮流穿搭说明书",
+        "185",
+        "分享店铺"
+      ],
+      "author": "木子维",
+      "time": 1791539550000,
+      "liked": 15,
+      "likedRaw": "15",
+      "url": "https://www.xiaohongshu.com/explore/6ac8b95e000000001802f2da",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg"
+      ],
+      "height": {
+        "value": 185,
+        "band": "h180",
+        "label": "180+",
+        "raw": "185男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "6a59e405000000001b01e454",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "存一些情侣穿搭",
+      "desc": "我们的情侣穿搭18图\n#我们俩 #情侣穿搭 #夏季穿搭howto#小红书慢人节 #放大最小单位慢#冬日阿普瑞风",
+      "tags": [
+        "我们俩",
+        "情侣穿搭",
+        "夏季穿搭howto",
+        "小红书慢人节",
+        "放大最小单位慢",
+        "冬日阿普瑞风"
+      ],
+      "author": "仨桶水",
+      "time": 1784275973000,
+      "liked": 8090,
+      "likedRaw": "8090",
+      "url": "https://www.xiaohongshu.com/explore/6a59e405000000001b01e454",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg",
+        "11.jpg",
+        "12.jpg",
+        "13.jpg",
+        "14.jpg",
+        "15.jpg",
+        "16.jpg",
+        "17.jpg",
+        "18.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6ab13ba3000000003a020676",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "男生秋日一周穿搭｜轻松玩转换季😎",
+      "desc": "换季不用纠结搭配，一周造型各有特色。兼顾舒适体验与外在观感，适配生活各类场景，轻松拿捏秋日自带的松弛氛围感～\n#男生穿搭 #初秋穿搭 #秋季穿搭 #一周穿搭不重样",
+      "tags": [
+        "男生穿搭",
+        "初秋穿搭",
+        "秋季穿搭",
+        "一周穿搭不重样"
+      ],
+      "author": "阿kong",
+      "time": 1790000035000,
+      "liked": 502,
+      "likedRaw": "502",
+      "url": "https://www.xiaohongshu.com/explore/6ab13ba3000000003a020676",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6acc6a9b000000000200ea52",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "男朋友的一周秋日穿搭已经准备好了！🍂",
+      "desc": "#男生穿搭 #阳光男孩穿搭 #痞帅穿搭 #秋季穿搭 #秋冬才是穿搭的主战场 #男生秋季穿搭",
+      "tags": [
+        "男生穿搭",
+        "阳光男孩穿搭",
+        "痞帅穿搭",
+        "秋季穿搭",
+        "秋冬才是穿搭的主战场",
+        "男生秋季穿搭"
+      ],
+      "author": "里会川",
+      "time": 1791781531000,
+      "liked": 75,
+      "likedRaw": "75",
+      "url": "https://www.xiaohongshu.com/explore/6acc6a9b000000000200ea52",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6937a7fc000000001e02c36a",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "185&175｜般配吗",
+      "desc": "等电梯也要拍一下\n#情侣拍照 #情侣照片 #合照 #情侣穿搭",
+      "tags": [
+        "情侣拍照",
+        "情侣照片",
+        "合照",
+        "情侣穿搭"
+      ],
+      "author": "1012",
+      "time": 1765255164000,
+      "liked": 2786,
+      "likedRaw": "2786",
+      "url": "https://www.xiaohongshu.com/explore/6937a7fc000000001e02c36a",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg"
+      ],
+      "height": {
+        "value": 185,
+        "band": "h180",
+        "label": "180+",
+        "raw": "185",
+        "kind": "leading",
+        "confidence": "medium",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "69846bb2000000000a03c5e2",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "数学老师听劝改造247天",
+      "desc": "有小伙伴让我学学黄sir，听说黄sir要上天空了！👍🏻\n上太空是太难了\n那就学学穿搭吧！\n该说不说明星选款真的很值得学！\n裤子真的很显腿长[抠鼻R]\n小伙伴们看看怎么样吧\n学的到位吗#当然要记录啊 #听劝改造 #数学老师 #素人改造 #人夫感 #把糖炒栗子穿上身 #男士成熟穿搭 #型男穿搭 #男友穿搭 #ootd每日穿搭",
+      "tags": [
+        "当然要记录啊",
+        "听劝改造",
+        "数学老师",
+        "素人改造",
+        "人夫感",
+        "把糖炒栗子穿上身",
+        "男士成熟穿搭",
+        "型男穿搭",
+        "男友穿搭",
+        "ootd每日穿搭"
+      ],
+      "author": "知后",
+      "time": 1770286002000,
+      "liked": 1572,
+      "likedRaw": "1572",
+      "url": "https://www.xiaohongshu.com/explore/69846bb2000000000a03c5e2",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6aa6af2e000000002901a62c",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "170–175cm 男生穿搭，真的没必要天天研究怎",
+      "desc": "170–175cm 男生穿搭，真的没必要天天研究怎么“增高10cm”。\n\t\n比起硬显高，更重要的是：比例、合身度、纵向线条。\n\t\n穿对了，未必让你看起来像180，但会明显更挺拔、更利落。\n\t\n我总结成几个最实用的原则👇\n\t\n① 上短下长\n上衣别盖住太多臀部，裤子优先中高腰。\n短夹克/针织衫 + 中高腰直筒裤，基本不会出错。\n\t\n② 合身，但不要紧身\n最怕两个极端：\n❌ 紧身T恤+紧身裤\n❌ 超大Oversize+低腰宽裤\n\t\n理想状态是肩线合适、身体有余量、裤腿自然垂落。\n\t\n③ 裤子比上衣更重要\n推荐：直筒、微锥、轻阔腿。\n裤脚最好刚好碰到鞋面，最多一处折痕。\n\t\n裤腿堆一大坨，再好的衣服都会显拖沓。\n\t\n④ 减少颜色切割\n想显比例好，不等于必须全黑。\n\t\n可以试试：\n深灰+黑\n藏蓝+深蓝\n米白+卡其\n白T+深色裤\n\t\n重点是让上下线条连贯，不要上衣、裤子、鞋子三种强烈撞色。\n\t\n⑤ 鞋别太笨重\n白色低帮鞋、德训鞋、乐福鞋、德比鞋、切尔西靴都比较友好。\n\t\n厚底不是不能穿，但别为了增高直接上“大砖头”。\n\t\n如果只记一套万能公式：\n\t\n短夹克 + 合身T恤 + 中高腰直筒裤 + 简洁低帮鞋\n\t\n通勤、约会、周末出去玩基本都能穿。\n\t\n170–175cm最需要避免的，其实不是“矮”，而是：\n衣服太长、裤腰太低、裤脚太堆、鞋子太重。\n\t\n比起想办法假装180，\n把肩线、腰线、裤长处理好，整个人反而更自然、更有精神。\n\t\n#男生穿搭 #男生穿搭分享 #小个子男生穿搭 #通勤穿搭 #约会穿搭 #男生变帅 #基础款穿搭 #男生穿搭技巧",
+      "tags": [
+        "男生穿搭",
+        "男生穿搭分享",
+        "小个子男生穿搭",
+        "通勤穿搭",
+        "约会穿搭",
+        "男生变帅",
+        "基础款穿搭",
+        "男生穿搭技巧"
+      ],
+      "author": "minagata",
+      "time": 1789308718000,
+      "liked": 465,
+      "likedRaw": "465",
+      "url": "https://www.xiaohongshu.com/explore/6aa6af2e000000002901a62c",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170–175",
+        "kind": "range",
+        "confidence": "medium",
+        "range": [
+          170,
+          175
+        ],
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "697749f8000000000a02a48b",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "170男生跟菅田将晖学穿搭",
+      "desc": "日系复古味\n#ootd每日穿搭 #通勤穿搭 #日系穿搭 #潮流REDVibe #廓系穿搭",
+      "tags": [
+        "ootd每日穿搭",
+        "通勤穿搭",
+        "日系穿搭",
+        "潮流REDVibe",
+        "廓系穿搭"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1769425400000,
+      "liked": 870,
+      "likedRaw": "870",
+      "url": "https://www.xiaohongshu.com/explore/697749f8000000000a02a48b",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6970b53f000000000b011af2",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "建议170男生复制一下",
+      "desc": "#ootd每日穿搭 #通勤穿搭 #日系穿搭 #潮流REDVibe #廓系穿搭",
+      "tags": [
+        "ootd每日穿搭",
+        "通勤穿搭",
+        "日系穿搭",
+        "潮流REDVibe",
+        "廓系穿搭"
+      ],
+      "author": "零点九八米的阿杰",
+      "time": 1768994111000,
+      "liked": 1505,
+      "likedRaw": "1505",
+      "url": "https://www.xiaohongshu.com/explore/6970b53f000000000b011af2",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg"
+      ],
+      "height": {
+        "value": 170,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "170男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6accc2f0000000001203fb66",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "165-185cm男生穿搭合集‖有型显高级感穿搭",
+      "desc": "内容来源@潮范Chaofan穿搭\n#WeeklyPick\n#男士小众穿搭\n#人类高质量穿搭\n#痞帅穿搭\n#潮男穿搭指南\n#男士成熟穿搭\n#男生休闲风穿搭",
+      "tags": [
+        "WeeklyPick",
+        "男士小众穿搭",
+        "人类高质量穿搭",
+        "痞帅穿搭",
+        "潮男穿搭指南",
+        "男士成熟穿搭",
+        "男生休闲风穿搭"
+      ],
+      "author": "施澜苑",
+      "time": 1791804144000,
+      "liked": 4,
+      "likedRaw": "4",
+      "url": "https://www.xiaohongshu.com/explore/6accc2f0000000001203fb66",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg"
+      ],
+      "height": {
+        "value": 165,
+        "band": "h165",
+        "label": "165–170",
+        "raw": "165-185",
+        "kind": "range",
+        "confidence": "medium",
+        "range": [
+          165,
+          185
+        ],
+        "tag": "小个子"
+      }
+    },
+    {
+      "id": "693a9a98000000001e004503",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "186 75kg 今天穿这样",
+      "desc": "#浪漫生活的记录者 #潮流online #潮流REDVibe #Ootd",
+      "tags": [
+        "浪漫生活的记录者",
+        "潮流online",
+        "潮流REDVibe",
+        "Ootd"
+      ],
+      "author": "VINSON SANMU",
+      "time": 1765448344000,
+      "liked": 355,
+      "likedRaw": "355",
+      "url": "https://www.xiaohongshu.com/explore/693a9a98000000001e004503",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg",
+        "11.jpg"
+      ],
+      "height": {
+        "value": 186,
+        "band": "h180",
+        "label": "180+",
+        "raw": "186",
+        "kind": "leading",
+        "confidence": "medium",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "6ac1bf1f000000001802d9b6",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "74.男生秋冬穿搭｜保暖帅气拒绝臃肿显壮",
+      "desc": "男生秋冬穿搭干货合集来啦🍂 冬天不用裹成粽子，保暖同时也能穿出少年感 整理 3 套核心造型：大衣｜羽绒服｜夹克 三层叠穿公式、内搭挑选、下装搭配、穿搭避坑一次性讲清楚 学生党 / 通勤男生直接抄作业，简单提升气质 记住穿搭核心：保暖、利落、显比例✨ 收藏起来，秋冬出门穿搭不用愁！ 💬最喜欢大衣还是羽绒服穿搭？评论区聊聊#穿搭经验howto #廓系穿搭 #howto低能量穿搭 #穿搭暗号对一下 #男生冬季穿搭 #男友穿搭 #男士秋冬穿搭 #男士成熟穿搭 #秋冬男生穿搭 #型男穿搭",
+      "tags": [
+        "穿搭经验howto",
+        "廓系穿搭",
+        "howto低能量穿搭",
+        "穿搭暗号对一下",
+        "男生冬季穿搭",
+        "男友穿搭",
+        "男士秋冬穿搭",
+        "男士成熟穿搭",
+        "秋冬男生穿搭",
+        "型男穿搭"
+      ],
+      "author": "i美丽的世界",
+      "time": 1791082272000,
+      "liked": 90,
+      "likedRaw": "90",
+      "url": "https://www.xiaohongshu.com/explore/6ac1bf1f000000001802d9b6",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6a1ad01b000000003502315d",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "普通人没建模 那就靠穿搭",
+      "desc": "#穿搭 #185 #男生穿搭 #ootd每日穿搭 #ootd",
+      "tags": [
+        "穿搭",
+        "185",
+        "男生穿搭",
+        "ootd每日穿搭",
+        "ootd"
+      ],
+      "author": "源为冰",
+      "time": 1780142107000,
+      "liked": 178,
+      "likedRaw": "178",
+      "url": "https://www.xiaohongshu.com/explore/6a1ad01b000000003502315d",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg"
+      ],
+      "height": {
+        "value": 185,
+        "band": "h180",
+        "label": "180+",
+        "raw": "185 男生",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "68fc96260000000004006689",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "190高个子男生的秋季穿搭",
+      "desc": "浙江终于降温了，可以把秋天的外套安排上了嘻嘻\n之前在韩国、日本旅游的时候还有网购了好多外套，\n然后我就整理了一下这段时间每天穿的外套\n裤子的话就是百搭的牛仔裤和运动裤，冲锋衣的话就配登山裤\n高个子的兄弟们或许可以看看哈哈\n#小帅大帅哥 #男生秋季穿搭 #秋冬男生穿搭 #男友穿搭 #男生休闲风穿搭 #阳光男孩穿搭 #懒人穿搭攻略 #痞帅穿搭 #高个子男生 #高个子男生穿搭",
+      "tags": [
+        "小帅大帅哥",
+        "男生秋季穿搭",
+        "秋冬男生穿搭",
+        "男友穿搭",
+        "男生休闲风穿搭",
+        "阳光男孩穿搭",
+        "懒人穿搭攻略",
+        "痞帅穿搭",
+        "高个子男生",
+        "高个子男生穿搭"
+      ],
+      "author": "零叁一",
+      "time": 1761383974000,
+      "liked": 91,
+      "likedRaw": "91",
+      "url": "https://www.xiaohongshu.com/explore/68fc96260000000004006689",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": 190,
+        "band": "h180",
+        "label": "180+",
+        "raw": "190",
+        "kind": "leading",
+        "confidence": "medium",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "6ada001b000000002a033401",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "180+男生秋季正装OOTD",
+      "desc": "#OOTD穿搭分享 #男生穿搭 #男士西装穿搭 #正装 #穿搭 #西装的魅力",
+      "tags": [
+        "OOTD穿搭分享",
+        "男生穿搭",
+        "男士西装穿搭",
+        "正装",
+        "穿搭",
+        "西装的魅力"
+      ],
+      "author": "叉烧仔仔",
+      "time": 1792671772000,
+      "liked": 45,
+      "likedRaw": "45",
+      "url": "https://www.xiaohongshu.com/explore/6ada001b000000002a033401",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg"
+      ],
+      "height": {
+        "value": 180,
+        "band": "h180",
+        "label": "180+",
+        "raw": "180",
+        "kind": "leading",
+        "confidence": "medium",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "6ab92d9f000000001b033f70",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "拒绝烂大街！情侣秋冬穿搭公式，显瘦又高级🙌",
+      "desc": "分享一组教科书级别的“高级松弛感”的英伦/法式秋冬情侣穿搭，来自ins：ootdmagazine，一起来看看她的👔穿搭思路吧\n-\n🎨 色彩法则：低饱和为主，亮色点睛\n-\n👉 基础打底：以黑、灰、驼、棕等低饱和度大地色系为主，自带清冷高级感。\n-\n👉 亮色点缀：利用克莱因蓝围巾、红帽子或红围巾作为视觉焦点，打破沉闷。\n-\n👉 内搭提亮：深色大衣内搭白色高领、白衬衫或条纹衫，增加层次感。\n-\n🧥 单品密码：长款大衣与叠穿\n-\n👉 外套：长款及踝H型或廓形大衣是灵魂。男生穿黑色挺拔利落，女生穿驼色/灰色慵懒知性。\n-\n👉 叠穿（三明治穿法）：白衬衫+针织马甲+大衣；高领打底+衬衫+开衫；连帽卫衣+大衣。条纹衬衫配领带更是点睛之笔。\n-\n👉下装：宽松直筒牛仔裤或阔腿裤，搭配黑色长靴或复古跑鞋，方便City Walk。\n-\n🧣 灵魂配饰：氛围感利器\n-\n👉长围巾随意绕脖或披挂；棒球帽中和正装的严肃；头戴式耳机+黑框眼镜打造文艺知识分子风。\n-\n👉大容量棕色托特包或帆布包，实用且契合色系。\n-\n👫 情侣搭配：求同存异\n-\n👉 色系协同：两人处于同一色相（如全黑、蓝灰），不穿同款却极度和谐。\n-\n👉 气质互补：男生大衣+直筒裤打造宽肩安全感；女生用裙装、玛丽珍鞋凸显法式温柔。\n-\n👉 细节呼应：男生的蓝帽呼应女生的蓝围巾，暗戳戳秀恩爱。\n-\n💡 氛围进阶Tips：\n真正的松弛感，源于从容自在的生活态度，不刻意，更高级！\n-\n#冬天才考验穿搭天花板 #穿搭bot #穿搭暗号对一下 #穿搭经验howto #情侣穿搭 #情侣穿搭分享 #冬季温暖穿搭 #穿搭灵感 #秋冬穿搭 @时尚薯",
+      "tags": [
+        "冬天才考验穿搭天花板",
+        "穿搭bot",
+        "穿搭暗号对一下",
+        "穿搭经验howto",
+        "情侣穿搭",
+        "情侣穿搭分享",
+        "冬季温暖穿搭",
+        "穿搭灵感",
+        "秋冬穿搭"
+      ],
+      "author": "穿搭研究所",
+      "time": 1790520735000,
+      "liked": 142,
+      "likedRaw": "142",
+      "url": "https://www.xiaohongshu.com/explore/6ab92d9f000000001b033f70",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg",
+        "11.jpg",
+        "12.jpg",
+        "13.jpg",
+        "14.jpg",
+        "15.jpg",
+        "16.jpg",
+        "17.jpg",
+        "18.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6aae704d000000002b001ebe",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "176/116 新衣试穿！",
+      "desc": "#新衣试穿 #衣服分享 #爱咋穿咋穿 #howto低能量穿搭 #高个子 #普通人穿搭 #购物开箱 #开箱 #穿搭 #穿搭分享",
+      "tags": [
+        "新衣试穿",
+        "衣服分享",
+        "爱咋穿咋穿",
+        "howto低能量穿搭",
+        "高个子",
+        "普通人穿搭",
+        "购物开箱",
+        "开箱",
+        "穿搭",
+        "穿搭分享"
+      ],
+      "author": "梦园Jenny",
+      "time": 1789816910000,
+      "liked": 2140,
+      "likedRaw": "2140",
+      "url": "https://www.xiaohongshu.com/explore/6aae704d000000002b001ebe",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg"
+      ],
+      "height": {
+        "value": 176,
+        "band": "h175",
+        "label": "175–180",
+        "raw": "176/116 ",
+        "kind": "height-weight",
+        "confidence": "high",
+        "range": null,
+        "tag": "标准"
+      }
+    },
+    {
+      "id": "6acfbcc50000000015004e6f",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "🔥165-185男生秋季夹克男装搭配",
+      "desc": "#男生夹克穿搭 #平价夹克 #男生秋季穿搭 #男友穿搭 #男生穿搭春季 #男士外套 #秋冬男生穿搭 #男士秋冬穿搭 #痞帅穿搭 #夹克外套",
+      "tags": [
+        "男生夹克穿搭",
+        "平价夹克",
+        "男生秋季穿搭",
+        "男友穿搭",
+        "男生穿搭春季",
+        "男士外套",
+        "秋冬男生穿搭",
+        "男士秋冬穿搭",
+        "痞帅穿搭",
+        "夹克外套"
+      ],
+      "author": "Youki 穿搭",
+      "time": 1791999173000,
+      "liked": 10,
+      "likedRaw": "10",
+      "url": "https://www.xiaohongshu.com/explore/6acfbcc50000000015004e6f",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": 165,
+        "band": "h165",
+        "label": "165–170",
+        "raw": "165-185",
+        "kind": "range",
+        "confidence": "medium",
+        "range": [
+          165,
+          185
+        ],
+        "tag": "小个子"
+      }
+    },
+    {
+      "id": "6a14551b0000000035023e1d",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "当178的我和188男友同框！",
+      "desc": "最萌身高差？不，是旗鼓相当的压迫感#势均力敌  #合照 #情侣 #镜头下的我们 #情侣拍照 #脸和身高各长各的 #大方展示美丽 #高个子穿搭",
+      "tags": [
+        "势均力敌",
+        "合照",
+        "情侣",
+        "镜头下的我们",
+        "情侣拍照",
+        "脸和身高各长各的",
+        "大方展示美丽",
+        "高个子穿搭"
+      ],
+      "author": "湖啦啦",
+      "time": 1779717403000,
+      "liked": 1907,
+      "likedRaw": "1907",
+      "url": "https://www.xiaohongshu.com/explore/6a14551b0000000035023e1d",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "高个子",
+        "kind": "semantic",
+        "confidence": "low",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "6925afeb000000001f005443",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "秋冬男友的一周穿搭不重样.",
+      "desc": "身高体重参考：187 / 160\n8套不一样的感觉.\n#男生穿搭 #男友穿搭 #痞帅穿搭 #高个子穿搭 #日常穿搭 #身高187 #美式穿搭 #秋冬男生穿搭 #男生冬季穿搭 #ootd每日穿搭",
+      "tags": [
+        "男生穿搭",
+        "男友穿搭",
+        "痞帅穿搭",
+        "高个子穿搭",
+        "日常穿搭",
+        "身高187",
+        "美式穿搭",
+        "秋冬男生穿搭",
+        "男生冬季穿搭",
+        "ootd每日穿搭"
+      ],
+      "author": "阿V",
+      "time": 1764077547000,
+      "liked": 536,
+      "likedRaw": "536",
+      "url": "https://www.xiaohongshu.com/explore/6925afeb000000001f005443",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg"
+      ],
+      "height": {
+        "value": 187,
+        "band": "h180",
+        "label": "180+",
+        "raw": "187 / 160 ",
+        "kind": "height-weight",
+        "confidence": "high",
+        "range": null,
+        "tag": "高个子"
+      }
+    },
+    {
+      "id": "6ad21330000000001303fcf0",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "秋冬的极简贵气感穿搭 艾特男朋友学起来！",
+      "desc": "#潮流POV #男生穿搭 #穿搭 #男生秋冬穿搭 #顶男创造营 #每日穿搭 #秋日时髦尖子生 #果然秋冬才是穿搭的主场 #穿搭的尽头是去繁就简 #秋冬男生穿搭",
+      "tags": [
+        "潮流POV",
+        "男生穿搭",
+        "穿搭",
+        "男生秋冬穿搭",
+        "顶男创造营",
+        "每日穿搭",
+        "秋日时髦尖子生",
+        "果然秋冬才是穿搭的主场",
+        "穿搭的尽头是去繁就简",
+        "秋冬男生穿搭"
+      ],
+      "author": "孙聖云阿雲",
+      "time": 1792152368000,
+      "liked": 32,
+      "likedRaw": "32",
+      "url": "https://www.xiaohongshu.com/explore/6ad21330000000001303fcf0",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg",
+        "11.jpg",
+        "12.jpg"
+      ],
+      "height": {
+        "value": null,
+        "band": "unknown",
+        "label": "未标注",
+        "raw": "",
+        "kind": "none",
+        "confidence": "none",
+        "tag": ""
+      }
+    },
+    {
+      "id": "6995aff3000000001a0250fa",
+      "sourceFile": "_state.search-180.json",
+      "sourceLabel": "搜索 · 180高个子穿搭",
+      "sourceKind": "search",
+      "keyword": "180高个子穿搭",
+      "type": "video",
+      "title": "他173悄悄踮脚，我178默默屈膝｜身高差归零",
+      "desc": "甜蜜加倍178女高和173男友的反差感穿搭\n谁懂啊！和173的男朋友走在一起，我178的身高直接把他衬成“小奶狗”😂 今天这套秋冬穿搭，主打一个反差感拉满！\n我选了灰色针织衫+灰色毛呢短裤，搭配同色系连裤袜和厚底玛丽珍，温柔又显腿长，围巾一围氛围感直接拿捏。他则是亮面黑羽绒服+迷彩工装裤，再踩上大黄靴，酷帅感十足，手里的浅蓝小包包还悄悄呼应了我的灰色系，细节控狂喜～\n走在小区里回头率超高，朋友都说我们是“最萌身高差”情侣模板！其实穿搭不用刻意同款，互补才是王道呀～\n#情侣穿搭 #最萌身高差 #秋冬穿搭 #OOTD #情侣日常 #小个子男生穿搭 #178女生穿搭 #身高差情侣",
+      "tags": [
+        "情侣穿搭",
+        "最萌身高差",
+        "秋冬穿搭",
+        "OOTD",
+        "情侣日常",
+        "小个子男生穿搭",
+        "178女生穿搭",
+        "身高差情侣"
+      ],
+      "author": "三笠",
+      "time": 1771417587000,
+      "liked": 206,
+      "likedRaw": "206",
+      "url": "https://www.xiaohongshu.com/explore/6995aff3000000001a0250fa",
+      "cover": "01.jpg",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg"
+      ],
+      "height": {
+        "value": 173,
+        "band": "h170",
+        "label": "170–175",
+        "raw": "173的男朋友",
+        "kind": "context",
+        "confidence": "medium",
+        "range": null,
+        "tag": "标准"
       }
     }
   ]
