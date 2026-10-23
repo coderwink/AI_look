@@ -25,8 +25,10 @@
 | `content/images/looks/` | 搭配图（命名 `look-N.jpg`） | ✅ 放图 |
 | `content/xhs/` | **外部素材库**：从小红书博主采集的穿搭素材（每条笔记一个目录：图片 + `content/xhs/index.json` 索引） | 由脚本生成 |
 | `web/materials.html` | 素材库浏览页（搜索 / 标签筛选 / 瀑布流 / 详情弹层），读 `content/xhs/index.json` | 改功能才动 |
-| `scripts/xhs-collect.cjs` | 小红书采集器（`list` 收集索引 / `detail` 抓详情下载图，需登录，可断点续跑） | — |
-| `scripts/build-xhs-index.cjs` | 从采集状态生成 `content/xhs/index.json` | — |
+| `scripts/xhs-collect.cjs` | 小红书采集器（`list` 博主主页 / `search` 搜索页 / `detail` 抓详情下载图，可断点续跑） | — |
+| `scripts/build-xhs-index.cjs` | 合并所有 `_state*.json` → `content/xhs/index.json`（含来源与身高） | — |
+| `scripts/extract-height.cjs` | 从文案抽身高（标题优先），写回 state 并输出识别率报告 | — |
+| `scripts/verify-materials.cjs` | 无头浏览器自检素材库页面（筛选/搜索/详情） | — |
 | `scripts/sync-chrome-login.cjs` | 同步日常 Chrome 登录态到采集工作目录（需先退出 Chrome） | — |
 | `scripts/prepare-chrome-profile.cjs` | 仅复制 Chrome 配置目录（Chrome 已关闭时使用） | — |
 | `scripts/analyze-covers.py` | 封面图量化分析（主色/明度/饱和度/画幅）→ `content/xhs/analysis.json` | — |
@@ -71,13 +73,23 @@ node scripts/check-content.mjs
 python scripts/process_images.py
 
 # 小红书素材采集（登录态见下方「登录态复用」说明）
-node scripts/xhs-collect.cjs list "<博主主页URL>"     # 阶段一：滚动收集全部笔记索引
-node scripts/xhs-collect.cjs detail "<博主主页URL>"   # 阶段二：逐条抓详情+下载封面图（可重复执行续跑）
-node scripts/build-xhs-index.cjs                      # 阶段三：生成 content/xhs/index.json
+node scripts/xhs-collect.cjs list   "<博主主页URL>" [--state 名称]
+node scripts/xhs-collect.cjs search "<搜索页URL>"  --state search-166xz --max 30   # 搜索页（需登录）
+node scripts/xhs-collect.cjs detail "<任意URL>"    --state search-166xz            # 逐条抓详情+下图
+node scripts/extract-height.cjs --state search-166xz   # 抽身高（标题优先）+ 识别率报告
+node scripts/build-xhs-index.cjs                        # 合并所有来源 → content/xhs/index.json
+node scripts/verify-materials.cjs                       # 页面自检（需本地服务器）
 ```
 
-素材库浏览页：`/web/materials.html`（支持关键词搜索、标签筛选、视频角标、原文链接）。
+素材库浏览页：`/web/materials.html`（关键词搜索、标签筛选、**身高段筛选**、视频角标、原文链接）。
 采集注意事项：请求间隔 3–6 秒防风控；素材仅供个人学习参考，不得二次发布。
+
+**搜索页采集要点**（2026-10 实测）
+
+- 搜索走 `so.xiaohongshu.com/api/sns/web/v2/search/notes`（不是 v1，字段随版本变），因此采集器**以 DOM 为主**：`.note-item` 上有 `data-note-id`，`.footer a.title` 的 href 带 `xsec_token`（详情页必需）
+- 未登录时搜索页会显示「登录后查看搜索结果」，登录后才出卡片
+- 小红书长连接会导致 `networkidle2` / `domcontentloaded` 迟迟不触发，所以统一用「导航容错 + 轮询卡片数」
+- 一个 Chrome 配置目录反复复用会积累坏状态，最终**渲染进程卡死（evaluate 永久挂起）**；采集器改为每次从种子目录复制登录凭证到 `.tmp/profile-<ts>` 跑，结束后把 cookie 写回种子
 
 **登录态复用**（避免每次扫码）：Windows 下 Chrome 的 Cookie 文件被独占锁定，必须先退出 Chrome 才能复制。
 
@@ -86,7 +98,12 @@ node scripts/sync-chrome-login.cjs --relaunch   # 等 Chrome 关闭 → 复制�
 node scripts/prepare-chrome-profile.cjs         # 等价拆分：仅复制配置（Chrome 已关闭时用）
 ```
 
-复制目标为 `~/.workbuddy/chrome-profile`。`xhs-collect.cjs` 启动时自动检测该目录：存在则用它（日常 Chrome 登录态），否则退回 `~/.workbuddy/xhs-session`（采集专用会话，首次需扫码）。可用环境变量 `XHS_PROFILE_DIR` 强制指定。
+登录态源目录（种子）默认 `~/.workbuddy/xhs-lean`（从早期扫码会话迁出的 cookie），优先级：`XHS_PROFILE_DIR` > `xhs-lean` > `xhs-session`。
+
+- 每次运行：复制 `Local State` + `Default/Preferences` + `Default/Network/Cookies` 到 `.tmp/profile-<时间戳>`，用副本启动 Chrome，结束后把 cookie 写回种子目录
+- **不要**让采集器长期复用同一个配置目录：坏状态会让渲染进程卡死
+- 登录态会过期；过期后搜索页会出现「登录后查看搜索结果」，此时删除 `~/.workbuddy/xhs-lean` 重跑一次扫码即可
+- `scripts/sync-chrome-login.cjs` 用于从**日常 Chrome** 同步登录态（需先退出 Chrome），复制到 `~/.workbuddy/chrome-profile`
 
 ## 6. 前端实现要点（改代码前必读）
 
@@ -111,7 +128,10 @@ node scripts/prepare-chrome-profile.cjs         # 等价拆分：仅复制配置
 ## 8. 待办与已知限制
 
 - 内容量：当前 9 套搭配，需要持续填充（这是当前最该做的事）
-- 外部素材：`content/xhs/` 已采集小红书博主「王ze霖」117 条笔记（以视频为主，存封面+文案+标签）
+- 外部素材：`content/xhs/` 共 **156 条**、2 个来源
+  - 博主「王ze霖」117 条（视频为主，存封面+文案+标签，未标注身高）
+  - 搜索「166小个子穿搭」39 条（含身高识别，35/39 命中，89.7%）
+- **身高维度已打通素材库**（按 155–160 / 160–165 / … / 180+ 筛选、卡片角标）；**主 App 的 `heightFit` 字段已进 schema，但 9 套 look 尚未填值、前端也还没接筛选**
 - 收藏仅存本机，未做账号与多端同步
 - 无「穿搭合集 / 作者主页 / 评论」等社区能力
 - 图片为 AI 生成，商用需替换为自有版权图

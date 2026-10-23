@@ -19,6 +19,16 @@
 
 > 填充方式：图片放进 `content/images/looks/`，复制模板写进 `content/looks.json`，跑 `node scripts/check-content.mjs`。
 
+## M2.5 · 身高维度（进行中）
+
+- [x] `taxonomy.json` 增加 `heights` 五段字典；`look.schema.json` 增加 `heightFit`
+- [x] 采集器支持搜索页（`search` 子命令），多来源隔离（`_state.<名称>.json`）
+- [x] 身高抽取脚本 + 识别率报告（搜索样本 39 条，命中 89.7%）
+- [x] 素材库按身高段筛选、卡片身高角标、详情显示「适合 166cm」
+- [ ] 搜索更多身高关键词：`170男生穿搭` / `175穿搭` / `180高个子穿搭`（补齐中高身高段样本）
+- [ ] 9 套 look 补 `heightFit`，主 App 加身高筛选
+- [ ] 素材库「收录为搭配」→ 生成 `status: "draft"` 草稿，打通素材与内容的流转
+
 ## M3 · 体验打磨
 
 - [ ] 无限滚动 / 分页（内容 > 40 套时再考虑）

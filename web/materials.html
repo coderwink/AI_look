@@ -37,6 +37,9 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
 .tagchip{flex:0 0 auto;background:var(--chip);border-radius:999px;padding:5px 12px;font-size:12px;color:var(--ink2);white-space:nowrap}
 .tagchip.on{background:var(--ink);color:#fff}
 .tagchip b{font-weight:600;color:inherit;opacity:.65;margin-left:3px;font-size:11px}
+.hbar{max-width:720px;margin:0 auto;padding:6px 16px 10px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.hbar::-webkit-scrollbar{display:none}
+.hbar .tagchip.on{background:#2b6cb0;color:#fff}
 
 /* 瀑布流 */
 .feed{max-width:720px;margin:12px auto 80px;padding:0 12px;column-count:2;column-gap:10px}
@@ -46,6 +49,8 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
 .mcard .cover{position:relative;background:#efefef}
 .mcard .cover img{width:100%}
 .mcard .vb{position:absolute;top:8px;right:8px;background:rgba(17,17,17,.72);color:#fff;font-size:10px;padding:2px 7px;border-radius:999px;letter-spacing:.5px}
+.mcard .hb{position:absolute;top:8px;left:8px;background:rgba(43,108,176,.9);color:#fff;font-size:10px;padding:2px 7px;border-radius:999px;font-weight:600;letter-spacing:.3px}
+.mcard .hb.soft{background:rgba(17,17,17,.5);font-weight:400}
 .mcard .cnt{position:absolute;bottom:8px;right:8px;background:rgba(17,17,17,.72);color:#fff;font-size:10px;padding:2px 7px;border-radius:999px}
 .mcard .pad{padding:9px 10px 11px}
 .mcard .t{font-size:13px;font-weight:600;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
@@ -85,6 +90,7 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
     </div>
   </div>
   <div class="tags" id="tagbar"></div>
+  <div class="hbar" id="heightbar"></div>
 </header>
 
 <main class="feed" id="feed"></main>
@@ -104,7 +110,7 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
 
 <script>
 const IMG = (id, f) => `../content/xhs/${id}/${f}`;
-let DATA = [], shown = [], activeTag = '', cur = null, curImg = 0;
+let DATA = [], shown = [], activeTag = '', activeHeight = '', HEIGHTS = [], cur = null, curImg = 0;
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const timeStr = t => { try { return new Date(t).toLocaleDateString('zh-CN'); } catch(e){ return ''; } };
@@ -113,9 +119,24 @@ async function init(){
   const r = await fetch('../content/xhs/index.json');
   const j = await r.json();
   DATA = j.notes || [];
+  HEIGHTS = (j.heights || []).filter(h => h.count);
   document.getElementById('count').textContent = DATA.length;
+  buildHeightbar();
   buildTagbar();
   apply();
+}
+
+function buildHeightbar(){
+  const bar = document.getElementById('heightbar');
+  const total = DATA.length;
+  bar.innerHTML = `<button class="tagchip on" data-h="">全部身高<b>${total}</b></button>`
+    + HEIGHTS.map(h => `<button class="tagchip" data-h="${h.key}">${h.label}${h.tag&&h.tag!=='未标注'?'·'+h.tag:''}<b>${h.count}</b></button>`).join('');
+  bar.onclick = e => {
+    const b = e.target.closest('.tagchip'); if(!b) return;
+    activeHeight = b.dataset.h;
+    bar.querySelectorAll('.tagchip').forEach(x=>x.classList.toggle('on', x===b));
+    apply();
+  };
 }
 
 function buildTagbar(){
@@ -140,6 +161,7 @@ function apply(){
   const q = document.getElementById('q').value.trim().toLowerCase();
   shown = DATA.filter(n => {
     if (activeTag && !(n.tags||[]).includes(activeTag)) return false;
+    if (activeHeight && (!n.height || n.height.band !== activeHeight)) return false;
     if (!q) return true;
     return (n.title + ' ' + n.desc + ' ' + (n.tags||[]).join(' ')).toLowerCase().includes(q);
   });
@@ -148,19 +170,24 @@ function apply(){
 }
 
 function render(){
-  document.getElementById('feed').innerHTML = shown.map((n,i) => `
+  document.getElementById('feed').innerHTML = shown.map((n,i) => {
+    const h = n.height || {};
+    const hLabel = h.value ? `${h.value}` : (h.tag || '');
+    const hCls = h.value ? 'hb' : 'hb soft';
+    return `
     <article class="mcard" data-i="${i}">
       <div class="cover">
         <img loading="lazy" src="${IMG(n.id, n.cover)}" alt="" onerror="this.style.opacity=0">
+        ${hLabel ? `<span class="${hCls}">${esc(hLabel)}${h.value ? 'cm' : ''}</span>` : ''}
         ${n.type==='video' ? '<span class="vb">视频</span>' : ''}
         ${n.images.length>1 ? `<span class="cnt">${n.images.length}图</span>` : ''}
       </div>
       <div class="pad">
         <div class="t">${esc(n.title || '（无标题）')}</div>
         <div class="tg">${(n.tags||[]).slice(0,3).map(t=>`<span>${esc(t)}</span>`).join('')}</div>
-        <div class="ft"><span>${timeStr(n.time)}</span><span>♡ ${esc(n.liked||'')}</span></div>
+        <div class="ft"><span>${esc(n.author || timeStr(n.time))}</span><span>♡ ${esc(n.liked||'')}</span></div>
       </div>
-    </article>`).join('');
+    </article>`;}).join('');
 }
 
 /* 详情 */
@@ -179,8 +206,10 @@ function renderViewer(){
 }
 function renderMeta(){
   const n = cur;
+  const h = n.height || {};
+  const hText = h.value ? `适合 ${h.value}cm` : (h.tag || '');
   document.getElementById('mTitle').textContent = n.title || '（无标题）';
-  document.getElementById('mSub').textContent = [timeStr(n.time), n.type==='video'?'视频笔记':'图文笔记', '♡ '+(n.liked||'')].filter(Boolean).join(' · ');
+  document.getElementById('mSub').textContent = [hText, n.author, timeStr(n.time), n.type==='video'?'视频笔记':'图文笔记', '♡ '+(n.liked||'')].filter(Boolean).join(' · ');
   document.getElementById('mDesc').textContent = n.desc || '';
   document.getElementById('mTags').innerHTML = (n.tags||[]).map(t=>`<span>${esc(t)}</span>`).join('');
   document.getElementById('mOpen').href = n.url;
@@ -207,7 +236,15 @@ document.getElementById('layer').onclick = e => {
   if (t){ document.getElementById('q').value = t.textContent; apply(); closeLayer(); window.scrollTo({top:0}); }
 };
 document.getElementById('q').addEventListener('input', apply);
-document.getElementById('clear').onclick = () => { document.getElementById('q').value=''; activeTag=''; document.querySelectorAll('.tagchip').forEach((x,i)=>x.classList.toggle('on',i===0)); apply(); };
+document.getElementById('clear').onclick = () => {
+  document.getElementById('q').value = '';
+  activeTag = ''; activeHeight = '';
+  ['tagbar','heightbar'].forEach(id => {
+    const chips = document.getElementById(id).querySelectorAll('.tagchip');
+    chips.forEach((x, i) => x.classList.toggle('on', i === 0));
+  });
+  apply();
+};
 window.addEventListener('popstate', () => { document.getElementById('layer').hidden = true; });
 
 init();

@@ -68,6 +68,17 @@
       "description": "配色方案，HEX 色值"
     },
     "tip": { "type": "string", "maxLength": 160, "description": "可执行的搭配提醒" },
+    "heightFit": {
+      "type": "object",
+      "description": "这套搭配适合的身高区间（cm）。缺省表示不限身高。",
+      "additionalProperties": false,
+      "required": ["min", "max"],
+      "properties": {
+        "min": { "type": "integer", "minimum": 140, "maximum": 220, "description": "适合身高下限" },
+        "max": { "type": "integer", "minimum": 140, "maximum": 220, "description": "适合身高上限" },
+        "note": { "type": "string", "maxLength": 60, "description": "身高相关提醒，如「九分裤露踝，165 以下更显高」" }
+      }
+    },
     "tags": { "type": "array", "items": { "type": "string" }, "description": "搜索用标签" },
     "author": { "type": "string", "description": "署名" },
     "status": {

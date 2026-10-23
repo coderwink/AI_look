@@ -37,6 +37,7 @@
 | `items[].note` | string | — | 版型 / 选购要点 |
 | `palette` | string[] | ✅ | 配色，2–6 个 HEX（`#ffffff`），展示为色卡 |
 | `tip` | string | 建议 | 一条可执行的搭配提醒 |
+| `heightFit` | object | — | 适配身高区间 `{ min, max, note? }`（cm）。缺省表示不限身高 |
 | `tags` | string[] | — | 搜索用关键词（「显高」「面试」等） |
 | `author` | string | — | 署名，默认「编辑部」 |
 | `status` | `"published"` \| `"draft"` | ✅ | `draft` 不会显示，可先填后发 |
@@ -51,6 +52,8 @@
 **seasons**：`spring` 春 · `summer` 夏 · `autumn` 秋 · `winter` 冬
 
 **itemCategories**：`outer` 外套 · `top` 上装 · `bottom` 下装 · `shoes` 鞋 · `bag` 包 · `accessory` 配饰
+
+**heights**（身高段，用于素材与搭配筛选）：`h155` 155–160 · `h160` 160–165 · `h165` 165–170 · `h170` 170–175 · `h175` 175–180 · `h180` 180+ · `unknown` 未标注
 
 > 增删分类：只改 `taxonomy.json`，前端 Tab、筛选、标签会自动跟着变。改 key 需同步改已有内容。
 
@@ -106,7 +109,46 @@
 - 若一批图尺寸相同，可用 `python scripts/process_images.py` 批量裁切压缩（会保留原图在 `raw/`）
 - 竖构图、全身入镜、背景干净，是这套排版最好看的组合
 
-## 6. 常见错误
+## 6. 素材库数据（`content/xhs/`）
+
+外部素材（小红书博主页 / 搜索页采集）与主内容分开存放，由脚本生成，**不要手改**。
+
+```
+content/xhs/
+├── index.json                 ← 前端唯一读取的文件（由 build-xhs-index.cjs 生成）
+├── _state.json                ← 博主采集中间态（.gitignore，含 token）
+├── _state.search-166xz.json   ← 搜索采集中间态（同上）
+└── <noteId>/01.jpg 02.jpg …   ← 每条笔记一个目录
+```
+
+`index.json`（version 2）结构：
+
+| 字段 | 说明 |
+|---|---|
+| `sources[]` | 来源列表：`{ kind: profile\|search, label, keyword, author, count }` |
+| `heights[]` | 身高段（来自 `taxonomy.heights`）并附 `count` 统计 |
+| `notes[]` | 素材条目，见下表 |
+
+`notes[]` 关键字段：
+
+| 字段 | 说明 |
+|---|---|
+| `id` | 笔记 id，也是图片目录名 |
+| `sourceKind` / `sourceLabel` / `keyword` | 来源标记（博主 or 搜索关键词） |
+| `title` / `desc` / `tags` / `author` | 文案与作者 |
+| `liked` | 点赞数，已归一化为数字（`2.8万` → `28000`） |
+| `cover` / `images` | 首图文件名 / 全部图片文件名 |
+| `height` | `{ value, band, label, raw, kind, confidence, range?, tag }` — 见下 |
+
+**身高字段怎么来的**（`scripts/extract-height.cjs`）
+
+- `value` 具体身高（cm），抽不到为 `null`
+- `band` 归属段（`h165` 等），前端按它筛选
+- `kind` 抽取依据：`explicit`（166cm）/ `height-weight`（162/60）/ `range`（165-175，取下限）/ `context`（165小个子）/ `leading`（标题开头三位数）/ `semantic`（只说「小个子」，无数值）/ `none`
+- `confidence`：`high` / `medium` / `low` / `none`
+- 规则**标题优先于正文**，因为正文常混入别人的身高；不做猜测，抽不到就置空
+
+## 7. 常见错误
 
 | 现象 | 原因 |
 |---|---|

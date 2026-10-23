@@ -30,5 +30,14 @@
     { "key": "shoes", "label": "鞋" },
     { "key": "bag", "label": "包" },
     { "key": "accessory", "label": "配饰" }
+  ],
+  "heights": [
+    { "key": "h155", "label": "155–160", "min": 155, "max": 160, "tag": "小个子" },
+    { "key": "h160", "label": "160–165", "min": 160, "max": 165, "tag": "小个子" },
+    { "key": "h165", "label": "165–170", "min": 165, "max": 170, "tag": "小个子" },
+    { "key": "h170", "label": "170–175", "min": 170, "max": 175, "tag": "标准" },
+    { "key": "h175", "label": "175–180", "min": 175, "max": 180, "tag": "标准" },
+    { "key": "h180", "label": "180+", "min": 180, "max": 220, "tag": "高个子" },
+    { "key": "unknown", "label": "未标注", "min": null, "max": null, "tag": "" }
   ]
 }

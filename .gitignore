@@ -23,5 +23,5 @@ raw/
 *.log
 npm-debug.log*
 
-# 采集器中间状态（含 token，仅本地保留）
-content/xhs/_state.json
+# 采集器中间状态（含 token，仅本地保留）；index.json 才是入库产物
+content/xhs/_state*.json
