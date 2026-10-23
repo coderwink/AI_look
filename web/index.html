@@ -49,6 +49,20 @@
         </div>
       </section>
 
+      <!-- 配色 -->
+      <section class="view" id="view-palettes" hidden>
+        <div class="page-head">
+          <h2>配色手册</h2>
+          <p class="page-sub">穿搭颜色配对 · 不看衣服，只看颜色怎么搭</p>
+        </div>
+        <div class="chip-row" id="pal-chips"></div>
+        <div class="pal-grid" id="pal-grid"></div>
+        <div class="empty" id="pal-empty" hidden>
+          <div class="empty-icon">◐</div>
+          <p class="empty-title">这个类别下暂时没有配色</p>
+        </div>
+      </section>
+
       <!-- 收藏 -->
       <section class="view" id="view-favs" hidden>
         <div class="page-head">
@@ -120,6 +134,10 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>
         <span>灵感</span>
       </button>
+      <button class="tab" data-tab="palettes">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="8.5" cy="9" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.5" cy="9" r="1.4" fill="currentColor" stroke="none"/><circle cx="9.5" cy="15" r="1.4" fill="currentColor" stroke="none"/><circle cx="14.5" cy="15" r="1.4" fill="currentColor" stroke="none"/></svg>
+        <span>配色</span>
+      </button>
       <button class="tab" data-tab="favs">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.6-9-9c-1.3-3 .7-6.5 4-6.5 2.2 0 3.8 1.3 5 3 1.2-1.7 2.8-3 5-3 3.3 0 5.3 3.5 4 6.5-2 4.4-9 9-9 9z"/></svg>
         <span>收藏</span>
@@ -133,6 +151,10 @@
     <!-- 详情层 -->
     <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
     <section class="sheet" id="sheet" hidden aria-modal="true" role="dialog"></section>
+
+    <!-- 配色详情层 -->
+    <div class="sheet-backdrop" id="pal-backdrop" hidden></div>
+    <section class="sheet pal-sheet" id="pal-sheet" hidden aria-modal="true" role="dialog"></section>
 
     <!-- 搜索层 -->
     <div class="search-layer" id="search-layer" hidden>

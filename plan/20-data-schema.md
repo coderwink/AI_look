@@ -9,6 +9,7 @@
 |---|---|---|
 | `content/looks.json` | 搭配（卡片 + 详情） | `{ version, updatedAt, looks: Look[] }` |
 | `content/editorials.json` | 流内排版卡 | `{ version, updatedAt, editorials: Editorial[] }` |
+| `content/palettes.json` | 配色手册（纯色卡，无图） | `{ version, updatedAt, kinds: Kind[], palettes: Palette[] }` |
 | `content/taxonomy.json` | 分类字典（标签的唯一真源） | `{ styles[], scenes[], seasons[], itemCategories[] }` |
 | `content/schema/look.schema.json` | 单条 Look 的 JSON Schema | 标准 JSON Schema 2020-12 |
 | `content/templates/look.template.json` | 新建用的空白模板 | 单个 Look 对象 |
@@ -105,7 +106,51 @@
 
 公共字段：`id` `type` `kicker`（小标签）`title` `body` `status`。
 
-## 5. 图片规范
+## 5. Palette（配色手册 · `content/palettes.json`）
+
+配色页只讲颜色怎么配，不依赖衣服照片。一组配色 = 3–5 个色块 + 一句「为什么成立」+ 一句「照着抄」。
+
+```json
+{
+  "id": "pal-navy-caramel",
+  "kind": "contrast",
+  "title": "藏蓝 × 焦糖",
+  "summary": "一冷一暖撞在腰线以上，通勤也有温度",
+  "swatches": [
+    { "hex": "#B0743C", "role": "上装", "name": "焦糖" },
+    { "hex": "#2C3A55", "role": "外套", "name": "藏蓝" },
+    { "hex": "#2C3A55", "role": "下装", "name": "藏蓝" },
+    { "hex": "#F4F1EA", "role": "鞋", "name": "奶白" }
+  ],
+  "rule": "撞色只撞一处：暖棕集中在胸颈位置吸引视线…",
+  "tip": "两个高饱和色别对半分，控制在 1:3 以内，撞色才高级。",
+  "scenes": ["commute", "date"],
+  "seasons": ["autumn", "winter"],
+  "status": "published"
+}
+```
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `id` | string | ✓ | 全局唯一，建议 `pal-<语义>` |
+| `kind` | string | ✓ | 配色法，取值见 `kinds`：`analog` 同色系 / `contrast` 撞色 / `neutral` 中性分层 / `accent` 点亮 |
+| `title` | string | ✓ | 6–12 字，可用「×」连接两色 |
+| `summary` | string | ✓ | 列表页一句话（≤24 字） |
+| `swatches` | array | ✓ | 3–5 个，顺序 = 展示顺序，**主色在前** |
+| `swatches[].hex` | string | ✓ | `#RRGGBB`，前端按亮度自动切换文字黑/白 |
+| `swatches[].role` | string | ✓ | 上装 / 下装 / 外套 / 鞋 / 包 / 配饰 / 内搭 |
+| `swatches[].name` | string | 建议 | 颜色中文名（燕麦米、藏蓝） |
+| `rule` | string | ✓ | 这组配色为什么成立（色彩关系，2–3 句） |
+| `tip` | string | 建议 | 照抄时的注意点，一句 |
+| `scenes` / `seasons` | string[] | — | 复用 `taxonomy.json` 的 key |
+| `status` | string | ✓ | `published` / `draft`（draft 不展示） |
+
+联动规则：
+
+- **搭配 → 配色**：`look.palette` 的色值会与全部 `palettes` 做最近色匹配（平均 RGB 距离 ≤ 68 视为命中），命中就在详情页出现「这组颜色怎么搭 · 去配色手册」。
+- **搜索**：搜索框的关键词会同时搜搭配与配色（颜色名、角色、hex、场景都参与匹配），结果分「配色 / 搭配」两段。
+
+## 6. 图片规范
 
 - 目录：`content/images/looks/`，命名与 `id` 对应：`look-10.jpg`
 - 尺寸：宽 720px，高度按画幅自然变化；单张控制在 150KB 以内（JPEG quality 82）
@@ -113,7 +158,7 @@
 - 若一批图尺寸相同，可用 `python scripts/process_images.py` 批量裁切压缩（会保留原图在 `raw/`）
 - 竖构图、全身入镜、背景干净，是这套排版最好看的组合
 
-## 6. 素材库数据（`content/xhs/`）
+## 7. 素材库数据（`content/xhs/`）
 
 外部素材（小红书博主页 / 搜索页采集）与主内容分开存放，由脚本生成，**不要手改**。
 
@@ -152,7 +197,7 @@ content/xhs/
 - `confidence`：`high` / `medium` / `low` / `none`
 - 规则**标题优先于正文**，因为正文常混入别人的身高；不做猜测，抽不到就置空
 
-## 7. 常见错误
+## 8. 常见错误
 
 | 现象 | 原因 |
 |---|---|

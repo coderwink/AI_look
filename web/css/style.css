@@ -127,6 +127,70 @@ code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .92em; 
 }
 @keyframes sk-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .55; } }
 
+/* ---------- 配色手册 ---------- */
+.pal-grid { display: grid; grid-template-columns: 1fr; gap: 12px; padding: 0 12px; }
+.pal-card {
+  background: var(--card); border-radius: 16px; padding: 13px 13px 11px;
+  box-shadow: var(--shadow); cursor: pointer; transition: transform .18s ease;
+}
+.pal-card:active { transform: scale(.98); }
+.pal-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 9px; }
+.pal-kind {
+  font-size: 9.5px; letter-spacing: 2px; color: var(--ink-3);
+  border: 1px solid var(--line); border-radius: 999px; padding: 2px 7px; white-space: nowrap;
+}
+.pal-title { font-family: var(--serif); font-size: 15.5px; letter-spacing: 1px; }
+.pal-bars {
+  display: flex; flex-direction: column; border-radius: 10px; overflow: hidden;
+  height: 156px; width: 100%;
+}
+.pal-bars i { flex: 1; }
+.pal-summary { font-size: 11.5px; color: var(--ink-2); line-height: 1.65; margin: 9px 0 8px; }
+.pal-roles { display: flex; }
+.pal-roles span {
+  flex: 1; text-align: center; font-size: 9.5px; letter-spacing: 1px; color: var(--ink-3);
+}
+.pal-empty-note { text-align: center; color: var(--ink-3); font-size: 12px; padding: 40px 0; }
+.search-sec {
+  font-size: 10px; letter-spacing: 2px; color: var(--ink-3);
+  padding: 12px 4px 8px;
+}
+.search-pal { padding: 0 0 10px; gap: 10px; }
+.search-pal .pal-bars { height: 120px; }
+
+.pal-sheet { max-height: 86vh; }
+.pal-sheet-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 13px 16px 11px; border-bottom: 1px solid var(--line);
+}
+.pal-sheet-close {
+  width: 28px; height: 28px; border-radius: 50%; flex: 0 0 auto;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+  font-size: 12px; line-height: 1; display: flex; align-items: center; justify-content: center;
+}
+.pal-sheet-bars { display: flex; flex-direction: column; height: 40vh; min-height: 240px; }
+.pal-bar {
+  flex: 1; display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16px;
+}
+.pal-bar-role { font-size: 10px; letter-spacing: 2px; opacity: .82; }
+.pal-bar-name { font-size: 14px; font-weight: 600; letter-spacing: 1px; }
+.pal-bar-hex {
+  font-size: 10px; font-variant-numeric: tabular-nums; opacity: .66; letter-spacing: .5px;
+  cursor: pointer;
+}
+.pal-sheet-body { padding: 16px 18px 22px; }
+.pal-sheet-kicker { font-size: 10px; letter-spacing: 2px; color: var(--ink-3); margin-bottom: 6px; }
+.pal-sheet-title { font-family: var(--serif); font-size: 20px; letter-spacing: 1px; margin-bottom: 10px; }
+.pal-sheet-rule { font-size: 13px; color: var(--ink-2); line-height: 1.8; margin-bottom: 14px; }
+.pal-copy { margin-top: 14px; width: 100%; }
+.pal-link {
+  display: block; width: 100%; margin-top: 10px; padding: 10px;
+  background: none; border: 1px dashed var(--line); border-radius: 10px;
+  color: var(--ink-2); font-size: 11.5px; letter-spacing: .5px;
+}
+.pal-link:active { background: var(--surface-2); }
+
 /* ---------- 瀑布流 ---------- */
 main { padding-bottom: calc(var(--tab-h) + env(safe-area-inset-bottom) + 48px); }
 .view { padding: 0 12px; }
@@ -407,6 +471,7 @@ main { padding-bottom: calc(var(--tab-h) + env(safe-area-inset-bottom) + 48px); 
   position: absolute; bottom: 3px; left: 5px; font-size: 8.5px;
   color: rgba(255,255,255,.85); font-family: monospace; text-shadow: 0 1px 2px rgba(0,0,0,.5);
 }
+.palette-strip .sw span.on-light { color: rgba(30,30,30,.72); text-shadow: none; }
 .tip-box { background: var(--surface-2); border-radius: var(--radius); padding: 13px 14px; font-size: 12.5px; line-height: 1.8; color: var(--tip-ink); }
 .tip-box b { display: block; font-size: 10.5px; letter-spacing: 2px; color: var(--accent); margin-bottom: 3px; }
 

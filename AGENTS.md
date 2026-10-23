@@ -19,6 +19,7 @@
 | `content/` | **唯一内容源**（搭配、编辑卡、分类字典、图片） | ✅ 日常主要改这里 |
 | `content/looks.json` | 所有搭配数据（数组） | ✅ 加/改搭配 |
 | `content/editorials.json` | 穿插在流里的排版卡（配色心法/清单/观点） | ✅ |
+| `content/palettes.json` | 配色手册：每组 3–5 个色块 + 配色逻辑 + 照抄建议（纯色卡，无图） | ✅ 加/改配色 |
 | `content/taxonomy.json` | 风格、场景、季节、单品品类字典（标签唯一真源） | ✅ 增减分类 |
 | `content/schema/look.schema.json` | 单条搭配的 JSON Schema | 结构变更时才改 |
 | `content/templates/look.template.json` | 新建搭配的空白模板 | 结构变更时才改 |

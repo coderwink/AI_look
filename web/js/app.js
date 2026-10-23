@@ -89,11 +89,13 @@ function toast(msg) {
 const content = {
   styles: [], scenes: [], seasons: [], cats: [], heights: [],
   looks: [], editorials: [], drafts: [],
-  styleLabel: {}, sceneLabel: {}, seasonLabel: {}, catLabel: {},
+  palettes: [], palKinds: [],
+  styleLabel: {}, sceneLabel: {}, seasonLabel: {}, catLabel: {}, palKindLabel: {},
 };
 
-const state = { tab: 'home', style: 'all', scene: 'all', height: 'all', favStyle: 'all', deferredInstall: null };
+const state = { tab: 'home', style: 'all', scene: 'all', height: 'all', favStyle: 'all', palKind: 'all', deferredInstall: null };
 let sheetOpen = false;
+let palOpen = false;
 let searchOpen = false;
 const lookById = {};
 
@@ -302,6 +304,7 @@ function popClose() { if (history.state && history.state.xinggeClose) history.ba
 
 window.addEventListener('popstate', () => {
   if (sheetOpen) closeSheet(true);
+  else if (palOpen) closePal(true);
   else if (searchOpen) closeSearch(true);
 });
 
@@ -374,8 +377,9 @@ function renderSheet(look) {
       ${(look.palette || []).length ? `
       <p class="sec-title">配色方案</p>
       <div class="palette-strip">
-        ${look.palette.map((c) => `<div class="sw" style="background:${esc(c)}"><span>${esc(c.toUpperCase())}</span></div>`).join('')}
-      </div>` : ''}
+        ${look.palette.map((c) => `<div class="sw" style="background:${esc(c)}"><span class="${isLight(c) ? 'on-light' : ''}">${esc(c.toUpperCase())}</span></div>`).join('')}
+      </div>
+      ${matchedPalette(look.palette) ? `<button class="pal-link" data-pal-link="${matchedPalette(look.palette).id}">这组颜色怎么搭 · 去配色手册 →</button>` : ''}` : ''}
 
       ${look.tip ? `<p class="sec-title">编辑提醒</p>
       <div class="tip-box"><b>TIP</b>${esc(look.tip)}</div>` : ''}
@@ -433,6 +437,145 @@ function closeSheet(fromPop) {
     $('#sheet-backdrop').hidden = true;
     $('#sheet').hidden = true;
     $('#sheet').innerHTML = '';
+  }, 320);
+}
+
+/* ---------- 配色手册 ---------- */
+function filteredPalettes() {
+  return content.palettes.filter((p) => state.palKind === 'all' || p.kind === state.palKind);
+}
+
+/** 把 look 的 hex 数组匹配到最接近的一组配色（平均色彩距离，超过阈值视为不匹配） */
+function matchedPalette(colors) {
+  if (!Array.isArray(colors) || !colors.length || !content.palettes.length) return null;
+  const rgb = (hex) => {
+    const m = hex.replace('#', '');
+    const n = parseInt(m.length === 3 ? m.split('').map((c) => c + c).join('') : m, 16);
+    return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+  };
+  const dist = (a, b) => {
+    const [r1, g1, b1] = rgb(a), [r2, g2, b2] = rgb(b);
+    return Math.sqrt((r1 - r2) ** 2 + (g1 - g2) ** 2 + (b1 - b2) ** 2);
+  };
+  let best = null;
+  let bestScore = Infinity;
+  content.palettes.forEach((p) => {
+    const hexes = p.swatches.map((s) => s.hex);
+    const score = colors.reduce((sum, c) => sum + Math.min(...hexes.map((h) => dist(c, h))), 0) / colors.length;
+    if (score < bestScore) { bestScore = score; best = p; }
+  });
+  return bestScore <= 68 ? best : null;
+}
+
+/** 从搭配详情跳到配色页并展开对应配色 */
+function gotoPalette(id) {
+  const p = content.palettes.find((x) => x.id === id);
+  if (!p) return;
+  closeSheet(true);
+  history.replaceState({}, '');
+  state.palKind = 'all';
+  switchTab('palettes');
+  setTimeout(() => openPalSheet(id), 330);
+}
+
+function palChips() {
+  const kinds = [{ key: 'all', label: '全部' }].concat(content.palKinds);
+  $('#pal-chips').innerHTML = kinds.map((k) =>
+    `<button class="chip ${state.palKind === k.key ? 'active' : ''}" data-pal-kind="${k.key}">${esc(k.label)}</button>`
+  ).join('');
+}
+
+function palCard(p) {
+  const kind = content.palKindLabel[p.kind] || p.kind;
+  return `
+    <div class="pal-card" data-pal="${p.id}">
+      <div class="pal-head">
+        <span class="pal-kind">${esc(kind)}</span>
+        <b class="pal-title">${esc(p.title)}</b>
+      </div>
+      <div class="pal-bars">
+        ${p.swatches.map((s) => `<i style="background:${s.hex}"></i>`).join('')}
+      </div>
+      <p class="pal-summary">${esc(p.summary)}</p>
+      <div class="pal-roles">${p.swatches.map((s) => `<span>${esc(s.role)}</span>`).join('')}</div>
+    </div>`;
+}
+
+function renderPalettes() {
+  palChips();
+  const list = filteredPalettes();
+  $('#pal-empty').hidden = list.length > 0;
+  $('#pal-grid').innerHTML = list.map(palCard).join('');
+  const sub = $('#view-palettes .page-sub');
+  if (sub) sub.textContent = `已收录 ${content.palettes.length} 组 · 点开看颜色怎么配、怎么抄`;
+}
+
+function renderPalSheet(p) {
+  const kind = content.palKindLabel[p.kind] || p.kind;
+  const meta = [
+    (p.scenes || []).map((s) => content.sceneLabel[s]).filter(Boolean).join(' / '),
+    (p.seasons || []).map((s) => content.seasonLabel[s]).filter(Boolean).join(''),
+  ].filter(Boolean).join(' · ');
+
+  $('#pal-sheet').innerHTML = `
+    <div class="pal-sheet-head">
+      <span class="pal-sheet-kicker">${esc(kind)}${meta ? ' · ' + esc(meta) : ''}</span>
+      <button class="pal-sheet-close" id="pal-close" aria-label="关闭">✕</button>
+    </div>
+    <div class="pal-sheet-bars">
+      ${p.swatches.map((s) => `
+        <div class="pal-bar" style="background:${s.hex};color:${isLight(s.hex) ? '#2a2a28' : '#f6f4f0'}">
+          <span class="pal-bar-role">${esc(s.role)}</span>
+          <span class="pal-bar-name">${esc(s.name)}</span>
+          <span class="pal-bar-hex" data-hex="${s.hex}">${s.hex.toUpperCase()}</span>
+        </div>`).join('')}
+    </div>
+    <div class="pal-sheet-body">
+      <h3 class="pal-sheet-title">${esc(p.title)}</h3>
+      <p class="pal-sheet-rule">${esc(p.rule)}</p>
+      ${p.tip ? `<div class="tip-box"><b>照着抄</b><p>${esc(p.tip)}</p></div>` : ''}
+      <button class="btn-small ghost pal-copy" id="pal-copy">复制全部色值</button>
+    </div>`;
+}
+
+function isLight(hex) {
+  const m = hex.replace('#', '');
+  const n = parseInt(m.length === 3 ? m.split('').map((c) => c + c).join('') : m, 16);
+  const r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255;
+  return (r * 299 + g * 587 + b * 114) / 1000 > 150;
+}
+
+function openPalSheet(id) {
+  const p = content.palettes.find((x) => x.id === id);
+  if (!p) return;
+  renderPalSheet(p);
+  const backdrop = $('#pal-backdrop');
+  const sheet = $('#pal-sheet');
+  backdrop.hidden = false;
+  sheet.hidden = false;
+  sheet.classList.add('sheet-init');
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    backdrop.classList.add('show');
+    sheet.classList.remove('sheet-init');
+    sheet.classList.add('up');
+  }));
+  palOpen = true;
+  document.body.style.overflow = 'hidden';
+  pushClose('pal');
+}
+
+function closePal(fromPop) {
+  if (!palOpen) return;
+  palOpen = false;
+  $('#pal-backdrop').classList.remove('show');
+  $('#pal-sheet').classList.remove('up');
+  $('#pal-sheet').classList.add('sheet-init');
+  document.body.style.overflow = '';
+  if (!fromPop) popClose();
+  setTimeout(() => {
+    $('#pal-backdrop').hidden = true;
+    $('#pal-sheet').hidden = true;
+    $('#pal-sheet').innerHTML = '';
   }, 320);
 }
 
@@ -608,6 +751,21 @@ function searchLooks(q) {
   });
 }
 
+function searchPalette(q) {
+  const kw = q.trim().toLowerCase();
+  if (!kw) return [];
+  return content.palettes.filter((p) => {
+    const hay = [
+      p.title, p.summary, p.rule, p.tip,
+      content.palKindLabel[p.kind] || '',
+      ...(p.swatches || []).flatMap((s) => [s.name, s.role, s.hex]),
+      ...(p.scenes || []).map((s) => content.sceneLabel[s] || ''),
+      ...(p.seasons || []).map((s) => content.seasonLabel[s] || ''),
+    ].join(' ').toLowerCase();
+    return hay.includes(kw);
+  });
+}
+
 function renderSearch(q) {
   const box = $('#search-results');
   if (!q.trim()) {
@@ -615,12 +773,20 @@ function renderSearch(q) {
     return;
   }
   const hits = searchLooks(q);
-  if (!hits.length) {
+  const pals = searchPalette(q);
+  if (!hits.length && !pals.length) {
     box.innerHTML = `<p class="search-hint">没有找到「${esc(q)}」相关搭配</p>`;
     return;
   }
-  box.innerHTML = `<div class="masonry">${hits.map((l, i) => lookCard(l, i)).join('')}</div>`;
-  layoutMasonry(box.querySelector('.masonry'));
+  box.innerHTML = `
+    ${pals.length ? `
+      <p class="search-sec">配色 · ${pals.length} 组</p>
+      <div class="pal-grid search-pal">${pals.map(palCard).join('')}</div>` : ''}
+    ${hits.length ? `
+      ${pals.length ? `<p class="search-sec">搭配 · ${hits.length} 套</p>` : ''}
+      <div class="masonry">${hits.map((l, i) => lookCard(l, i)).join('')}</div>` : ''}`;
+  const m = box.querySelector('.masonry');
+  if (m) layoutMasonry(m);
 }
 
 function openSearch() {
@@ -645,14 +811,15 @@ function closeSearch(fromPop) {
 function switchTab(tab) {
   state.tab = tab;
   document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('active', t.dataset.tab === tab));
-  ['home', 'favs', 'me'].forEach((v) => { $(`#view-${v}`).hidden = v !== tab; });
-  // 筛选只在灵感页出现，收藏 / 我的页把顶部空间让出来
+  ['home', 'palettes', 'favs', 'me'].forEach((v) => { $(`#view-${v}`).hidden = v !== tab; });
+  // 筛选只在灵感页出现，其他页把顶部空间让出来
   const isHome = tab === 'home';
   $('#style-tabs').hidden = !isHome;
   $('#scene-chips').hidden = !isHome;
   if (!isHome) $('#height-chips').hidden = true;
   else renderHeightChips();
   window.scrollTo({ top: 0 });
+  if (tab === 'palettes') renderPalettes();
   if (tab === 'favs') { renderFavs(); layoutMasonry($('#fav-masonry')); }
   if (tab === 'me') { updateStats(); renderHeightPicks(); renderDrafts(); }
 }
@@ -706,6 +873,28 @@ function bindEvents() {
     layoutMasonry($('#fav-masonry'));
   });
 
+  // 配色页：分类筛选 + 打开详情
+  $('#pal-chips').addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-pal-kind]');
+    if (!btn) return;
+    state.palKind = btn.dataset.palKind;
+    renderPalettes();
+  });
+  $('#pal-backdrop').addEventListener('click', () => closePal());
+  $('#pal-sheet').addEventListener('click', (e) => {
+    if (e.target.closest('#pal-close')) { closePal(); return; }
+    const copyAll = e.target.closest('#pal-copy');
+    if (copyAll) {
+      const bars = Array.from(document.querySelectorAll('#pal-sheet .pal-bar-hex')).map((x) => x.dataset.hex);
+      if (navigator.clipboard) navigator.clipboard.writeText(bars.join(' ')).then(() => toast('色值已复制'));
+      return;
+    }
+    const hexEl = e.target.closest('[data-hex]');
+    if (hexEl && navigator.clipboard) {
+      navigator.clipboard.writeText(hexEl.dataset.hex).then(() => toast(`已复制 ${hexEl.dataset.hex}`));
+    }
+  });
+
   $('#height-picks').addEventListener('click', (e) => {
     const btn = e.target.closest('[data-myheight]');
     if (!btn) return;
@@ -730,6 +919,15 @@ function bindEvents() {
     if (nav) { e.stopPropagation(); const next = sheetCtx.list[sheetCtx.idx + Number(nav.dataset.sheetNav)]; if (next) openSheet(next.id); return; }
     const drop = e.target.closest('[data-drop]');
     if (drop) { e.stopPropagation(); dropDraft(drop.dataset.drop); return; }
+    const palLink = e.target.closest('[data-pal-link]');
+    if (palLink) { e.stopPropagation(); gotoPalette(palLink.dataset.palLink); return; }
+    // 配色卡（配色页 / 搜索结果共用同一套委托）
+    const palCardEl = e.target.closest('[data-pal]');
+    if (palCardEl) {
+      if (searchOpen) { closeSearch(true); history.replaceState({}, ''); }
+      openPalSheet(palCardEl.dataset.pal);
+      return;
+    }
     const card = e.target.closest('[data-look]');
     if (card) { openSheet(card.dataset.look); return; }
     const goto = e.target.closest('[data-goto]');
@@ -828,8 +1026,8 @@ async function loadContent() {
     if (!r.ok) throw new Error(`${file} ${r.status}`);
     return r.json();
   });
-  const [tax, looksData, editorialsData] = await Promise.all([
-    get('taxonomy.json'), get('looks.json'), get('editorials.json'),
+  const [tax, looksData, editorialsData, palettesData] = await Promise.all([
+    get('taxonomy.json'), get('looks.json'), get('editorials.json'), get('palettes.json'),
   ]);
 
   content.styles = tax.styles || [];
@@ -845,6 +1043,9 @@ async function loadContent() {
   content.looks = (looksData.looks || []).filter((l) => l.status === 'published');
   content.looks.forEach((l) => { lookById[l.id] = l; });
   content.editorials = (editorialsData.editorials || []).filter((e) => e.status !== 'draft');
+  content.palettes = (palettesData.palettes || []).filter((p) => p.status !== 'draft');
+  content.palKinds = palettesData.kinds || [];
+  content.palKinds.forEach((k) => { content.palKindLabel[k.key] = k.label; });
   loadDrafts();
 }
 
@@ -881,7 +1082,7 @@ async function boot() {
 
   // 支持 PWA 快捷方式：?tab=favs / ?tab=me
   const tabParam = new URLSearchParams(location.search).get('tab');
-  if (['home', 'favs', 'me'].includes(tabParam)) switchTab(tabParam);
+  if (['home', 'palettes', 'favs', 'me'].includes(tabParam)) switchTab(tabParam);
 }
 
 boot();

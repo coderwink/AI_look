@@ -17,10 +17,11 @@ const warns = [];
 const err = (m) => errors.push(m);
 const warn = (m) => warns.push(m);
 
-let taxonomy, looksData, editorialsData;
+let taxonomy, looksData, editorialsData, palettesData;
 try { taxonomy = read('content/taxonomy.json'); } catch (e) { err(`taxonomy.json 解析失败：${e.message}`); }
 try { looksData = read('content/looks.json'); } catch (e) { err(`looks.json 解析失败：${e.message}`); }
 try { editorialsData = read('content/editorials.json'); } catch (e) { err(`editorials.json 解析失败：${e.message}`); }
+try { palettesData = read('content/palettes.json'); } catch (e) { err(`palettes.json 解析失败：${e.message}`); }
 
 if (taxonomy && looksData) {
   const styleKeys = new Set(taxonomy.styles.map((s) => s.key));
@@ -98,8 +99,40 @@ if (taxonomy && looksData) {
   });
 
   const published = looks.filter((l) => l.status === 'published').length;
-  console.log(`\n内容统计：${looks.length} 套 look（已发布 ${published}）· ${(editorialsData?.editorials ?? []).length} 张编辑部卡`);
+  console.log(`\n内容统计：${looks.length} 套 look（已发布 ${published}）· ${(editorialsData?.editorials ?? []).length} 张编辑部卡 · ${(palettesData?.palettes ?? []).length} 组配色`);
   console.log(`分类字典：${styleKeys.size} 风格 / ${sceneKeys.size} 场景 / ${seasonKeys.size} 季节 / ${catKeys.size} 品类`);
+}
+
+// ---------- 配色手册 ----------
+if (palettesData) {
+  const kindKeys = new Set((palettesData.kinds ?? []).map((k) => k.key));
+  const palSeen = new Set();
+  const hexRe = /^#[0-9a-fA-F]{6}$/;
+
+  (palettesData.palettes ?? []).forEach((p, i) => {
+    const where = `palettes[${i}] ${p.id ?? '(缺 id)'}`;
+    if (!p.id) err(`${where}: 缺少 id`);
+    else if (palSeen.has(p.id)) err(`${where}: id 重复`);
+    else palSeen.add(p.id);
+
+    if (!p.title) err(`${where}: 缺少 title`);
+    if (!p.summary) warn(`${where}: 建议补 summary（列表页一句话）`);
+    if (!kindKeys.has(p.kind)) err(`${where}: kind "${p.kind}" 不在 kinds 中`);
+    if (!p.rule) err(`${where}: 缺少 rule（这组配色为什么成立）`);
+
+    const sw = p.swatches ?? [];
+    if (!Array.isArray(sw) || sw.length < 3) err(`${where}: swatches 至少 3 个色块`);
+    else if (sw.length > 5) warn(`${where}: swatches 超过 5 个，手机上一屏放不下`);
+    sw.forEach((s, k) => {
+      hexRe.test(s.hex ?? '') || err(`${where}: swatches[${k}] 色值格式错误 "${s.hex}"`);
+      if (!s.role) err(`${where}: swatches[${k}] 缺少 role（上装/下装/鞋…）`);
+      if (!s.name) warn(`${where}: swatches[${k}] 建议补 name（颜色中文名）`);
+    });
+
+    (p.scenes ?? []).forEach((s) => taxonomy?.scenes.some((x) => x.key === s) || err(`${where}: 未知场景 "${s}"`));
+    (p.seasons ?? []).forEach((s) => taxonomy?.seasons.some((x) => x.key === s) || err(`${where}: 未知季节 "${s}"`));
+    if (!['published', 'draft'].includes(p.status)) err(`${where}: status 只能是 published / draft`);
+  });
 }
 
 warns.forEach((w) => console.log(`  ⚠ ${w}`));

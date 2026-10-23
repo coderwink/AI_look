@@ -1,0 +1,183 @@
+{
+  "$comment": "配色页数据 · 纯色卡展示穿搭颜色配对，不依赖衣服照片。swatches 顺序即展示顺序（主色在前）。",
+  "version": 1,
+  "updatedAt": "2026-10-23",
+  "kinds": [
+    { "key": "analog", "label": "同色系" },
+    { "key": "contrast", "label": "撞色" },
+    { "key": "neutral", "label": "中性分层" },
+    { "key": "accent", "label": "点亮" }
+  ],
+  "palettes": [
+    {
+      "id": "pal-oat",
+      "kind": "analog",
+      "title": "大地色三明治",
+      "summary": "浅→深→浅压住全身，最稳的秋天公式",
+      "swatches": [
+        { "hex": "#D8CCBA", "role": "上装", "name": "燕麦米" },
+        { "hex": "#A9896B", "role": "外套", "name": "浅驼" },
+        { "hex": "#57493B", "role": "下装", "name": "深咖" },
+        { "hex": "#F2EDE3", "role": "鞋", "name": "米白" }
+      ],
+      "rule": "全身一个色相（棕），只动明度：上浅、中深、鞋又浅，形成三明治。色相统一时怎么叠都不乱。",
+      "tip": "同色系的关键是上下至少差两档深浅，一样深就闷成一块了。",
+      "scenes": ["daily", "date"],
+      "seasons": ["autumn", "winter"],
+      "status": "published"
+    },
+    {
+      "id": "pal-navy-caramel",
+      "kind": "contrast",
+      "title": "藏蓝 × 焦糖",
+      "summary": "一冷一暖撞在腰线以上，通勤也有温度",
+      "swatches": [
+        { "hex": "#B0743C", "role": "上装", "name": "焦糖" },
+        { "hex": "#2C3A55", "role": "外套", "name": "藏蓝" },
+        { "hex": "#2C3A55", "role": "下装", "name": "藏蓝" },
+        { "hex": "#F4F1EA", "role": "鞋", "name": "奶白" }
+      ],
+      "rule": "撞色只撞一处：暖棕集中在胸颈位置吸引视线，藏蓝承包其余大面积，冷暖平衡。鞋用奶白收尾提亮。",
+      "tip": "两个高饱和色别对半分，控制在 1:3 以内，撞色才高级。",
+      "scenes": ["commute", "date"],
+      "seasons": ["autumn", "winter"],
+      "status": "published"
+    },
+    {
+      "id": "pal-grey",
+      "kind": "neutral",
+      "title": "灰的三层深浅",
+      "summary": "无彩色也分层，极简风的基本功",
+      "swatches": [
+        { "hex": "#D7DADF", "role": "上装", "name": "浅灰" },
+        { "hex": "#8C9196", "role": "下装", "name": "中灰" },
+        { "hex": "#33363B", "role": "外套", "name": "炭灰" },
+        { "hex": "#17181A", "role": "鞋", "name": "黑" }
+      ],
+      "rule": "从上到下明度递减，形成自然的视觉下坠感，显高。无彩色之间靠材质反光度再分一次层。",
+      "tip": "灰最怕「一半黑一半白」的两极切分，四档渐变才顺眼。",
+      "scenes": ["daily", "commute"],
+      "seasons": ["spring", "autumn"],
+      "status": "published"
+    },
+    {
+      "id": "pal-olive",
+      "kind": "neutral",
+      "title": "军绿 × 黑 × 米白",
+      "summary": "机能风的底色盘，怎么动都不散",
+      "swatches": [
+        { "hex": "#4C5B44", "role": "外套", "name": "军绿" },
+        { "hex": "#1B1D1E", "role": "下装", "name": "黑" },
+        { "hex": "#E9E5DA", "role": "鞋", "name": "米白" },
+        { "hex": "#1B1D1E", "role": "配饰", "name": "黑" }
+      ],
+      "rule": "军绿是唯一的彩色，压在最大面积的外套上；黑收敛下半身；米白鞋负责透气，避免全身过沉。",
+      "tip": "机能配色别超过一彩两无：一个彩色 + 黑白灰，多了就变军品店。",
+      "scenes": ["trip", "daily"],
+      "seasons": ["autumn", "winter"],
+      "status": "published"
+    },
+    {
+      "id": "pal-navy-white",
+      "kind": "contrast",
+      "title": "海魂蓝白",
+      "summary": "夏天的经典二色，越简单越显贵",
+      "swatches": [
+        { "hex": "#F6F4F0", "role": "上装", "name": "白" },
+        { "hex": "#42658A", "role": "下装", "name": "海蓝" },
+        { "hex": "#D9C7A7", "role": "鞋", "name": "沙色" },
+        { "hex": "#42658A", "role": "配饰", "name": "海蓝" }
+      ],
+      "rule": "白在上、蓝在下最清爽；鞋和配饰带一点沙色，呼应夏日光线。整体只两个色相，干净利落。",
+      "tip": "蓝选灰调的「海蓝」而不是宝蓝，配白才不会像工服。",
+      "scenes": ["daily", "trip"],
+      "seasons": ["summer"],
+      "status": "published"
+    },
+    {
+      "id": "pal-mono-black",
+      "kind": "accent",
+      "title": "全黑 + 一线银",
+      "summary": "夜出场合：颜色归零，用小面积亮色点睛",
+      "swatches": [
+        { "hex": "#17181A", "role": "上装", "name": "曜石黑" },
+        { "hex": "#232327", "role": "下装", "name": "墨黑" },
+        { "hex": "#35353A", "role": "鞋", "name": "炭灰" },
+        { "hex": "#C4C8CE", "role": "配饰", "name": "银灰" }
+      ],
+      "rule": "三个「黑」明度各异（相差 5% 左右就能看出来），银饰只占 2% 面积，把光集中在脸和手附近。",
+      "tip": "全黑靠材质分层次：针织哑光、皮革反光、金属点睛。",
+      "scenes": ["party", "date"],
+      "seasons": ["autumn", "winter"],
+      "status": "published"
+    },
+    {
+      "id": "pal-brick",
+      "kind": "contrast",
+      "title": "砖红 × 奶油 × 丹宁",
+      "summary": "美式复古的固定三角，暖冷各占一边",
+      "swatches": [
+        { "hex": "#A34E3B", "role": "上装", "name": "砖红" },
+        { "hex": "#EFE6D4", "role": "内搭", "name": "奶油" },
+        { "hex": "#3D5A73", "role": "下装", "name": "丹宁蓝" },
+        { "hex": "#EFE6D4", "role": "鞋", "name": "奶油" }
+      ],
+      "rule": "暖色（砖红/奶油）管上半身，冷色（丹宁）管下半身，鞋回到暖色闭环。复古感来自低饱和的红蓝对峙。",
+      "tip": "红蓝都做旧：饱和度压到 40% 以下，才有年代感不发艳。",
+      "scenes": ["daily", "date"],
+      "seasons": ["autumn", "spring"],
+      "status": "published"
+    },
+    {
+      "id": "pal-coffee",
+      "kind": "analog",
+      "title": "咖啡 × 奶油",
+      "summary": "一杯拿铁的配色，日系秋天的温柔底",
+      "swatches": [
+        { "hex": "#6F5B44", "role": "上装", "name": "咖啡" },
+        { "hex": "#E9DFCE", "role": "下装", "name": "奶油" },
+        { "hex": "#B9A98F", "role": "鞋", "name": "灰褐" },
+        { "hex": "#6F5B44", "role": "包", "name": "咖啡" }
+      ],
+      "rule": "上深下浅反过来压重心，包回扣上装色形成闭环。灰褐鞋是两端的中间值，过渡不生硬。",
+      "tip": "深色放上面显精神，适合上半身有优势的体型；反过来穿更沉稳。",
+      "scenes": ["daily", "date"],
+      "seasons": ["autumn", "spring"],
+      "status": "published"
+    },
+    {
+      "id": "pal-fogblue",
+      "kind": "analog",
+      "title": "雾蓝 × 燕麦",
+      "summary": "低饱和的冷色通勤，温柔但不软",
+      "swatches": [
+        { "hex": "#7C93AD", "role": "上装", "name": "雾蓝" },
+        { "hex": "#E6DFD3", "role": "下装", "name": "燕麦" },
+        { "hex": "#3A4148", "role": "鞋", "name": "深灰蓝" },
+        { "hex": "#7C93AD", "role": "配饰", "name": "雾蓝" }
+      ],
+      "rule": "雾蓝和燕麦明度接近、色温一冷一暖，靠鞋的深色稳住下盘。适合想穿彩色但怕张扬的通勤日。",
+      "tip": "彩色通勤选「带灰的彩色」：饱和度一低，正式感就回来了。",
+      "scenes": ["commute", "daily"],
+      "seasons": ["spring", "autumn"],
+      "status": "published"
+    },
+    {
+      "id": "pal-dark-heart",
+      "kind": "accent",
+      "title": "深色外壳 + 一颗酒红",
+      "summary": "冬天的暗色穿搭，靠内搭亮一下",
+      "swatches": [
+        { "hex": "#1E2124", "role": "外套", "name": "黑" },
+        { "hex": "#7A3B3F", "role": "内搭", "name": "酒红" },
+        { "hex": "#2E3236", "role": "下装", "name": "炭" },
+        { "hex": "#17181A", "role": "鞋", "name": "黑" }
+      ],
+      "rule": "外套拉链敞开时酒红只露一条竖线，走路才若隐若现。亮色面积控制在 10% 以内，反而比大面积更抓眼。",
+      "tip": "暗色穿搭的亮色放在「胸口到领口」这个视线焦点区最划算。",
+      "scenes": ["daily", "party"],
+      "seasons": ["winter"],
+      "status": "published"
+    }
+  ]
+}

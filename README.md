@@ -2,6 +2,8 @@
 
 移动端优先的男士穿搭灵感图鉴：小红书式双列瀑布流，按风格 / 场景 / 身高筛选，每套搭配附单品清单、配色方案与搭配提醒。
 
+另有一个**配色手册**页：10 组纯色卡讲清「颜色为什么这么配」，不用看衣服图，点色块可复制 hex；搭配详情里的配色还能一键跳到对应色卡。
+
 配套一个本地**素材库**：用本机 Chrome 的登录态采集小红书穿搭笔记，按身高段筛选浏览，看到合适的可以一键「收录为搭配」，回到 App 草稿箱里预览、导出 JSON。
 
 ![status](https://img.shields.io/badge/status-v1.1-brightgreen) ![stack](https://img.shields.io/badge/stack-vanilla%20JS%20%C2%B7%20PWA-black)
@@ -25,6 +27,7 @@ python -m http.server 8765
 ├── content/            # 唯一内容源（改这里就能换内容，不用碰代码）
 │   ├── looks.json      #   搭配数据
 │   ├── editorials.json #   流内排版卡（配色心法、清单、观点）
+│   ├── palettes.json   #   配色手册（纯色卡：同色系/撞色/中性分层/点亮）
 │   ├── taxonomy.json   #   风格 / 场景 / 季节 / 品类 / 身高 字典
 │   ├── schema/         #   JSON Schema（字段契约）
 │   ├── templates/      #   新建搭配的模板
