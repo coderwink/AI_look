@@ -1,7 +1,7 @@
 # AGENTS.md · AI 协作入口
 
 > 任何 AI（或新加入的人）读这个文件就能上手，不必先读全部代码。
-> 最后更新：2026-10-22 · 版本 v1.0
+> 最后更新：2026-10-23 · 版本 v1.1
 
 ## 1. 这是什么
 
@@ -9,7 +9,7 @@
 当前只有 **Web / PWA** 端在运行；Android 原生、iOS 原生目录已预留，未来与 Web 共用同一套内容数据。
 
 - 线上形态：静态站点（可直接部署到 GitHub Pages / 任意静态托管）
-- 技术栈：原生 HTML + CSS + ES Module，**没有构建步骤、没有依赖**
+- 技术栈：原生 HTML + CSS + ES Module，**没有构建步骤**；运行时零依赖，`package.json` 只声明采集脚本用的 `puppeteer-core`（devDependency）
 - 后端：暂无。收藏数据存在 `localStorage`
 
 ## 2. 目录地图
@@ -24,7 +24,7 @@
 | `content/templates/look.template.json` | 新建搭配的空白模板 | 结构变更时才改 |
 | `content/images/looks/` | 搭配图（命名 `look-N.jpg`） | ✅ 放图 |
 | `content/xhs/` | **外部素材库**：从小红书博主采集的穿搭素材（每条笔记一个目录：图片 + `content/xhs/index.json` 索引） | 由脚本生成 |
-| `web/materials.html` | 素材库浏览页（搜索 / 标签筛选 / 瀑布流 / 详情弹层），读 `content/xhs/index.json` | 改功能才动 |
+| `web/materials.html` | 素材库浏览页（搜索 / 标签·身高·来源筛选 / 瀑布流 / 详情弹层 / 收录为搭配），读 `content/xhs/index.json` | 改功能才动 |
 | `scripts/xhs-collect.cjs` | 小红书采集器（`list` 博主主页 / `search` 搜索页 / `detail` 抓详情下载图，可断点续跑） | — |
 | `scripts/build-xhs-index.cjs` | 合并所有 `_state*.json` → `content/xhs/index.json`（含来源与身高） | — |
 | `scripts/extract-height.cjs` | 从文案抽身高（标题优先），写回 state 并输出识别率报告 | — |
@@ -33,7 +33,7 @@
 | `scripts/prepare-chrome-profile.cjs` | 仅复制 Chrome 配置目录（Chrome 已关闭时使用） | — |
 | `scripts/analyze-covers.py` | 封面图量化分析（主色/明度/饱和度/画幅）→ `content/xhs/analysis.json` | — |
 | `web/` | Web / PWA 端（页面、样式、逻辑） | 改功能才动 |
-| `web/js/app.js` | 全部前端逻辑：加载内容、瀑布流排版、详情层、收藏 | 改功能才动 |
+| `web/js/app.js` | 全部前端逻辑：加载内容、瀑布流排版、风格/场景/身高筛选、详情层、收藏、草稿箱 | 改功能才动 |
 | `web/css/style.css` | 全部样式（含瀑布流容器规则） | 改视觉才动 |
 | `manifest.webmanifest` | PWA 清单（图标、启动页、主题色） | 极少改 |
 | `sw.js` | Service Worker 离线缓存（位于仓库根，scope 为全站） | 极少改 |

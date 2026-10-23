@@ -40,6 +40,7 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
 .hbar{max-width:720px;margin:0 auto;padding:6px 16px 10px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
 .hbar::-webkit-scrollbar{display:none}
 .hbar .tagchip.on{background:#2b6cb0;color:#fff}
+.sbar .tagchip.on{background:#3f7d5a;color:#fff}
 
 /* 瀑布流 */
 .feed{max-width:720px;margin:12px auto 80px;padding:0 12px;column-count:2;column-gap:10px}
@@ -74,6 +75,18 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
 .m-tags{margin-top:12px;display:flex;gap:6px;flex-wrap:wrap}
 .m-tags span{font-size:12px;background:var(--chip);color:var(--ink2);border-radius:999px;padding:4px 11px;cursor:pointer}
 .m-open{display:block;margin-top:16px;text-align:center;background:var(--ink);color:#fff;border-radius:10px;padding:11px;font-size:14px;font-weight:600}
+
+/* 收录为搭配 */
+.m-collect{display:block;width:100%;margin-top:8px;background:#fff;border:1px solid var(--ink);color:var(--ink);border-radius:10px;padding:11px;font-size:14px;font-weight:600}
+.collect{margin-top:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
+.collect label{display:block;font-size:11.5px;color:var(--ink2);margin-bottom:10px}
+.collect input,.collect select{display:block;width:100%;margin-top:4px;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:14px;color:var(--ink);background:#fafafa;font-family:inherit}
+.collect .two{display:flex;gap:8px}
+.collect .two label{flex:1;min-width:0}
+.collect .row{display:flex;gap:8px}
+.collect .row button{flex:1;padding:10px;border-radius:8px;font-size:13px;border:1px solid var(--line);background:#fff;color:var(--ink)}
+.collect .row .primary{background:var(--ink);color:#fff;border-color:var(--ink);font-weight:600}
+.collect .hint{font-size:11px;color:var(--ink2);margin-top:9px;line-height:1.6}
 </style>
 </head>
 <body>
@@ -91,6 +104,7 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
   </div>
   <div class="tags" id="tagbar"></div>
   <div class="hbar" id="heightbar"></div>
+  <div class="hbar sbar" id="sourcebar"></div>
 </header>
 
 <main class="feed" id="feed"></main>
@@ -105,25 +119,63 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
     <div class="m-desc" id="mDesc"></div>
     <div class="m-tags" id="mTags"></div>
     <a class="m-open" id="mOpen" target="_blank" rel="noopener">在小红书查看原笔记 ↗</a>
+    <button class="m-collect" id="mCollect">收录为搭配 →</button>
+    <div class="collect" id="collect" hidden>
+      <label>标题<input id="cTitle" maxlength="24" placeholder="如：166 小个子 · 短外套拉高腰线"></label>
+      <div class="two">
+        <label>风格<select id="cStyle"></select></label>
+        <label>场景<select id="cScene"></select></label>
+      </div>
+      <div class="two">
+        <label>适穿身高下限<input id="cMin" type="number" step="1" min="140" max="210"></label>
+        <label>适穿身高上限<input id="cMax" type="number" step="1" min="140" max="210"></label>
+      </div>
+      <div class="row">
+        <button id="cCancel">取消</button>
+        <button id="cSave" class="primary">存为草稿</button>
+      </div>
+      <p class="hint" id="cMsg">草稿存在本机浏览器，回到穿搭 App 的「我的 → 我的草稿」可以预览和导出。</p>
+    </div>
   </div>
 </div>
 
 <script>
 const IMG = (id, f) => `../content/xhs/${id}/${f}`;
-let DATA = [], shown = [], activeTag = '', activeHeight = '', HEIGHTS = [], cur = null, curImg = 0;
+let DATA = [], shown = [], activeTag = '', activeHeight = '', activeSource = '', HEIGHTS = [], SOURCES = [], TAX = null, cur = null, curImg = 0;
+const DRAFT_KEY = 'xingge.incoming.v1';
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const timeStr = t => { try { return new Date(t).toLocaleDateString('zh-CN'); } catch(e){ return ''; } };
 
 async function init(){
-  const r = await fetch('../content/xhs/index.json');
+  const [r, rt] = await Promise.all([
+    fetch('../content/xhs/index.json'),
+    fetch('../content/taxonomy.json').catch(() => null),
+  ]);
   const j = await r.json();
+  TAX = rt && rt.ok ? await rt.json() : null;
   DATA = j.notes || [];
   HEIGHTS = (j.heights || []).filter(h => h.count);
+  SOURCES = (j.sources || []).filter(s => s.count);
   document.getElementById('count').textContent = DATA.length;
   buildHeightbar();
+  buildSourcebar();
   buildTagbar();
   apply();
+}
+
+/* 来源筛选：博主主页 / 各搜索关键词 */
+function buildSourcebar(){
+  const bar = document.getElementById('sourcebar');
+  if (SOURCES.length < 2) { bar.hidden = true; return; }
+  bar.innerHTML = `<button class="tagchip on" data-s="">全部来源<b>${DATA.length}</b></button>`
+    + SOURCES.map(s => `<button class="tagchip" data-s="${esc(s.file)}">${esc(s.label)}<b>${s.count}</b></button>`).join('');
+  bar.onclick = e => {
+    const b = e.target.closest('.tagchip'); if(!b) return;
+    activeSource = b.dataset.s;
+    bar.querySelectorAll('.tagchip').forEach(x=>x.classList.toggle('on', x===b));
+    apply();
+  };
 }
 
 function buildHeightbar(){
@@ -162,6 +214,7 @@ function apply(){
   shown = DATA.filter(n => {
     if (activeTag && !(n.tags||[]).includes(activeTag)) return false;
     if (activeHeight && (!n.height || n.height.band !== activeHeight)) return false;
+    if (activeSource && n.sourceFile !== activeSource) return false;
     if (!q) return true;
     return (n.title + ' ' + n.desc + ' ' + (n.tags||[]).join(' ')).toLowerCase().includes(q);
   });
@@ -193,6 +246,7 @@ function render(){
 /* 详情 */
 function openDetail(i){
   cur = shown[i]; curImg = 0;
+  closeCollect();
   renderViewer(); renderMeta();
   const l = document.getElementById('layer');
   l.hidden = false; l.scrollTop = 0;
@@ -209,7 +263,7 @@ function renderMeta(){
   const h = n.height || {};
   const hText = h.value ? `适合 ${h.value}cm` : (h.tag || '');
   document.getElementById('mTitle').textContent = n.title || '（无标题）';
-  document.getElementById('mSub').textContent = [hText, n.author, timeStr(n.time), n.type==='video'?'视频笔记':'图文笔记', '♡ '+(n.liked||'')].filter(Boolean).join(' · ');
+  document.getElementById('mSub').textContent = [hText, n.author, timeStr(n.time), n.type==='video'?'视频笔记':'图文笔记', '♡ '+(n.liked||''), n.sourceKind==='search' ? n.sourceLabel : ''].filter(Boolean).join(' · ');
   document.getElementById('mDesc').textContent = n.desc || '';
   document.getElementById('mTags').innerHTML = (n.tags||[]).map(t=>`<span>${esc(t)}</span>`).join('');
   document.getElementById('mOpen').href = n.url;
@@ -221,8 +275,98 @@ function closeLayer(){
   if (history.state && history.state.layer) history.back();
 }
 
-document.getElementById('feed').onclick = e => {
-  const c = e.target.closest('.mcard'); if(!c) return;
+/* ---------- 收录为搭配（写 localStorage 草稿，App 端可预览/导出） ---------- */
+function plainText(s){
+  return String(s || '').replace(/#[^\s#]+/g, ' ').replace(/\s+/g, ' ').trim();
+}
+function guessStyle(n){
+  const q = ((n.title || '') + ' ' + plainText(n.desc)).toLowerCase();
+  const rules = [
+    ['business', ['西装','正装','职场','面试','领带']],
+    ['smart', ['衬衫','半正式','约会']],
+    ['techwear', ['机能','冲锋','户外','山系','防风']],
+    ['street', ['街头','潮','球鞋','工装','阔形','廓形']],
+    ['retro', ['复古','牛仔','vintage','美式','做旧']],
+    ['minimal', ['极简','简约','黑白灰','同色系','基础款']],
+    ['cityboy', ['日系','cityboy','宽松','叠穿','通勤']],
+  ];
+  const hit = rules.find(([, ws]) => ws.some(w => q.includes(w)));
+  return hit ? hit[0] : 'cityboy';
+}
+function readDrafts(){
+  try { const a = JSON.parse(localStorage.getItem(DRAFT_KEY) || '[]'); return Array.isArray(a) ? a : []; }
+  catch(e){ return []; }
+}
+function writeDrafts(arr){
+  try { localStorage.setItem(DRAFT_KEY, JSON.stringify(arr)); return true; }
+  catch(e){ return false; }
+}
+function fillSelects(){
+  const st = document.getElementById('cStyle');
+  if (st.options.length) return;
+  st.innerHTML = ((TAX && TAX.styles) || []).map(s => `<option value="${esc(s.key)}">${esc(s.label)}</option>`).join('');
+  document.getElementById('cScene').innerHTML = ((TAX && TAX.scenes) || []).map(s => `<option value="${esc(s.key)}">${esc(s.label)}</option>`).join('');
+}
+function openCollect(){
+  const n = cur; if (!n) return;
+  fillSelects();
+  const title = (n.title || '').trim();
+  document.getElementById('cTitle').value = (title || plainText(n.desc).slice(0, 24)).slice(0, 24);
+  const v = n.height && n.height.value;
+  document.getElementById('cMin').value = v ? Math.max(140, v - 5) : '';
+  document.getElementById('cMax').value = v ? Math.min(210, v + 6) : '';
+  // 风格按文案关键词猜，场景同理，猜不中就留默认
+  const st = guessStyle(n);
+  if ([...document.getElementById('cStyle').options].some(o => o.value === st)) document.getElementById('cStyle').value = st;
+  const q = ((n.title || '') + ' ' + plainText(n.desc)).toLowerCase();
+  const guess = [['commute',['通勤','上班','职场','面试']],['date',['约会','相亲']],['trip',['旅行','出行','度假']],['party',['聚会','派对']],['daily',['日常','每天']]];
+  const hit = guess.find(([, ws]) => ws.some(w => q.includes(w)));
+  if (hit) document.getElementById('cScene').value = hit[0];
+  document.getElementById('cMsg').textContent = '草稿存在本机浏览器，回到穿搭 App 的「我的 → 我的草稿」可以预览和导出。';
+  document.getElementById('collect').hidden = false;
+  document.getElementById('mCollect').hidden = true;
+  document.getElementById('collect').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+function closeCollect(){
+  const box = document.getElementById('collect');
+  if (box.hidden) return;
+  box.hidden = true;
+  document.getElementById('mCollect').hidden = false;
+}
+function saveDraft(){
+  const n = cur; if (!n) return;
+  const titleEl = document.getElementById('cTitle');
+  const title = titleEl.value.trim();
+  if (!title) { titleEl.focus(); return; }
+  const min = parseInt(document.getElementById('cMin').value, 10);
+  const max = parseInt(document.getElementById('cMax').value, 10);
+  const clean = plainText(n.desc);
+  const firstSentence = (clean.split(/[。！!？?；;]/)[0] || '').trim();
+  const draft = {
+    id: 'draft-' + n.id.slice(-10),
+    title,
+    summary: firstSentence.slice(0, 24),
+    styles: [document.getElementById('cStyle').value],
+    scenes: [document.getElementById('cScene').value],
+    seasons: [],
+    image: { src: 'xhs/' + n.id + '/' + n.cover, ratio: 0.75, alt: title, credit: n.author || '' },
+    desc: (clean || title).slice(0, 220),
+    items: [], palette: [], tip: '',
+    tags: (n.tags || []).filter(t => t !== n.author && t.length <= 10).slice(0, 4),
+    author: n.author || '素材库',
+    status: 'draft',
+    source: { noteId: n.id, url: n.url, label: n.sourceLabel || '' },
+    createdAt: new Date().toISOString().slice(0, 10),
+  };
+  if (min && max && min < max) draft.heightFit = { min, max, note: '' };
+  const arr = readDrafts();
+  const i = arr.findIndex(d => d.source && d.source.noteId === n.id);
+  if (i >= 0) arr[i] = draft; else arr.unshift(draft);
+  if (!writeDrafts(arr)) { document.getElementById('cMsg').textContent = '保存失败：浏览器存储空间不足，先清理一些本地数据。'; return; }
+  document.getElementById('cMsg').textContent = `已存入草稿箱（共 ${arr.length} 条）。回 App「我的 → 我的草稿」可预览、导出 JSON。`;
+}
+
+document.getElementById('feed').onclick = e => {  const c = e.target.closest('.mcard'); if(!c) return;
   openDetail(+c.dataset.i);
 };
 document.getElementById('viewer').onclick = e => {
@@ -231,6 +375,9 @@ document.getElementById('viewer').onclick = e => {
   renderViewer();
 };
 document.getElementById('close').onclick = closeLayer;
+document.getElementById('mCollect').onclick = openCollect;
+document.getElementById('cCancel').onclick = closeCollect;
+document.getElementById('cSave').onclick = saveDraft;
 document.getElementById('layer').onclick = e => {
   const t = e.target.closest('.m-tags span');
   if (t){ document.getElementById('q').value = t.textContent; apply(); closeLayer(); window.scrollTo({top:0}); }
@@ -238,8 +385,8 @@ document.getElementById('layer').onclick = e => {
 document.getElementById('q').addEventListener('input', apply);
 document.getElementById('clear').onclick = () => {
   document.getElementById('q').value = '';
-  activeTag = ''; activeHeight = '';
-  ['tagbar','heightbar'].forEach(id => {
+  activeTag = ''; activeHeight = ''; activeSource = '';
+  ['tagbar','heightbar','sourcebar'].forEach(id => {
     const chips = document.getElementById(id).querySelectorAll('.tagchip');
     chips.forEach((x, i) => x.classList.toggle('on', i === 0));
   });

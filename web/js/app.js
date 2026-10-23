@@ -11,17 +11,40 @@
 
 const CONTENT_BASE = '../content';
 const IMAGE_BASE = '../content/images/looks/';
+const DRAFT_KEY = 'xingge.incoming.v1';
 const COLUMN_COUNT = 2;
 const GAP = 10;
+
+/** 素材库收录的草稿图放在 content/xhs/ 下，路径前缀要区分 */
+function imageSrc(look) {
+  const src = (look.image && look.image.src) || '';
+  return src.startsWith('xhs/') ? `${CONTENT_BASE}/${src}` : `${IMAGE_BASE}${src}`;
+}
+
+function readDrafts() {
+  try {
+    const arr = JSON.parse(localStorage.getItem(DRAFT_KEY) || '[]');
+    return Array.isArray(arr) ? arr.filter((d) => d && d.id) : [];
+  } catch (e) { return []; }
+}
+
+function writeDrafts(arr) {
+  try { localStorage.setItem(DRAFT_KEY, JSON.stringify(arr)); return true; }
+  catch (e) { toast('保存失败，请检查存储空间'); return false; }
+}
 
 /* ---------- 存储层 ---------- */
 const storage = {
   key: 'xingge.v1',
-  data: { favs: [], seen: [] },
+  data: { favs: [], seen: [], profile: { height: '' } },
   load() {
     try {
       const raw = localStorage.getItem(this.key);
-      if (raw) this.data = Object.assign(this.data, JSON.parse(raw));
+      if (raw) {
+        const saved = JSON.parse(raw);
+        this.data = Object.assign(this.data, saved);
+        this.data.profile = Object.assign({ height: '' }, saved.profile || {});
+      }
     } catch (e) { /* 数据损坏则重置 */ }
   },
   save() {
@@ -39,6 +62,10 @@ const storage = {
     if (!this.data.seen.includes(id)) { this.data.seen.push(id); this.save(); }
   },
   clearFavs() { this.data.favs = []; this.save(); },
+  setHeight(bandKey) {
+    this.data.profile.height = bandKey || '';
+    this.save();
+  },
 };
 
 /* ---------- 工具 ---------- */
@@ -60,12 +87,12 @@ function toast(msg) {
 
 /* ---------- 内容状态 ---------- */
 const content = {
-  styles: [], scenes: [], seasons: [], cats: [],
-  looks: [], editorials: [],
+  styles: [], scenes: [], seasons: [], cats: [], heights: [],
+  looks: [], editorials: [], drafts: [],
   styleLabel: {}, sceneLabel: {}, seasonLabel: {}, catLabel: {},
 };
 
-const state = { tab: 'home', style: 'all', scene: 'all', deferredInstall: null };
+const state = { tab: 'home', style: 'all', scene: 'all', height: 'all', deferredInstall: null };
 let sheetOpen = false;
 let searchOpen = false;
 const lookById = {};
@@ -112,9 +139,11 @@ function lookCard(look, idx) {
   return `
     <article class="card" data-look="${look.id}" style="animation-delay:${Math.min(idx * 45, 360)}ms">
       <div class="card-cover">
-        <img src="${IMAGE_BASE}${look.image.src}" alt="${esc(look.image.alt || look.title)}"
+        <img src="${imageSrc(look)}" alt="${esc(look.image.alt || look.title)}"
              style="--r:${look.image.ratio}" loading="lazy" decoding="async" />
         ${styleName ? `<span class="card-badge">${esc(styleName)}</span>` : ''}
+        ${look.heightFit ? `<span class="card-badge is-fit">${esc(heightText(look))}</span>` : ''}
+        ${look.isDraft ? '<span class="card-badge is-draft">草稿</span>' : ''}
       </div>
       <div class="card-body">
         <h3 class="card-title">${esc(look.title)}</h3>
@@ -151,22 +180,50 @@ function publishedLooks() {
   return content.looks.filter((l) => l.status === 'published');
 }
 
+/** 身高段字典（去掉 unknown） */
+function bandByKey(key) {
+  return content.heights.find((h) => h.key === key) || null;
+}
+
+/** 一套 look 是否覆盖某个身高段：区间重叠即算 */
+function fitsBand(look, band) {
+  const fit = look.heightFit;
+  if (!fit || typeof fit.min !== 'number') return true; // 没标注的不做排除
+  return fit.min < band.max && fit.max > band.min;
+}
+
+function heightText(look) {
+  const fit = look.heightFit;
+  if (!fit) return '';
+  return `${fit.min}–${fit.max}cm`;
+}
+
+function matchFilters(l) {
+  const band = state.height === 'all' ? null : bandByKey(state.height);
+  return (state.style === 'all' || l.styles.includes(state.style)) &&
+    (state.scene === 'all' || (l.scenes || []).includes(state.scene)) &&
+    (!band || fitsBand(l, band));
+}
+
 function filteredLooks() {
-  return publishedLooks().filter((l) =>
-    (state.style === 'all' || l.styles.includes(state.style)) &&
-    (state.scene === 'all' || (l.scenes || []).includes(state.scene))
-  );
+  return publishedLooks().filter(matchFilters);
+}
+
+/** 素材库收录的草稿：跟正式内容一起过滤，但排在最后 */
+function filteredDrafts() {
+  return content.drafts.filter(matchFilters);
 }
 
 function renderFeed() {
   const looks = filteredLooks();
+  const drafts = filteredDrafts();
   const box = $('#masonry');
   $('#loading').hidden = true;
 
-  if (!looks.length) {
+  if (!looks.length && !drafts.length) {
     box.innerHTML = `<div class="empty"><div class="empty-icon">✦</div>
       <p class="empty-title">这个组合下暂时没有搭配</p>
-      <p class="empty-sub">换个风格或场景试试</p></div>`;
+      <p class="empty-sub">换个风格、场景或身高试试</p></div>`;
     box.style.height = 'auto';
     box.firstElementChild.style.position = 'static';
     $('#feed-end').hidden = true;
@@ -181,6 +238,7 @@ function renderFeed() {
   slots.forEach((pos) => {
     if (eds.length) items.splice(pos + 1, 0, { kind: 'ed', data: eds.shift() });
   });
+  drafts.forEach((d) => items.push({ kind: 'look', data: d }));
 
   box.innerHTML = items.map((it, i) =>
     it.kind === 'look' ? lookCard(it.data, i) : editorialCard(it.data, i)
@@ -205,6 +263,21 @@ function renderTabs() {
   $('#scene-chips').innerHTML = [{ key: 'all', label: '全部场景' }].concat(content.scenes).map((s) =>
     `<button class="chip ${state.scene === s.key ? 'active' : ''}" data-scene="${s.key}">${esc(s.label)}</button>`
   ).join('');
+  renderHeightChips();
+}
+
+/** 身高筛选行：只在有 look 覆盖的段落出现 */
+function renderHeightChips() {
+  const looks = publishedLooks();
+  const bands = content.heights.filter((h) => looks.some((l) => fitsBand(l, h)));
+  const my = storage.data.profile.height;
+  const chips = [{ key: 'all', label: '不限身高' }].concat(
+    bands.map((b) => ({ key: b.key, label: `${b.label}${b.key === my ? ' · 我' : ''}` }))
+  );
+  $('#height-chips').innerHTML = chips.map((c) =>
+    `<button class="chip fit ${state.height === c.key ? 'active' : ''}" data-height="${c.key}">${esc(c.label)}</button>`
+  ).join('');
+  $('#height-chips').hidden = bands.length < 2;
 }
 
 /* ---------- 历史栈（Android 返回键关闭浮层） ---------- */
@@ -235,7 +308,7 @@ function openSheet(id) {
 
   $('#sheet').innerHTML = `
     <div class="sheet-img">
-      <img src="${IMAGE_BASE}${look.image.src}" alt="${esc(look.image.alt || look.title)}" />
+      <img src="${imageSrc(look)}" alt="${esc(look.image.alt || look.title)}" />
       <button class="sheet-close" id="sheet-close" aria-label="关闭">✕</button>
       <button class="sheet-fav ${storage.isFav(id) ? 'faved' : ''}" data-fav="${id}" aria-label="收藏">
         ${heartSvg(storage.isFav(id))}
@@ -249,15 +322,30 @@ function openSheet(id) {
       <h2 class="sheet-title">${esc(look.title)}</h2>
       ${look.desc ? `<p class="sheet-desc">${esc(look.desc)}</p>` : ''}
 
+      ${look.heightFit ? `
+      <div class="fit-line">
+        <b>适穿身高</b>
+        <span>${esc(heightText(look))}</span>
+        ${look.heightFit.note ? `<em>${esc(look.heightFit.note)}</em>` : ''}
+      </div>` : ''}
+
+      ${look.isDraft ? `
+      <div class="draft-box">
+        <b>草稿</b>
+        <p>从素材库收录${look.source?.label ? `（${esc(look.source.label)}）` : ''}，还没拆单品和配色。<a href="${esc(look.source?.url || '#')}" target="_blank" rel="noopener">看原笔记 ↗</a></p>
+        <button class="draft-drop" data-drop="${esc(look.id)}">移出草稿箱</button>
+      </div>` : ''}
+
+      ${(look.items || []).length ? `
       <p class="sec-title">单品清单</p>
       <div class="item-list">
-        ${(look.items || []).map((it) => `
+        ${look.items.map((it) => `
           <div class="item-row">
             <span class="item-cat">${esc(content.catLabel[it.cat] || it.cat)}</span>
             <span class="item-name">${esc(it.name)}</span>
             <span class="item-note">${esc(it.note || '')}</span>
           </div>`).join('')}
-      </div>
+      </div>` : ''}
 
       ${(look.palette || []).length ? `
       <p class="sec-title">配色方案</p>
@@ -272,7 +360,7 @@ function openSheet(id) {
       <div class="rel-grid">
         ${related.map((l) => `
           <div class="rel-card" data-look="${l.id}">
-            <img src="${IMAGE_BASE}${l.image.src}" alt="${esc(l.title)}" loading="lazy" />
+            <img src="${imageSrc(l)}" alt="${esc(l.title)}" loading="lazy" />
             <p>${esc(l.title)}</p>
           </div>`).join('')}
       </div>
@@ -336,6 +424,67 @@ function updateStats() {
   $('#stat-styles').textContent = content.styles.length;
 }
 
+/* ---------- 草稿箱（素材库收录） ---------- */
+function renderDrafts() {
+  const strip = $('#draft-strip');
+  const count = $('#draft-count');
+  if (!strip || !count) return;
+  const arr = content.drafts;
+  count.textContent = arr.length ? `${arr.length} 条` : '暂无';
+  strip.hidden = !arr.length;
+  strip.innerHTML = arr.map((d) => `
+    <div class="draft-chip" data-look="${esc(d.id)}">
+      <img src="${imageSrc(d)}" alt="${esc(d.title)}" loading="lazy" />
+      <p>${esc(d.title)}</p>
+    </div>`).join('');
+}
+
+function dropDraft(id) {
+  if (!confirm('把这套草稿移出草稿箱？')) return;
+  writeDrafts(readDrafts().filter((d) => d.id !== id));
+  delete lookById[id];
+  closeSheet();
+  loadDrafts();
+  renderDrafts();
+  renderTabs();
+  renderFeed();
+  toast('已移出草稿箱');
+}
+
+function exportDrafts() {
+  if (!content.drafts.length) return toast('草稿箱还是空的');
+  const clean = content.drafts.map((d) => {
+    const copy = Object.assign({}, d);
+    delete copy.isDraft;
+    return copy;
+  });
+  const blob = new Blob([JSON.stringify(clean, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `looks-drafts-${new Date().toISOString().slice(0, 10)}.json`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 3000);
+  toast('已导出，粘贴进 content/looks.json 的 looks 数组即可发布');
+}
+
+/** 我的页：身高段选择 */function renderHeightPicks() {
+  const my = storage.data.profile.height;
+  const box = $('#height-picks');
+  if (!box) return;
+  box.innerHTML = content.heights.map((h) =>
+    `<button class="hpick ${my === h.key ? 'on' : ''}" data-myheight="${h.key}">${esc(h.label)}</button>`
+  ).join('');
+  const hint = $('#height-hint');
+  if (hint) {
+    hint.textContent = my
+      ? `当前 ${bandByKey(my)?.label ?? ''}cm：灵感页默认只看这个身高段，再点一次取消。`
+      : '设一次，之后默认先看你这个身高段穿得上的搭配。';
+  }
+}
+
 /* ---------- 搜索 ---------- */
 function searchLooks(q) {
   const kw = q.trim().toLowerCase();
@@ -390,9 +539,15 @@ function switchTab(tab) {
   state.tab = tab;
   document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('active', t.dataset.tab === tab));
   ['home', 'favs', 'me'].forEach((v) => { $(`#view-${v}`).hidden = v !== tab; });
+  // 筛选只在灵感页出现，收藏 / 我的页把顶部空间让出来
+  const isHome = tab === 'home';
+  $('#style-tabs').hidden = !isHome;
+  $('#scene-chips').hidden = !isHome;
+  if (!isHome) $('#height-chips').hidden = true;
+  else renderHeightChips();
   window.scrollTo({ top: 0 });
   if (tab === 'favs') { renderFavs(); layoutMasonry($('#fav-masonry')); }
-  if (tab === 'me') updateStats();
+  if (tab === 'me') { updateStats(); renderHeightPicks(); renderDrafts(); }
 }
 
 /* ---------- 分享 ---------- */
@@ -427,6 +582,32 @@ function bindEvents() {
     renderFeed();
   });
 
+  $('#height-chips').addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-height]');
+    if (!btn) return;
+    state.height = btn.dataset.height;
+    renderTabs();
+    renderFeed();
+    if (btn.scrollIntoView) btn.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+  });
+
+  $('#height-picks').addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-myheight]');
+    if (!btn) return;
+    const key = btn.dataset.myheight;
+    const same = storage.data.profile.height === key;
+    storage.setHeight(same ? '' : key);
+    if (same) {
+      toast('已清除身高设置');
+    } else {
+      state.height = key;
+      toast(`已设为 ${bandByKey(key)?.label || ''}cm，灵感页只显示穿得上的搭配`);
+    }
+    renderHeightPicks();
+    renderTabs();
+    renderFeed();
+  });
+
   document.addEventListener('click', (e) => {
     const favBtn = e.target.closest('[data-fav]');
     if (favBtn) { e.stopPropagation(); onFavToggle(favBtn); return; }
@@ -434,6 +615,8 @@ function bindEvents() {
     if (card) { openSheet(card.dataset.look); return; }
     const goto = e.target.closest('[data-goto]');
     if (goto) switchTab(goto.dataset.goto);
+    const drop = e.target.closest('[data-drop]');
+    if (drop) { e.stopPropagation(); dropDraft(drop.dataset.drop); }
   });
 
   $('#sheet-backdrop').addEventListener('click', () => closeSheet());
@@ -447,6 +630,19 @@ function bindEvents() {
 
   $('#btn-share-top').addEventListener('click', shareApp);
   $('#btn-share-app').addEventListener('click', shareApp);
+  $('#btn-export-drafts').addEventListener('click', exportDrafts);
+  $('#btn-goto-materials').addEventListener('click', () => { location.href = 'materials.html'; });
+  $('#btn-clear-drafts').addEventListener('click', () => {
+    if (!content.drafts.length) return toast('草稿箱已经是空的');
+    if (!confirm('清空全部草稿？导出过 JSON 的记得先保存。')) return;
+    writeDrafts([]);
+    content.drafts.forEach((d) => delete lookById[d.id]);
+    loadDrafts();
+    renderDrafts();
+    renderTabs();
+    renderFeed();
+    toast('草稿箱已清空');
+  });
   $('#btn-clear-favs').addEventListener('click', () => {
     if (!storage.data.favs.length) return toast('收藏已经是空的啦');
     if (confirm('确定清空全部收藏吗？此操作不可恢复。')) {
@@ -489,6 +685,7 @@ async function loadContent() {
   content.scenes = tax.scenes || [];
   content.seasons = tax.seasons || [];
   content.cats = tax.itemCategories || [];
+  content.heights = (tax.heights || []).filter((h) => h.key !== 'unknown');
   tax.styles.forEach((s) => { content.styleLabel[s.key] = s.label; });
   tax.scenes.forEach((s) => { content.sceneLabel[s.key] = s.label; });
   tax.seasons.forEach((s) => { content.seasonLabel[s.key] = s.label; });
@@ -497,6 +694,13 @@ async function loadContent() {
   content.looks = (looksData.looks || []).filter((l) => l.status === 'published');
   content.looks.forEach((l) => { lookById[l.id] = l; });
   content.editorials = (editorialsData.editorials || []).filter((e) => e.status !== 'draft');
+  loadDrafts();
+}
+
+/** 本地草稿（素材库收录）→ 可渲染的 look 对象 */
+function loadDrafts() {
+  content.drafts = readDrafts().map((d) => Object.assign({}, d, { isDraft: true }));
+  content.drafts.forEach((d) => { lookById[d.id] = d; });
 }
 
 async function boot() {
@@ -510,9 +714,15 @@ async function boot() {
       `无法读取 <code>content/*.json</code>（${esc(e.message)}）。<br/>请用本地服务器打开，例如在项目根目录执行：<br/><code>python -m http.server 8765</code>`;
     return;
   }
+  // 上次设置过身高，就直接按它过滤灵感页
+  if (storage.data.profile.height && bandByKey(storage.data.profile.height)) {
+    state.height = storage.data.profile.height;
+  }
   renderTabs();
   renderFeed();
   renderFavs();
+  renderHeightPicks();
+  renderDrafts();
   updateStats();
   bindEvents();
 

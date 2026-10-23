@@ -64,6 +64,25 @@ if (taxonomy && looksData) {
     (l.palette ?? []).forEach((c) => /^#[0-9a-fA-F]{6}$/.test(c) || err(`${where}: 色值格式错误 "${c}"`));
 
     if (!['published', 'draft'].includes(l.status)) err(`${where}: status 只能是 published / draft`);
+
+    // 适穿身高区间：可选字段，但有就必须自洽
+    if (l.heightFit !== undefined) {
+      const f = l.heightFit;
+      if (typeof f !== 'object' || f === null) err(`${where}: heightFit 必须是对象 { min, max, note }`);
+      else {
+        if (typeof f.min !== 'number' || typeof f.max !== 'number') err(`${where}: heightFit.min / max 必须是数字`);
+        else if (f.min >= f.max) err(`${where}: heightFit.min 必须小于 max`);
+        else {
+          if (f.min < 140 || f.max > 210) warn(`${where}: heightFit 区间 ${f.min}–${f.max} 超出常规 140–210cm`);
+          const covered = (taxonomy.heights ?? []).filter((h) => h.min !== null && f.min < h.max && f.max > h.min);
+          if (!covered.length) warn(`${where}: heightFit 未覆盖任何身高段，身高筛选里会看不到`);
+        }
+        if (f.note && f.note.length > 40) warn(`${where}: heightFit.note 建议 40 字以内（详情页单行展示）`);
+      }
+    } else {
+      warn(`${where}: 建议补 heightFit（身高筛选需要）`);
+    }
+
     if (!l.desc) warn(`${where}: 建议补 desc（详情页正文）`);
     if (!l.tip) warn(`${where}: 建议补 tip（搭配提醒）`);
   });

@@ -33,6 +33,8 @@
     <nav class="tabs" id="style-tabs" role="tablist"></nav>
     <!-- 场景次级筛选 -->
     <div class="chip-row" id="scene-chips"></div>
+    <!-- 身高筛选 -->
+    <div class="chip-row fit-row" id="height-chips"></div>
 
     <main id="main">
       <!-- 瀑布流 -->
@@ -78,6 +80,27 @@
             <p>把「型格」添加到手机主屏幕，像原生 App 一样全屏打开。</p>
           </div>
           <button class="btn-small" id="btn-install">安装</button>
+        </div>
+
+        <div class="me-card me-card-col">
+          <div class="me-card-body">
+            <b>你的身高</b>
+            <p id="height-hint">设一次，之后默认先看你这个身高段穿得上的搭配。</p>
+          </div>
+          <div class="height-picks" id="height-picks"></div>
+        </div>
+
+        <div class="me-card me-card-col">
+          <div class="me-card-body">
+            <b>我的草稿 <span class="me-count" id="draft-count">暂无</span></b>
+            <p>从素材库「收录为搭配」存下来的，会先出现在灵感流末尾。</p>
+          </div>
+          <div class="draft-strip" id="draft-strip" hidden></div>
+          <div class="draft-actions">
+            <button class="btn-small ghost" id="btn-export-drafts">导出 JSON</button>
+            <button class="btn-small ghost" id="btn-goto-materials">去素材库</button>
+            <button class="btn-small ghost" id="btn-clear-drafts">清空</button>
+          </div>
         </div>
 
         <div class="me-group">

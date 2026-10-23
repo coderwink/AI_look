@@ -80,6 +80,17 @@
       }
     },
     "tags": { "type": "array", "items": { "type": "string" }, "description": "搜索用标签" },
+    "heightFit": {
+      "type": "object",
+      "description": "适穿身高区间（cm），身高筛选按区间重叠匹配；不填则任何身高段都能看到",
+      "additionalProperties": false,
+      "required": ["min", "max"],
+      "properties": {
+        "min": { "type": "number", "minimum": 140, "maximum": 210, "description": "区间下限（含）" },
+        "max": { "type": "number", "minimum": 140, "maximum": 210, "description": "区间上限（不含）" },
+        "note": { "type": "string", "maxLength": 40, "description": "一句话说明，例：九分裤露出脚踝更显高" }
+      }
+    },
     "author": { "type": "string", "description": "署名" },
     "status": {
       "type": "string",

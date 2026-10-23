@@ -1,0 +1,14 @@
+{
+  "name": "xingge-lookbook",
+  "version": "1.0.0",
+  "private": true,
+  "description": "型格 LOOKBOOK · 男士穿搭图鉴（PWA）",
+  "scripts": {
+    "serve": "python -m http.server 8765",
+    "check": "node scripts/check-content.mjs",
+    "materials": "node scripts/build-xhs-index.cjs && node scripts/extract-height.cjs && node scripts/verify-materials.cjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.10.2"
+  }
+}

@@ -37,7 +37,7 @@
 | `items[].note` | string | — | 版型 / 选购要点 |
 | `palette` | string[] | ✅ | 配色，2–6 个 HEX（`#ffffff`），展示为色卡 |
 | `tip` | string | 建议 | 一条可执行的搭配提醒 |
-| `heightFit` | object | — | 适配身高区间 `{ min, max, note? }`（cm）。缺省表示不限身高 |
+| `heightFit` | object | 建议 | 适配身高区间 `{ min, max, note? }`（cm）。缺省表示不限身高 |
 | `tags` | string[] | — | 搜索用关键词（「显高」「面试」等） |
 | `author` | string | — | 署名，默认「编辑部」 |
 | `status` | `"published"` \| `"draft"` | ✅ | `draft` 不会显示，可先填后发 |
@@ -56,6 +56,10 @@
 **heights**（身高段，用于素材与搭配筛选）：`h155` 155–160 · `h160` 160–165 · `h165` 165–170 · `h170` 170–175 · `h175` 175–180 · `h180` 180+ · `unknown` 未标注
 
 > 增删分类：只改 `taxonomy.json`，前端 Tab、筛选、标签会自动跟着变。改 key 需同步改已有内容。
+
+**heightFit 怎么匹配**：按区间**重叠**判断，不是包含。例如 look 写 `{ min: 160, max: 180 }`，用户选 165–170 能命中，选 175–180 也能命中（175<180），选 180+ 不命中。`min` 含、`max` 不含；`min` 必须小于 `max`，超出 140–210 会告警。前端只在「有 look 覆盖」的身高段上出现筛选 chip。
+
+**素材 → 搭配的草稿流**：素材库详情页「收录为搭配」把草稿写进浏览器 `localStorage`（key `xingge.incoming.v1`），主 App 读取后排在灵感流末尾并带「草稿」角标；「我的 → 我的草稿」可预览、导出 JSON。导出文件是 look 对象数组，粘贴进 `content/looks.json` 的 `looks` 里、把 `status` 改成 `published`、补 `items` / `palette` / `tip` 即成为正式内容。
 
 ## 3. 完整示例
 
