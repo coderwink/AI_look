@@ -128,37 +128,68 @@ code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .92em; 
 @keyframes sk-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .55; } }
 
 /* ---------- 配色手册 ---------- */
-.pal-grid { display: grid; grid-template-columns: 1fr; gap: 12px; padding: 0 12px; }
+.pal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 12px 10px; align-items: start; }
 .pal-card {
-  background: var(--card); border-radius: 16px; padding: 13px 13px 11px;
+  background: var(--card); border-radius: 14px; padding: 9px 9px 11px;
   box-shadow: var(--shadow); cursor: pointer; transition: transform .18s ease;
 }
 .pal-card:active { transform: scale(.98); }
-.pal-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 9px; }
+.pal-head { display: flex; align-items: center; gap: 6px; margin-bottom: 7px; min-height: 18px; }
 .pal-kind {
-  font-size: 9.5px; letter-spacing: 2px; color: var(--ink-3);
-  border: 1px solid var(--line); border-radius: 999px; padding: 2px 7px; white-space: nowrap;
+  font-size: 9px; letter-spacing: 1.6px; color: var(--ink-3);
+  border: 1px solid var(--line); border-radius: 999px; padding: 2px 6px; white-space: nowrap;
 }
-.pal-title { font-family: var(--serif); font-size: 15.5px; letter-spacing: 1px; }
-.pal-bars {
-  display: flex; flex-direction: column; border-radius: 10px; overflow: hidden;
-  height: 156px; width: 100%;
+.pal-mine-tag { margin-left: auto; font-size: 8.5px; letter-spacing: 1px; color: var(--accent); }
+.pal-title { font-family: var(--serif); font-size: 14px; letter-spacing: .5px; display: block; margin-top: 7px; }
+.pal-summary { font-size: 10.5px; color: var(--ink-2); line-height: 1.6; margin: 4px 0 0; }
+
+.pal-card-body { position: relative; background: var(--surface-2); border-radius: 10px; padding: 4px 4px 0; }
+.pal-fig { display: block; width: 100%; height: auto; }
+.pal-card-dots { display: flex; gap: 3px; padding: 5px 3px 3px; }
+.pal-card-dots i { flex: 1; height: 6px; border-radius: 3px; }
+
+/* 今日配色大卡 */
+.pal-hero {
+  grid-column: 1 / -1; background: var(--surface-2); border-radius: 16px;
+  padding: 12px 13px 14px; cursor: pointer;
 }
-.pal-bars i { flex: 1; }
-.pal-summary { font-size: 11.5px; color: var(--ink-2); line-height: 1.65; margin: 9px 0 8px; }
+.pal-hero-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.pal-hero-score { font-size: 9px; letter-spacing: 2px; color: var(--accent); }
+.pal-hero-main { display: flex; gap: 13px; align-items: center; }
+.pal-hero .pal-fig { width: 92px; flex: 0 0 92px; background: var(--card); border-radius: 10px; padding: 5px; }
+.pal-hero-info h3 { font-family: var(--serif); font-size: 19px; letter-spacing: 1px; margin-bottom: 6px; }
+.pal-hero-info p { font-size: 11px; color: var(--ink-2); line-height: 1.7; margin-bottom: 9px; }
+.pal-hero-dots { display: flex; gap: 4px; }
+.pal-hero-dots i { flex: 1; height: 9px; border-radius: 3px; }
+
+/* 横条卡：每四张插一张，打破节奏 */
+.pal-card.is-compact { display: flex; flex-direction: column; }
+.pal-weight { display: flex; height: 54px; border-radius: 9px; overflow: hidden; }
+.pal-weight i { height: 100%; }
+.pal-card.is-compact .pal-roles { margin-top: 6px; }
+
 .pal-roles { display: flex; }
 .pal-roles span {
-  flex: 1; text-align: center; font-size: 9.5px; letter-spacing: 1px; color: var(--ink-3);
+  flex: 1; text-align: center; font-size: 9px; letter-spacing: .5px; color: var(--ink-3);
+  overflow: hidden; white-space: nowrap;
 }
-.pal-empty-note { text-align: center; color: var(--ink-3); font-size: 12px; padding: 40px 0; }
-.search-sec {
-  font-size: 10px; letter-spacing: 2px; color: var(--ink-3);
-  padding: 12px 4px 8px;
-}
-.search-pal { padding: 0 0 10px; gap: 10px; }
-.search-pal .pal-bars { height: 120px; }
 
-.pal-sheet { max-height: 86vh; }
+/* 工具行 */
+.pal-tools { display: flex; gap: 7px; padding: 2px 12px 10px; }
+.pal-tool {
+  flex: 1; padding: 9px 0; white-space: nowrap; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--card); color: var(--ink-2); font-size: 11.5px; letter-spacing: .5px;
+}
+.pal-tool.is-primary { background: var(--dark); border-color: var(--dark); color: var(--on-dark); font-weight: 600; }
+.pal-tool.is-active { border-color: var(--ink); color: var(--ink); font-weight: 600; box-shadow: 0 0 0 1px var(--ink) inset; }
+.pal-tool:active { opacity: .8; }
+
+/* 搜索结果里的配色段 */
+.search-sec { font-size: 10px; letter-spacing: 2px; color: var(--ink-3); padding: 12px 4px 8px; }
+.search-pal { padding: 0 0 10px; gap: 10px; }
+
+/* ---------- 配色详情 ---------- */
+.pal-sheet { max-height: 88vh; }
 .pal-sheet-head {
   display: flex; align-items: center; justify-content: space-between;
   padding: 13px 16px 11px; border-bottom: 1px solid var(--line);
@@ -168,28 +199,111 @@ code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .92em; 
   border: 1px solid var(--line); background: var(--surface); color: var(--ink);
   font-size: 12px; line-height: 1; display: flex; align-items: center; justify-content: center;
 }
-.pal-sheet-bars { display: flex; flex-direction: column; height: 40vh; min-height: 240px; }
-.pal-bar {
-  flex: 1; display: flex; align-items: center; justify-content: space-between;
-  padding: 0 16px;
+.pal-sheet-kicker { font-size: 10px; letter-spacing: 2px; color: var(--ink-3); }
+.pal-detail { padding: 14px 16px 24px; }
+.pal-sheet-title { font-family: var(--serif); font-size: 21px; letter-spacing: 1px; margin-bottom: 12px; }
+.pal-detail-top { display: flex; gap: 12px; margin-bottom: 14px; align-items: stretch; }
+.pal-detail-top .pal-fig { width: 96px; flex: 0 0 96px; background: var(--surface-2); border-radius: 10px; padding: 5px; }
+.pal-rows {
+  flex: 1; display: flex; flex-direction: column; gap: 2px;
+  border-radius: 10px; overflow: hidden; min-height: 172px;
 }
-.pal-bar-role { font-size: 10px; letter-spacing: 2px; opacity: .82; }
-.pal-bar-name { font-size: 14px; font-weight: 600; letter-spacing: 1px; }
-.pal-bar-hex {
-  font-size: 10px; font-variant-numeric: tabular-nums; opacity: .66; letter-spacing: .5px;
-  cursor: pointer;
+.pal-row { display: flex; align-items: center; gap: 5px; padding: 0 8px; min-height: 26px; overflow: hidden; }
+.pal-row span { font-size: 9.5px; letter-spacing: 1px; opacity: .8; }
+.pal-row b { font-size: 11px; font-weight: 600; margin-left: auto; white-space: nowrap; }
+.pal-row i { font-style: normal; font-family: monospace; font-size: 8px; opacity: .62; flex: 0 0 auto; text-align: right; }
+
+/* 可穿性评分 */
+.pal-score-card {
+  display: flex; gap: 13px; align-items: center;
+  background: var(--surface-2); border-radius: 12px; padding: 11px 14px; margin-bottom: 14px;
 }
-.pal-sheet-body { padding: 16px 18px 22px; }
-.pal-sheet-kicker { font-size: 10px; letter-spacing: 2px; color: var(--ink-3); margin-bottom: 6px; }
-.pal-sheet-title { font-family: var(--serif); font-size: 20px; letter-spacing: 1px; margin-bottom: 10px; }
+.pal-score-num { text-align: center; flex: 0 0 auto; }
+.pal-score-num b { font-family: var(--serif); font-size: 27px; line-height: 1; }
+.pal-score-num span { font-size: 10px; color: var(--ink-3); }
+.pal-score-text b { font-size: 10px; letter-spacing: 1.5px; color: var(--accent); }
+.pal-score-text p { font-size: 11.5px; color: var(--ink-2); line-height: 1.65; margin-top: 3px; }
+
 .pal-sheet-rule { font-size: 13px; color: var(--ink-2); line-height: 1.8; margin-bottom: 14px; }
-.pal-copy { margin-top: 14px; width: 100%; }
+
+/* 明度阶梯 */
+.lum-ladder { display: flex; flex-direction: column; gap: 5px; margin-bottom: 16px; }
+.lum-row { display: flex; align-items: center; gap: 8px; }
+.lum-role { font-size: 9.5px; color: var(--ink-3); width: 28px; letter-spacing: 1px; flex: 0 0 28px; }
+.lum-track { flex: 1; height: 13px; background: var(--skeleton); border-radius: 4px; overflow: hidden; }
+.lum-track i { display: block; height: 100%; border-radius: 4px; }
+.lum-row b { font-size: 9.5px; color: var(--ink-2); width: 32px; text-align: right; font-variant-numeric: tabular-nums; }
+
+/* 色相环 */
+.pal-hue-wrap { display: flex; align-items: center; gap: 15px; margin-bottom: 16px; }
+.hue-ring { position: relative; width: 104px; height: 104px; flex: 0 0 104px; }
+.hue-ring-arc {
+  position: absolute; inset: 0; border-radius: 50%;
+  background: conic-gradient(from -90deg, #d64545, #d68b45, #cfc24a, #7fbf5a, #4cbfa0, #4a8fd6, #6a5ad6, #b45ad6, #d6459e, #d64545);
+  -webkit-mask: radial-gradient(circle, transparent 55%, #000 56%);
+  mask: radial-gradient(circle, transparent 55%, #000 56%);
+}
+.hue-ring-center {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font-size: 9px; letter-spacing: 2px; color: var(--ink-3);
+}
+.hue-dot {
+  position: absolute; width: 13px; height: 13px; margin: -6.5px 0 0 -6.5px; border-radius: 50%;
+  border: 2px solid var(--card); box-shadow: 0 1px 3px rgba(0,0,0,.28);
+}
+.pal-hue-legend p { font-size: 11.5px; color: var(--ink-2); line-height: 1.6; }
+.pal-hue-legend .muted { font-size: 10px; color: var(--ink-3); margin-top: 5px; }
+
+.pal-looks .rel-card { flex: 0 0 104px; }
+.pal-detail-actions { display: flex; gap: 8px; margin-top: 16px; }
+.pal-detail-actions .btn-small { flex: 1; }
+.btn-small.danger { color: #b4544a; border-color: rgba(180, 84, 74, .38); }
 .pal-link {
   display: block; width: 100%; margin-top: 10px; padding: 10px;
   background: none; border: 1px dashed var(--line); border-radius: 10px;
   color: var(--ink-2); font-size: 11.5px; letter-spacing: .5px;
 }
 .pal-link:active { background: var(--surface-2); }
+
+/* ---------- 自建试色 ---------- */
+.bs-body { padding: 12px 16px 24px; }
+.bs-preview { display: flex; gap: 12px; align-items: center; margin-bottom: 13px; }
+.bs-preview .pal-fig { width: 92px; flex: 0 0 92px; background: var(--surface-2); border-radius: 10px; padding: 5px; }
+.bs-verdict { flex: 1; }
+.bs-score { display: flex; align-items: baseline; gap: 2px; }
+.bs-score b { font-family: var(--serif); font-size: 30px; line-height: 1; }
+.bs-score span { font-size: 11px; color: var(--ink-3); }
+.bs-score em {
+  font-style: normal; margin-left: 8px; font-size: 10px; letter-spacing: 1px;
+  color: var(--accent); border: 1px solid var(--line); border-radius: 999px; padding: 2px 7px;
+}
+.bs-note { font-size: 11px; color: var(--ink-2); line-height: 1.65; margin-top: 6px; }
+.bs-slots { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+.bs-slot {
+  display: flex; align-items: center; gap: 7px; padding: 8px 9px;
+  border: 1px solid var(--line); border-radius: 10px; background: var(--card); cursor: pointer;
+}
+.bs-slot.on { border-color: var(--ink); box-shadow: 0 0 0 1px var(--ink) inset; }
+.bs-role { font-size: 10.5px; color: var(--ink-2); white-space: nowrap; }
+.bs-role em { font-style: normal; font-size: 8px; color: var(--ink-3); margin-left: 2px; }
+.bs-chip { width: 17px; height: 17px; border-radius: 5px; margin-left: auto; flex: 0 0 17px; }
+.bs-chip[data-empty] { background: var(--skeleton); border: 1px dashed var(--line); }
+.bs-slot b { font-size: 9px; color: var(--ink-3); white-space: nowrap; overflow: hidden; max-width: 54px; }
+.bs-picker-head {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 10px; letter-spacing: 1.5px; color: var(--ink-3); margin-bottom: 7px;
+}
+.bs-clear { background: none; border: none; color: var(--ink-3); font-size: 10px; text-decoration: underline; }
+.bs-colors { display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; }
+.bs-color { aspect-ratio: 1; border-radius: 7px; border: 2px solid transparent; padding: 0; cursor: pointer; }
+.bs-color.on { border-color: var(--ink); }
+.bs-hex { display: flex; gap: 8px; margin-top: 10px; }
+.bs-hex input {
+  flex: 1; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px;
+  font-size: 12px; background: var(--surface); color: var(--ink); font-family: monospace;
+}
+.bs-actions { display: flex; gap: 8px; margin-top: 15px; }
+.bs-actions .btn-small { flex: 1; }
 
 /* ---------- 瀑布流 ---------- */
 main { padding-bottom: calc(var(--tab-h) + env(safe-area-inset-bottom) + 48px); }

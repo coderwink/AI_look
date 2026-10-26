@@ -4,7 +4,7 @@
  *   图片 / 样式 / 脚本      → 缓存优先（离线可用，速度快）
  * 改版时把 VERSION 加一，即可让旧缓存自动失效。 */
 
-const VERSION = 'v4';
+const VERSION = 'v5';
 const CACHE = `xingge-${VERSION}`;
 
 const PRECACHE = [

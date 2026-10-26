@@ -19,7 +19,7 @@
 | `content/` | **唯一内容源**（搭配、编辑卡、分类字典、图片） | ✅ 日常主要改这里 |
 | `content/looks.json` | 所有搭配数据（数组） | ✅ 加/改搭配 |
 | `content/editorials.json` | 穿插在流里的排版卡（配色心法/清单/观点） | ✅ |
-| `content/palettes.json` | 配色手册：每组 3–5 个色块 + 配色逻辑 + 照抄建议（纯色卡，无图） | ✅ 加/改配色 |
+| `content/palettes.json` | 配色手册：每组 3–5 个色块 + 配色逻辑 + 照抄建议（纯色卡，无图；面积/评分等派生值由前端算） | ✅ 加/改配色 |
 | `content/taxonomy.json` | 风格、场景、季节、单品品类字典（标签唯一真源） | ✅ 增减分类 |
 | `content/schema/look.schema.json` | 单条搭配的 JSON Schema | 结构变更时才改 |
 | `content/templates/look.template.json` | 新建搭配的空白模板 | 结构变更时才改 |
@@ -113,6 +113,8 @@ node scripts/prepare-chrome-profile.cjs         # 等价拆分：仅复制配置
 - 容器不可见时 `clientWidth` 为 0，所以**切换 Tab 后要重新排版**（`switchTab()` 里已处理）。
 - 卡片入场动画只动 `opacity`，不动 `transform`（`transform` 被 JS 用于定位，动画会覆盖它）。
 - 收藏读写集中在 `storage` 对象；接云账号时替换它即可，UI 不用改。
+- 配色页（`renderPalettes` / `renderPalSheet` / `renderBuilder`）的视觉核心是 `figureSvg(p)`：按 `role` 把 hex 画到简笔人形上（头/上装/外套/下装/鞋/包/配饰各一层），改配色数据不需要动 SVG。
+- 自建配色存 `localStorage` 的 `xingge.palettes.v1`（数组，元素带 `custom: true`），与内置配色在 `allPalettes()` 合并；试色判定复用 `paletteScore()`。
 - 详情层/搜索层打开会 `history.pushState`，Android 返回键可关闭。
 
 ## 7. 多端策略
