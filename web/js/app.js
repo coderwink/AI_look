@@ -446,6 +446,28 @@ const ROLE_WEIGHT = { 外套: 0.34, 上装: 0.28, 下装: 0.24, 内搭: 0.12, �
 const roleWeight = (r) => ROLE_WEIGHT[r] || 0.06;
 
 const CUSTOM_PAL_KEY = 'xingge.palettes.v1';
+
+/** 小红书爆款配色法则（整理自高赞笔记） */
+const PAL_RULES = [
+  { t: '全身 ≤ 3 色', d: '黑白灰、藏蓝、卡其、驼色随意组合都不乱' },
+  { t: '撞色 1 : 3', d: '两个高饱和色别对半分，小面积撞才高级' },
+  { t: '提亮一件', d: '全身深色加浅色打底，全身浅色压一件深内搭' },
+  { t: '亮色 10%', d: '点睛色放领口到胸口，比大面积更抓眼' },
+  { t: '花色留里面', d: '格纹条纹做内搭，外面压一件纯色外套' },
+  { t: '同色靠材质', d: '同色系用棉、麻、针织、皮革再分一次层' },
+  { t: '鞋收尾', d: '鞋选深色收底或米白提亮，别停在中间调' },
+  { t: '深浅要拉开', d: '上下至少差两档明度，一样深就闷成一块' },
+];
+
+function palRulesStrip() {
+  return `<div class="pal-rules-head"><span>小红书爆款配色法则</span><em>整理自高赞笔记</em></div>
+  <div class="pal-rules">${PAL_RULES.map((r, i) => `
+    <div class="pal-rule" style="--rule-i:${i}">
+      <b>${esc(r.t)}</b>
+      <p>${esc(r.d)}</p>
+    </div>`).join('')}
+  </div>`;
+}
 const PRESET_COLORS = [
   '#F6F4F0', '#E9E4D8', '#D8CCBA', '#D9C7A7', '#B9A98F', '#A9896B',
   '#B0743C', '#6B4F35', '#A34E3B', '#7A3B3F', '#231F1C', '#17181A',
@@ -839,6 +861,9 @@ function renderPalettes() {
   // 自建视图下这两个筛选没有意义，收起来
   $('#pal-chips').hidden = state.palMine;
   $('#pal-scenes').hidden = state.palMine;
+  const rulesEl = $('#pal-rules');
+  if (rulesEl) rulesEl.innerHTML = rulesEl.dataset.loaded ? rulesEl.innerHTML : palRulesStrip();
+  if (rulesEl) rulesEl.dataset.loaded = '1';
   const list = filteredPalettes();
   const hero = state.palMine || state.palKind !== 'all' || state.palScene !== 'all' ? null : heroPalette();
   $('#pal-empty').hidden = list.length > 0;
@@ -907,6 +932,24 @@ function renderPalSheet(p) {
       </div>
 
       ${p.tip ? `<div class="tip-box"><b>照着抄</b><p>${esc(p.tip)}</p></div>` : ''}
+
+      ${p.guide ? `
+      <p class="sec-title">穿搭图文建议</p>
+      <div class="pal-guide">
+        <div class="pg-block">
+          <b>搭配公式</b>
+          <p>${esc(p.guide.outfit)}</p>
+        </div>
+        <div class="pg-items">${(p.guide.items || []).map((it) => `<span>${esc(it)}</span>`).join('')}</div>
+        <div class="pg-block pg-avoid">
+          <b>避雷</b>
+          <p>${esc(p.guide.avoid)}</p>
+        </div>
+        <div class="pg-caption">
+          <div class="pg-cap-head"><b>发布文案</b><button class="btn-mini" id="pal-copy-cap">复制文案</button></div>
+          <p>${esc(p.guide.caption)}</p>
+        </div>
+      </div>` : ''}
 
       ${looks.length ? `
       <p class="sec-title">能这么穿的搭配</p>
@@ -1385,6 +1428,12 @@ function bindEvents() {
     if (copyAll) {
       const hexes = Array.from(document.querySelectorAll('#pal-sheet [data-hex]')).map((x) => x.dataset.hex);
       if (navigator.clipboard) navigator.clipboard.writeText(hexes.join(' ')).then(() => toast('色值已复制'));
+      return;
+    }
+    const copyCap = e.target.closest('#pal-copy-cap');
+    if (copyCap) {
+      const cap = copyCap.closest('.pg-caption').querySelector('p');
+      if (cap && navigator.clipboard) navigator.clipboard.writeText(cap.textContent).then(() => toast('文案已复制，去发笔记吧'));
       return;
     }
     const hexEl = e.target.closest('[data-hex]');

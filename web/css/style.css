@@ -265,6 +265,53 @@ code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .92em; 
 }
 .pal-link:active { background: var(--surface-2); }
 
+/* ---------- 小红书爆款配色法则 ---------- */
+.pal-rules-wrap { padding: 0 12px 4px; }
+.pal-rules-head { display: flex; align-items: baseline; gap: 7px; margin: 4px 2px 8px; }
+.pal-rules-head span { font-size: 13px; font-weight: 700; letter-spacing: .5px; }
+.pal-rules-head em { font-style: normal; font-size: 10px; color: var(--ink-3); }
+.pal-rules {
+  display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 8px;
+  scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+}
+.pal-rules::-webkit-scrollbar { display: none; }
+.pal-rule {
+  flex: 0 0 128px; scroll-snap-align: start;
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 10px 11px 11px;
+}
+.pal-rule b {
+  display: inline-block; font-size: 11.5px; letter-spacing: .3px;
+  background: var(--surface-2); color: var(--accent);
+  border-radius: 6px; padding: 2px 7px;
+}
+.pal-rule p { font-size: 10.5px; color: var(--ink-2); line-height: 1.6; margin-top: 6px; }
+
+/* ---------- 穿搭图文建议 ---------- */
+.pal-guide { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 13px 14px 14px; margin-bottom: 16px; }
+.pal-guide .pg-block { margin-bottom: 9px; }
+.pal-guide .pg-block b, .pg-cap-head b {
+  display: inline-block; font-size: 9.5px; letter-spacing: 1.5px;
+  color: var(--accent); margin-bottom: 4px;
+}
+.pal-guide .pg-block p { font-size: 12.5px; line-height: 1.75; color: var(--ink); }
+.pg-items { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 11px; }
+.pg-items span {
+  font-size: 10.5px; color: var(--ink-2);
+  background: var(--surface-2); border-radius: 999px; padding: 3px 10px;
+}
+.pg-avoid { border-top: 1px dashed var(--line); padding-top: 10px; }
+.pg-avoid p { font-size: 11.5px !important; color: var(--ink-2) !important; }
+.pg-caption { background: var(--surface-2); border-radius: 10px; padding: 10px 11px; }
+.pg-cap-head { display: flex; align-items: center; justify-content: space-between; }
+.pg-caption p { font-size: 11.5px; color: var(--tip-ink); line-height: 1.75; margin-top: 2px; }
+.btn-mini {
+  font-size: 10.5px; color: var(--ink-2);
+  border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px;
+  background: var(--card);
+}
+.btn-mini:active { background: var(--surface-2); }
+
 /* ---------- 自建试色 ---------- */
 .bs-body { padding: 12px 16px 24px; }
 .bs-preview { display: flex; gap: 12px; align-items: center; margin-bottom: 13px; }
