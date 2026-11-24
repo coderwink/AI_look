@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6f4f0" />
+  <title>材质洗护图鉴 · 型格 LOOKBOOK</title>
+  <style>
+    :root {
+      --bg: #f6f4f0; --card: #ffffff; --ink: #1b1a18; --ink-2: #6f6a63; --ink-3: #a8a29a;
+      --line: #e9e4dc; --accent: #a15c33; --surface-2: #efe9df; --tip-ink: #4d4437;
+      --radius: 14px;
+      --font: "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+      --serif: "Songti SC", "Noto Serif SC", "STSong", Georgia, serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212; --card: #1b1b1c; --ink: #f2efea; --ink-2: #a8a39b; --ink-3: #726d66;
+        --line: #2c2b28; --accent: #c98a5e; --surface-2: #262320; --tip-ink: #d6cec1;
+      }
+      body { background: var(--bg); }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    [hidden] { display: none !important; }
+    body { font-family: var(--font); background: #eceae5; color: var(--ink); line-height: 1.55; }
+    button { font-family: inherit; border: 0; background: none; cursor: pointer; color: inherit; }
+    img { display: block; max-width: 100%; }
+    #app { max-width: 480px; margin: 0 auto; min-height: 100dvh; background: var(--bg); position: relative; }
+    @media (min-width: 481px) { #app { box-shadow: 0 0 60px rgba(0,0,0,.08); } }
+
+    /* 顶栏 */
+    .topbar {
+      position: sticky; top: 0; z-index: 40;
+      display: flex; align-items: center; gap: 10px;
+      padding: calc(env(safe-area-inset-top) + 10px) 14px 10px;
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    }
+    .back {
+      width: 32px; height: 32px; border-radius: 999px;
+      background: var(--card); border: 1px solid var(--line);
+      display: grid; place-items: center; font-size: 16px; color: var(--ink-2);
+    }
+    .topbar h1 { font-size: 15.5px; font-weight: 700; letter-spacing: 1px; }
+    .topbar .sub { font-size: 11px; color: var(--ink-3); margin-left: auto; }
+
+    /* 分组导航 */
+    .group-nav { display: flex; gap: 7px; padding: 2px 14px 10px; overflow-x: auto; scrollbar-width: none; }
+    .group-nav::-webkit-scrollbar { display: none; }
+    .group-nav button {
+      flex: 0 0 auto; font-size: 11.5px; letter-spacing: .5px;
+      background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+      padding: 5px 13px; color: var(--ink-2);
+    }
+    .page-hint { padding: 0 16px 12px; font-size: 11.5px; color: var(--ink-3); line-height: 1.6; }
+
+    /* 面料卡 */
+    .fab-list { padding: 0 12px calc(24px + env(safe-area-inset-bottom)); display: flex; flex-direction: column; gap: 14px; }
+    .fab-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; scroll-margin-top: 64px; }
+    .fab-img-wrap { position: relative; background: var(--surface-2); }
+    .fab-img-wrap img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+    .fab-group-tag {
+      position: absolute; top: 10px; left: 10px;
+      font-size: 9.5px; letter-spacing: 1.5px;
+      background: rgba(27,26,24,.66); color: #f6f4f0;
+      border-radius: 999px; padding: 3px 10px;
+    }
+    .fab-body { padding: 13px 14px 14px; }
+    .fab-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 7px; }
+    .fab-head h2 { font-family: var(--serif); font-size: 19px; font-weight: 700; }
+    .fab-head .grade { font-size: 10px; letter-spacing: 1px; color: var(--accent); margin-left: auto; white-space: nowrap; }
+    .fab-feel { font-size: 12.5px; color: var(--ink-2); line-height: 1.75; }
+    .fab-pc { display: flex; flex-direction: column; gap: 3px; margin: 9px 0 0; }
+    .fab-pros, .fab-cons { font-size: 11px; line-height: 1.7; }
+    .fab-pros { color: #4a7c59; }
+    .fab-cons { color: #b4544a; }
+    .fab-block { margin-top: 10px; border-radius: 10px; padding: 9px 11px; font-size: 11.5px; line-height: 1.75; }
+    .fab-block b { display: inline-block; font-size: 9.5px; letter-spacing: 1.5px; margin-right: 8px; }
+    .fab-wash { background: var(--surface-2); color: var(--ink-2); }
+    .fab-wash b { color: var(--accent); }
+    .fab-tip { background: transparent; border: 1px dashed var(--line); color: var(--tip-ink); }
+    .fab-tip b { color: #b4544a; }
+    .fab-legend { padding: 2px 16px 4px; font-size: 10.5px; color: var(--ink-3); }
+    .fab-legend i { font-style: normal; color: var(--accent); }
+    .loading, .error { padding: 60px 16px; text-align: center; color: var(--ink-3); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="topbar">
+      <button class="back" id="btn-back" aria-label="返回">‹</button>
+      <h1>材质洗护图鉴</h1>
+      <span class="sub" id="fab-count"></span>
+    </div>
+    <div class="group-nav" id="group-nav"></div>
+    <p class="fab-legend">● 为综合推荐度（<i>质感 × 耐造 × 好打理</i>），满分 5 分，仅供参考</p>
+    <p class="page-hint">买衣服先摸面料再看版型——同样一个版，好面料是「穿在身上」，差面料是「挂在身上」。洗坏比穿坏快，怎么洗往下看。</p>
+    <div class="fab-list" id="fab-list">
+      <p class="loading">正在加载…</p>
+    </div>
+  </div>
+
+  <script>
+    const esc = (s) => String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+
+    fetch('../content/fabrics.json')
+      .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then((data) => render(data.fabrics || []))
+      .catch((e) => {
+        document.getElementById('fab-list').innerHTML =
+          `<p class="error">无法读取 content/fabrics.json（${esc(e.message)}）。<br/>请从本地服务器打开本页面。</p>`;
+      });
+
+    function render(list) {
+      document.getElementById('fab-count').textContent = `${list.length} 种面料`;
+      const groups = [];
+      list.forEach((f) => { if (!groups.includes(f.group)) groups.push(f.group); });
+      document.getElementById('group-nav').innerHTML =
+        groups.map((g) => `<button data-goto="${esc(g)}">${esc(g)}</button>`).join('');
+
+      document.getElementById('fab-list').innerHTML = list.map((f) => `
+        <div class="fab-card" id="fab-${esc(f.id)}">
+          <div class="fab-img-wrap">
+            <img src="../content/${esc(f.img)}" alt="${esc(f.name)}面料图解" loading="lazy" />
+            <span class="fab-group-tag">${esc(f.group)}</span>
+          </div>
+          <div class="fab-body">
+            <div class="fab-head">
+              <h2>${esc(f.name)}</h2>
+              <span class="grade">${'●'.repeat(f.grade || 3)}${'○'.repeat(5 - (f.grade || 3))} ${f.grade || 3}/5</span>
+            </div>
+            <p class="fab-feel">${esc(f.feel)}</p>
+            <div class="fab-pc">
+              <span class="fab-pros">${(f.pros || []).map((x) => `+ ${esc(x)}`).join('&ensp;')}</span>
+              <span class="fab-cons">${(f.cons || []).map((x) => `− ${esc(x)}`).join('&ensp;')}</span>
+            </div>
+            <div class="fab-block fab-wash"><b>怎么洗</b>${esc(f.wash)}</div>
+            <div class="fab-block fab-tip"><b>避雷</b>${esc(f.tip)}</div>
+          </div>
+        </div>`).join('');
+
+      document.getElementById('group-nav').addEventListener('click', (e) => {
+        const btn = e.target.closest('[data-goto]');
+        if (!btn) return;
+        const first = list.find((f) => f.group === btn.dataset.goto);
+        if (first) document.getElementById(`fab-${first.id}`).scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+
+    document.getElementById('btn-back').addEventListener('click', () => {
+      if (history.length > 1) history.back();
+      else location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

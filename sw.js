@@ -4,7 +4,7 @@
  *   图片 / 样式 / 脚本      → 缓存优先（离线可用，速度快）
  * 改版时把 VERSION 加一，即可让旧缓存自动失效。 */
 
-const VERSION = 'v8';
+const VERSION = 'v9';
 const CACHE = `xingge-${VERSION}`;
 
 const PRECACHE = [
@@ -15,11 +15,24 @@ const PRECACHE = [
   './web/css/style.css',
   './web/js/app.js',
   './web/materials.html',
+  './web/fabrics.html',
   './content/taxonomy.json',
   './content/looks.json',
   './content/editorials.json',
   './content/palettes.json',
   './content/fabrics.json',
+  './content/images/fabrics/fabric-cotton.jpg',
+  './content/images/fabrics/fabric-wool.jpg',
+  './content/images/fabrics/fabric-cashmere.jpg',
+  './content/images/fabrics/fabric-linen.jpg',
+  './content/images/fabrics/fabric-denim.jpg',
+  './content/images/fabrics/fabric-down.jpg',
+  './content/images/fabrics/fabric-polyester.jpg',
+  './content/images/fabrics/fabric-nylon.jpg',
+  './content/images/fabrics/fabric-lyocell.jpg',
+  './content/images/fabrics/fabric-corduroy.jpg',
+  './content/images/fabrics/fabric-suede.jpg',
+  './content/images/fabrics/fabric-silk.jpg',
   './assets/icons/icon-192.png',
   './assets/icons/icon-512.png',
 ];

@@ -1271,43 +1271,6 @@ function closeSearch(fromPop) {
 }
 
 /* ---------- 标签页 ---------- */
-/* ---------- 材质洗护图鉴 ---------- */
-let fabricOpen = '';
-
-function renderFabrics() {
-  const box = $('#fabric-list');
-  if (!box) return;
-  const list = content.fabrics || [];
-  if (!list.length) { box.hidden = true; return; }
-  const groups = [];
-  list.forEach((f) => { if (!groups.includes(f.group)) groups.push(f.group); });
-  box.innerHTML = groups.map((g) => {
-    const items = list.filter((f) => f.group === g);
-    return `<div class="fab-group"><span class="fab-group-name">${esc(g)}</span>
-      ${items.map((f) => {
-        const open = fabricOpen === f.id;
-        return `<div class="fab-item ${open ? 'open' : ''}" data-fabric="${f.id}">
-          <button class="fab-head" data-fabric-head="${f.id}" aria-expanded="${open}">
-            <span class="fab-name">${esc(f.name)}</span>
-            <span class="fab-grade" title="综合推荐度">${'●'.repeat(f.grade || 3)}${'○'.repeat(5 - (f.grade || 3))}</span>
-            <i class="fab-caret">▾</i>
-          </button>
-          ${open ? `
-          <div class="fab-body">
-            <p class="fab-feel">${esc(f.feel)}</p>
-            <div class="fab-pc">
-              <span class="fab-pros">${(f.pros || []).map((x) => `+ ${esc(x)}`).join('　')}</span>
-              <span class="fab-cons">${(f.cons || []).map((x) => `− ${esc(x)}`).join('　')}</span>
-            </div>
-            <p class="fab-wash"><b>怎么洗</b>${esc(f.wash)}</p>
-            <p class="fab-tip"><b>避雷</b>${esc(f.tip)}</p>
-          </div>` : ''}
-        </div>`;
-      }).join('')}
-    </div>`;
-  }).join('');
-}
-
 function switchTab(tab) {
   state.tab = tab;
   document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('active', t.dataset.tab === tab));
@@ -1321,7 +1284,7 @@ function switchTab(tab) {
   window.scrollTo({ top: 0 });
   if (tab === 'palettes') renderPalettes();
   if (tab === 'favs') { renderFavs(); layoutMasonry($('#fav-masonry')); }
-  if (tab === 'me') { updateStats(); renderHeightPicks(); renderDrafts(); renderFabrics(); }
+  if (tab === 'me') { updateStats(); renderHeightPicks(); renderDrafts(); }
 }
 
 /* ---------- 分享 ---------- */
@@ -1507,13 +1470,6 @@ function bindEvents() {
     }
   });
 
-  $('#fabric-list').addEventListener('click', (e) => {
-    const head = e.target.closest('[data-fabric-head]');
-    if (!head) return;
-    fabricOpen = fabricOpen === head.dataset.fabricHead ? '' : head.dataset.fabricHead;
-    renderFabrics();
-  });
-
   $('#height-picks').addEventListener('click', (e) => {
     const btn = e.target.closest('[data-myheight]');
     if (!btn) return;
@@ -1600,6 +1556,7 @@ function bindEvents() {
   $('#btn-share-app').addEventListener('click', shareApp);
   $('#btn-export-drafts').addEventListener('click', exportDrafts);
   $('#btn-goto-materials').addEventListener('click', () => { location.href = 'materials.html'; });
+  $('#btn-goto-fabrics').addEventListener('click', () => { location.href = 'fabrics.html'; });
   $('#btn-clear-drafts').addEventListener('click', () => {
     if (!content.drafts.length) return toast('草稿箱已经是空的');
     if (!confirm('清空全部草稿？导出过 JSON 的记得先保存。')) return;
