@@ -80,15 +80,35 @@
       }
     },
     "tags": { "type": "array", "items": { "type": "string" }, "description": "搜索用标签" },
-    "heightFit": {
+    "specs": {
       "type": "object",
-      "description": "适穿身高区间（cm），身高筛选按区间重叠匹配；不填则任何身高段都能看到",
+      "description": "尺码与身材维度：尺寸数据 + 配鞋建议 + 适穿人群 + 避雷。详情页渲染「尺码与身材」卡。",
       "additionalProperties": false,
-      "required": ["min", "max"],
       "properties": {
-        "min": { "type": "number", "minimum": 140, "maximum": 210, "description": "区间下限（含）" },
-        "max": { "type": "number", "minimum": 140, "maximum": 210, "description": "区间上限（不含）" },
-        "note": { "type": "string", "maxLength": 40, "description": "一句话说明，例：九分裤露出脚踝更显高" }
+        "top": {
+          "type": "object",
+          "description": "上装 / 外套的尺寸",
+          "additionalProperties": false,
+          "properties": {
+            "name": { "type": "string", "description": "单品名" },
+            "chest": { "type": "string", "description": "胸围 / 版型，如「胸围 110cm · 宽松」" },
+            "length": { "type": "string", "description": "衣长 + 落点，如「衣长 70cm · 盖过皮带扣」" },
+            "shoulder": { "type": "string", "description": "肩宽（西装 / 大衣类建议填）" }
+          }
+        },
+        "bottom": {
+          "type": "object",
+          "description": "下装的尺寸",
+          "additionalProperties": false,
+          "properties": {
+            "name": { "type": "string", "description": "单品名" },
+            "waist": { "type": "string", "description": "腰围 + 腰型，如「腰围 72–80cm · 松紧抽绳」" },
+            "length": { "type": "string", "description": "裤长 + 落脚效果，如「裤长 105cm · 堆脚一折」" }
+          }
+        },
+        "shoes": { "type": "string", "maxLength": 80, "description": "配什么鞋：鞋款 + 袜子 / 细节建议" },
+        "suits": { "type": "string", "maxLength": 80, "description": "适合谁穿：身高 / 体型 / 场合" },
+        "avoid": { "type": "string", "maxLength": 80, "description": "避雷：选码 / 保养 / 造型禁忌" }
       }
     },
     "author": { "type": "string", "description": "署名" },

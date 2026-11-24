@@ -375,6 +375,30 @@ function renderSheet(look) {
           </div>`).join('')}
       </div>` : ''}
 
+      ${look.specs ? `
+      <p class="sec-title">尺码与身材</p>
+      <div class="specs-card">
+        ${look.specs.top ? `
+        <div class="spec-row">
+          <span class="spec-tag">上衣</span>
+          <div class="spec-vals">
+            <b>${esc(look.specs.top.name || '')}</b>
+            ${[look.specs.top.chest, look.specs.top.length, look.specs.top.shoulder].filter(Boolean).map((v) => `<p>${esc(v)}</p>`).join('')}
+          </div>
+        </div>` : ''}
+        ${look.specs.bottom ? `
+        <div class="spec-row">
+          <span class="spec-tag">下装</span>
+          <div class="spec-vals">
+            <b>${esc(look.specs.bottom.name || '')}</b>
+            ${[look.specs.bottom.waist, look.specs.bottom.length].filter(Boolean).map((v) => `<p>${esc(v)}</p>`).join('')}
+          </div>
+        </div>` : ''}
+        ${look.specs.shoes ? `<div class="spec-row"><span class="spec-tag">配鞋</span><p class="spec-line">${esc(look.specs.shoes)}</p></div>` : ''}
+        ${look.specs.suits ? `<div class="spec-row"><span class="spec-tag">适合</span><p class="spec-line">${esc(look.specs.suits)}</p></div>` : ''}
+        ${look.specs.avoid ? `<div class="spec-row is-avoid"><span class="spec-tag">避雷</span><p class="spec-line">${esc(look.specs.avoid)}</p></div>` : ''}
+      </div>` : ''}
+
       ${(look.palette || []).length ? `
       <p class="sec-title">配色方案</p>
       <div class="palette-strip">
@@ -1181,6 +1205,10 @@ function searchLooks(q) {
       ...(l.seasons || []).map((s) => content.seasonLabel[s] || ''),
       ...(l.tags || []),
       ...(l.items || []).flatMap((it) => [content.catLabel[it.cat] || '', it.name, it.note || '']),
+      ...(l.specs ? [l.specs.shoes, l.specs.suits, l.specs.avoid,
+        ...(l.specs.top ? [l.specs.top.name, l.specs.top.chest, l.specs.top.length, l.specs.top.shoulder] : []),
+        ...(l.specs.bottom ? [l.specs.bottom.name, l.specs.bottom.waist, l.specs.bottom.length] : []),
+      ].filter(Boolean) : []),
     ].join(' ').toLowerCase();
     return hay.includes(kw);
   });
