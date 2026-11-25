@@ -19,6 +19,9 @@ __pycache__/
 # 图片原图：体积大且可再生（scripts/process_images.py），只在本地保留
 raw/
 
+# AI 生图中间产物（成品已压缩进 content/），可再生不入库
+generated-images/
+
 # 日志
 *.log
 npm-debug.log*
